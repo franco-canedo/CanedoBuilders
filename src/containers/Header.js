@@ -48,7 +48,10 @@ function Header({ toggleTab }) {
                 <div className="tabs-container">
 
                     {
-                        width < 550 ? <div onClick={handleMenu}>Button</div> :
+                        width < 550 ?
+                            <div className="button-div">
+                                <div onClick={handleMenu}>Menu</div>
+                            </div> :
                             <>
                                 <div onClick={() => toggleTab("gallery")}>
                                     <p>Gallery</p>
