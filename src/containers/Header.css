@@ -39,6 +39,7 @@ div {
     background-color: white;
     box-shadow: 5px 5px #424040;
     overflow: hidden;
+    visibility: hidden;
 }
 
 .mobile-menu-in {
