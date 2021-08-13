@@ -1,0 +1,32 @@
+.header {
+    border: dotted;
+    /* display: grid;
+    grid-template-columns: 20%;
+    grid-template-rows: 20%; */
+    /* display: flex;
+    justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+   
+    
+    
+}
+
+div {
+    border: solid;
+}
+
+.logo {
+    width: 20%;
+}
+
+.tabs-container {
+    width: 500px;
+    border: double;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-right: 10%;
+   
+}
