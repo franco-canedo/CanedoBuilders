@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
-import './About.css';
+import './Home.css';
 
 
-function About() {
+function Home() {
     return (
         <div>
             <div>
-                <h1>About</h1>
+                <h1>Home</h1>
             </div>
         </div>
 
     );
 }
 
-export default About;
+export default Home;
