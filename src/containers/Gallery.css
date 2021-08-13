@@ -9,5 +9,27 @@
 }
 
 .gallery-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: minmax(300px, auto);
+    grid-auto-columns: minmax(300px, auto);;
+    grid-gap: 20px;
     border: dotted;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 2fr;
+    }
+  }
+
+.grid-item {
+    border: solid;
+    
+}
+
+h2 {
+    text-align: left;
+    margin-left: 10px;
 }

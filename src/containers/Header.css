@@ -30,3 +30,48 @@ div {
     padding-right: 10%;
    
 }
+
+.mobile-menu-hidden {
+    animation: Slide_Out 1s ease .1s forwards;
+}
+
+.mobile-menu-in {
+    animation: Slide_In 1s ease .1s forwards;
+}
+
+@keyframes Slide_In {
+    0%{
+      transform: translateX(-1500px);
+      overflow: hidden;
+    }
+    100%{
+      transform: translateX(0px);
+      
+    }
+  }
+
+  @-webkit-keyframes Slide_In {
+    to {
+        width:0;
+        height:0;
+        visibility: hidden;
+    }
+  }
+
+@keyframes Slide_Out {
+    0%{
+      transform: translateX(0px);
+    }
+    100%{
+      transform: translateX(-1500px);
+      overflow: hidden;
+    }
+  }
+  
+  @-webkit-keyframes Slide_Out {
+    to {
+        width:0;
+        height:0;
+        visibility: hidden;
+    }
+  }
