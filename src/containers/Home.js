@@ -12,6 +12,26 @@ function Home() {
         <div className="gallery-master-container">
             <div className="head-div">
                 <img className="head-imager" src={house}></img>
+                <p>
+                    Creating beautiful and unique living spaces that
+                    blend seamlessly with the character and culture of the city of Austin.  </p>
+            </div>
+            <div className="paragraph-div">
+                <p>
+                    Creating beautiful and unique living spaces that
+                    blend seamlessly with the character and culture of the city of Austin.  </p>
+            </div>
+            <div className='hero-btns'>
+                <Button
+                    variant="light"
+                    className='btns'
+                    buttonStyle='btn--outline'
+                    buttonSize='btn--large'
+                    onClick="document.getElementById('middle').scrollIntoView();"
+                >
+
+                    <a href="#down">MORE</a>
+                </Button>
 
             </div>
             <div className="sliders=container">

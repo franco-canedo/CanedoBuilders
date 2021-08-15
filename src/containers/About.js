@@ -24,7 +24,7 @@ function About() {
                         <img className="profile-pic2" src={guido}></img>
                     </div>
                     <div className="p-div">
-                    <p>Guido Jr.</p>
+                        <p>Guido Jr.</p>
                         <p>Manager</p>
                     </div>
 
@@ -34,7 +34,7 @@ function About() {
                         <img className="profile-pic3" src={franco}></img>
                     </div>
                     <div className="p-div">
-                    <p>Franco</p>
+                        <p>Franco</p>
                         <p>Sales</p>
                     </div>
 

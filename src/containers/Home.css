@@ -1,5 +1,6 @@
-.head-div {
-    /* max-height: auto; */
+.head-div > p {
+    position: absolute;
+    color: white;
 }
 
 .head-imager {
@@ -14,7 +15,12 @@
 }
 
 .slide-img {
-    margin-top: 50px;
+    margin-bottom: 50px;
     max-width: 600px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.paragraph-div {
+    padding: 50px;
+    font-size: 20px;
 }
