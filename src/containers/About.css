@@ -17,8 +17,10 @@
     width: 200px;
     margin-top: 5px;
     animation: Profile_Slide_In 2s ease 0s forwards;
+    object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
 .profile-pic2 {
     border-radius: 50%;
     height: 200px;
@@ -26,6 +28,7 @@
     margin-top: 5px;
     animation: Profile_Slide_In 4s ease 0s forwards;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    object-fit: cover;
 }
 
 .profile-pic3 {
@@ -35,7 +38,16 @@
     margin-top: 5px;
     animation: Profile_Slide_In 6s ease 0s forwards;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    object-fit: cover;
 }
+
+.p-pic-div:hover {
+    transition: transform 500ms;
+    transform: translate3d(0, calc(1% - 1rem), 0);
+    transform: translateY(-10px);
+}
+
+
 
 @keyframes Profile_Slide_In {
     0%{

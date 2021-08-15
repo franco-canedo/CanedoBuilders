@@ -6,7 +6,7 @@ import house7 from '../photos/house7.jpg';
 
 function CurrentProjects() {
     return (
-        <div>
+        <div className="gallery-master-container">
             <div>
                 <img src={house5} className="project-img"></img>
             </div>

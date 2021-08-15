@@ -3,7 +3,8 @@
 }
 
 .gallery-master-container {
-    animation: master_fade 2s ease 0s forwards;;
+    animation: master_fade 2s ease 0s forwards;
+    height: 100%;
 }
 
 @keyframes master_fade {
