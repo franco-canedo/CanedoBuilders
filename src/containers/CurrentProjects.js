@@ -38,11 +38,14 @@ function CurrentProjects() {
                     </div>
                     <div className="p-info-div">
                         <h3>2511 Givens Ave</h3>
-                        <p>3 beds 2 baths</p>
+                        <p>3 Beds 2 Baths</p>
                         <p>1100 SF</p>
                         <p>Completion: August 2021</p>
                         <Button variant="contained" color="primary">
                             Google Maps
+                        </Button>
+                        <Button variant="contained" color="secondary" className="button-c">Contact Us
+                            <a href="mailto:canedoguido65@gmail.com?subject=Subject&body=Body"></a>
                         </Button>
                     </div>
                 </div>
@@ -55,12 +58,17 @@ function CurrentProjects() {
                     </div>
                     <div className="p-info-div">
                         <h3>7511 Behtune Ave</h3>
-                        <p> 3 beds 2 baths</p>
+                        <p> 3 Beds 2 Baths</p>
                         <p>1600 SF</p>
                         <p>Completion: September 2021</p>
+
                         <Button variant="contained" color="primary">
                             Google Maps
                         </Button>
+                        <Button variant="contained" color="secondary" className="button-c">Contact Us
+                            <a href="mailto:canedoguido65@gmail.com?subject=Subject&body=Body"></a>
+                        </Button>
+
                     </div>
                 </div>
             </div>
