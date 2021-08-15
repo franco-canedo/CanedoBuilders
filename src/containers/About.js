@@ -9,14 +9,35 @@ function About() {
     return (
         <div>
             <div>
-                <div className="profile-piv-div">
-                    <img className="profile-pic" src={house7}></img>
+                <div className="profile-pic-div">
+                    <div>
+                        <img className="profile-pic1" src={house7}></img>
+                    </div>
+
+                    <div className="p-div">
+                        <p>Guido</p>
+                        <p>President</p>
+                    </div>
                 </div>
-                <div className="profile-piv-div">
-                    <img className="profile-pic" src={house6}></img>
+                <div className="profile-pic-div">
+                    <div>
+                        <img className="profile-pic2" src={house6}></img>
+                    </div>
+                    <div className="p-div">
+                    <p>Guido Jr.</p>
+                        <p>Manager</p>
+                    </div>
+
                 </div>
-                <div className="profile-piv-div">
-                    <img className="profile-pic" src={house3}></img>
+                <div className="profile-pic-div">
+                    <div>
+                        <img className="profile-pic3" src={house3}></img>
+                    </div>
+                    <div className="p-div">
+                    <p>Franco</p>
+                        <p>Sales</p>
+                    </div>
+
                 </div>
             </div>
         </div>
