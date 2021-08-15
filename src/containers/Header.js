@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Header.css';
+import logo from '../photos/Logo.jpg';
 
 
 function debounce(fn, ms) {
@@ -44,7 +45,8 @@ function Header({ toggleTab }) {
             <div className="header">
                 <div className="logo-div"
                 onClick={() => toggleTab("home")}>
-                    <h2>CANEDO</h2>
+                    <img className="logo-img"
+                    src={logo}></img>
                 </div>
                 <div className="tabs-container">
 
@@ -56,19 +58,19 @@ function Header({ toggleTab }) {
                             <>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("gallery")}>
-                                    <h3>GALLERY</h3>
+                                    <p>GALLERY</p>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("current projects")}>
-                                    <h3>CURRENT PROJECTS</h3>
+                                    <p>CURRENT PROJECTS</p>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("about")}>
-                                    <h3>ABOUT</h3>
+                                    <p>ABOUT</p>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("contact")}>
-                                    <h3>CONTACT</h3>
+                                    <p>CONTACT</p>
                                 </div>
                             </>
                     }

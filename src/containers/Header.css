@@ -1,33 +1,39 @@
 .header {
     column-count: 2;
-    height: 100px;
+    height: 125px;
     color: white;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     background-image: linear-gradient(to bottom, rgb(133, 122, 122),rgb(41, 37, 37));
 }
 
-.logo {
-    width: 30px;
-    border: solid
+.logo-div {
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.logo-img {
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+} 
+
 .tabs-container {
-    /* width: 800px; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: stretch;
-    /* position: absolute; */
-    /* left: 300px; */
     padding-right: 200px;
+    padding-top: 125px;
 }
 
 .tab-div {
-   margin-left: 50px;
-   /* border: none; */
-    /* width: auto; */
-    
-   
+   min-width: 175px;
+   padding: 5px;
+   box-shadow: rgb(204, 219, 232) 2px 0px inset, rgba(255, 255, 255, 0.5)  0px 1px inset;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .logo-div {
