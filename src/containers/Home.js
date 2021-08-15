@@ -9,7 +9,7 @@ import house6 from '../photos/house6.jpg';
 
 function Home() {
     return (
-        <div>
+        <div className="gallery-master-container">
             <div className="head-div">
                 <img className="head-imager" src={house}></img>
 
