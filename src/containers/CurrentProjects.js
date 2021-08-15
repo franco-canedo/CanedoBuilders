@@ -8,6 +8,8 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
+import ProjectCarousel from '../components/ProjectCarousel';
+import BethuneCarousel from '../components/BethuneCarousel';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -31,10 +33,12 @@ function CurrentProjects() {
             <div className="projects-container">
                 <div className="project-div">
                     <div className="collage-div">
-                        <img src={house5} className="project-img"></img>
+                        {/* <img src={house5} className="project-img"></img> */}
+                        <ProjectCarousel/>
                     </div>
                     <div className="bounce-div">
                         <img src={givens} className="project-img"></img>
+                        
                     </div>
                     <div className="p-info-div">
                         <h3>2511 Givens Ave</h3>
@@ -51,7 +55,8 @@ function CurrentProjects() {
                 </div>
                 <div className="project-div">
                     <div className="collage-div">
-                        <img src={house6} className="project-img"></img>
+                        {/* <img src={house6} className="project-img"></img> */}
+                        <BethuneCarousel/>
                     </div>
                     <div className="bounce-div">
                         <img src={bethune} className="project-img"></img>

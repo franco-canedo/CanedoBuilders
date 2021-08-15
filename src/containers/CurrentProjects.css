@@ -27,17 +27,18 @@
 
  .collage-div {
      animation: Project_slide 2s ease;
+     margin-top: 50px;
+     max-width: 400px;
+     max-height: 300px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
 
  @keyframes Project_slide {
     0%{
-      transform: translateX(-500px);
-      overflow: hidden;
-      visibility: hidden;
+        
       opacity: 0%;
     }
     100%{
-      transform: translateX(0px);
       opacity: 100%;
     }
   }
