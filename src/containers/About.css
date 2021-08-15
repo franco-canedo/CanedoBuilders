@@ -1,0 +1,72 @@
+.profile-pic-div {
+    margin-bottom: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: turquoise; */
+    padding: 20px;
+    height: auto;
+    border-bottom: ridge;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+.profile-pic1 {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: 5px;
+    animation: Profile_Slide_In 2s ease 0s forwards;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.profile-pic2 {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: 5px;
+    animation: Profile_Slide_In 4s ease 0s forwards;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profile-pic3 {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: 5px;
+    animation: Profile_Slide_In 6s ease 0s forwards;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@keyframes Profile_Slide_In {
+    0%{
+      transform: translateX(-500px);
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0%;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 100%;
+    }
+  }
+
+
+.p-div {
+    margin-top: 20px;
+    padding-top: 50px;
+    animation: P_fade 2s ease 0s forwards;
+    border-bottom: ridge;
+    width: 200px;
+}
+
+@keyframes P_fade {
+    0%{
+      transform: translateY(100px);
+      opacity: 0%;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 100%;
+    }
+  }
+

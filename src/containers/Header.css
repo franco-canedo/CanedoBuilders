@@ -1,32 +1,136 @@
 .header {
-    border: dotted;
-    /* display: grid;
-    grid-template-columns: 20%;
-    grid-template-rows: 20%; */
-    /* display: flex;
-    justify-content: space-between; */
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-   
-    
-    
+    column-count: 2;
+    height: 125px;
+    color: white;
+    /* padding-top: 10px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-image: linear-gradient(to bottom, rgb(133, 122, 122),rgb(41, 37, 37));
 }
 
-div {
-    border: solid;
+.logo-div {
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.logo {
-    width: 20%;
-}
+.logo-img {
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+} 
 
 .tabs-container {
-    width: 500px;
-    border: double;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
-    padding-right: 10%;
-   
+    padding-right: 200px;
+    padding-top: 125px;
+}
+
+.tab-div {
+   min-width: 175px;
+   padding: 5px;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+   /* box-shadow: rgb(204, 219, 232) 2px 0px inset, rgba(255, 255, 255, 0.5)  0px 1px inset; */
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tab-div:hover {
+    transition: transform 300ms;
+  transform: translate3d(0, calc(1% - 1rem), 0);
+  transform: translateY(-10px);
+}
+
+.logo-div {
+    max-width: 200px;
+    
+    margin: 20px;
+}
+
+.mobile-menu-hidden {
+    animation: Slide_Out 1s ease 0s forwards;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 5px 5px #424040;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    padding-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mobile-menu-in {
+    animation: Slide_In .5s ease 0s forwards;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 5px 5px #424040;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 1;
+    padding-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes Slide_In {
+    0%{
+      transform: translateY(1500px);
+      overflow: hidden;
+      visibility: hidden;
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
+
+@keyframes Slide_Out {
+    0%{
+      transform: translateY(0px);
+      z-index: 1;
+    }
+    100%{
+      transform: translateY(1000px);
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+  
+  @-webkit-keyframes Slide_Out {
+    to {
+        width:0;
+        height:0;
+        visibility: hidden;
+    }
+  }
+
+  .button-div {
+      min-width: 100px;
+      height: 50px;
+      margin-left: 200px;
+      padding-top:10px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+     
+  }
+
+  .option {
+      border-bottom: ridge;
+      margin-top: 10px;
+      width: 200px;
+  }
+
+  .button {
+    margin-top: 10px;
+    padding-top: 25px;
+    width: 200px;
 }

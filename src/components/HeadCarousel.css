@@ -1,0 +1,10 @@
+.head-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+img {
+    z-index: -1;
+}
