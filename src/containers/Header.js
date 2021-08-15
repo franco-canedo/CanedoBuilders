@@ -42,28 +42,33 @@ function Header({ toggleTab }) {
     return (
         <>
             <div className="header">
-                <div onClick={() => toggleTab("home")}>
-                    <h1>Canedo Builders</h1>
+                <div className="logo-div"
+                onClick={() => toggleTab("home")}>
+                    <h2>CANEDO</h2>
                 </div>
                 <div className="tabs-container">
 
                     {
                         width < 550 ?
                             <div className="button-div">
-                                <div onClick={handleMenu}>Menu</div>
+                                <div onClick={handleMenu}>MENU</div>
                             </div> :
                             <>
-                                <div onClick={() => toggleTab("gallery")}>
-                                    <p>Gallery</p>
+                                <div className="tab-div"
+                                onClick={() => toggleTab("gallery")}>
+                                    <h3>GALLERY</h3>
                                 </div>
-                                <div onClick={() => toggleTab("current projects")}>
-                                    <p>Current Projects</p>
+                                <div className="tab-div"
+                                onClick={() => toggleTab("current projects")}>
+                                    <h3>CURRENT PROJECTS</h3>
                                 </div>
-                                <div onClick={() => toggleTab("about")}>
-                                    <p>About</p>
+                                <div className="tab-div"
+                                onClick={() => toggleTab("about")}>
+                                    <h3>ABOUT</h3>
                                 </div>
-                                <div onClick={() => toggleTab("contact")}>
-                                    <p>Contact</p>
+                                <div className="tab-div"
+                                onClick={() => toggleTab("contact")}>
+                                    <h3>CONTACT</h3>
                                 </div>
                             </>
                     }

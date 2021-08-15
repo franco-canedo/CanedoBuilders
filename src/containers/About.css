@@ -1,0 +1,12 @@
+.profile-pic-div {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}

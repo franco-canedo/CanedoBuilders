@@ -1,34 +1,38 @@
 .header {
-    border: dotted;
-    /* display: grid;
-    grid-template-columns: 20%;
-    grid-template-rows: 20%; */
-    /* display: flex;
-    justify-content: space-between; */
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-   
-    
-    
-}
-
-div {
-    border-bottom: groove;
+    column-count: 2;
+    height: 150px;
+    color: white;
+    padding-top: 40px;
+    background-image: linear-gradient(to bottom, rgb(133, 122, 122),rgb(41, 37, 37));
 }
 
 .logo {
-    width: 20%;
+    width: 30px;
+    border: solid
 }
 
 .tabs-container {
-    width: 500px;
-    border: double;
+    /* width: 800px; */
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    padding-right: 10%;
+    /* position: absolute; */
+    /* left: 300px; */
+    padding-right: 500px;
+}
+
+.tab-div {
    
+   /* border: none; */
+    /* width: auto; */
+    
+   
+}
+
+.logo-div {
+    max-width: 200px;
+    
+    margin: 20px;
 }
 
 .mobile-menu-hidden {
@@ -39,7 +43,7 @@ div {
     background-color: white;
     box-shadow: 5px 5px #424040;
     overflow: hidden;
-    visibility: hidden;
+  
 }
 
 .mobile-menu-in {
@@ -50,6 +54,7 @@ div {
     background-color: white;
     box-shadow: 5px 5px #424040;
     overflow: hidden;
+    
 }
 
 @keyframes Slide_In {
@@ -69,7 +74,7 @@ div {
       transform: translateY(0px);
     }
     100%{
-      transform: translateY(1500px);
+      transform: translateY(3000px);
       overflow: hidden;
     }
   }
@@ -88,5 +93,5 @@ div {
       padding: 20px;
       margin: 20px;
       margin-left: 80%;
-      border: dotted;
+     
   }

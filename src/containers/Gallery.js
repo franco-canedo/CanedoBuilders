@@ -16,9 +16,6 @@ import DiningCarousel from '../components/DiningCarousel';
 function Gallery() {
     return (
         <div>
-            <div>
-                <h1>Gallery</h1>
-            </div>
             <div className="head-picture-container">
                 {/* <img className="head-image" src={house} alt="house" /> */}
                 <HeadCarousel />

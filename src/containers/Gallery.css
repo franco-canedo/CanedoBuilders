@@ -1,5 +1,5 @@
 .head-picture-container {
-    border: dotted;
+  
 }
 
 .head-image {
@@ -10,11 +10,11 @@
 
 .gallery-container {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 3fr 3fr;
     grid-auto-rows: minmax(300px, auto);
     grid-auto-columns: minmax(300px, auto);;
     grid-gap: 20px;
-    border: dotted;
+    
     padding: 20px;
 }
 
