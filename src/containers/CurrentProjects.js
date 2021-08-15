@@ -33,11 +33,11 @@ function CurrentProjects() {
                     <div className="collage-div">
                         <img src={house5} className="project-img"></img>
                     </div>
-                    <div>
+                    <div className="bounce-div">
                         <img src={givens} className="project-img"></img>
                     </div>
                     <div className="p-info-div">
-                        <h2>2511 Givens Ave</h2>
+                        <h3>2511 Givens Ave</h3>
                         <p>3 beds 2 baths</p>
                         <p>1100 SF</p>
                         <p>Completion: August 2021</p>
@@ -50,11 +50,11 @@ function CurrentProjects() {
                     <div className="collage-div">
                         <img src={house6} className="project-img"></img>
                     </div>
-                    <div>
+                    <div className="bounce-div">
                         <img src={bethune} className="project-img"></img>
                     </div>
                     <div className="p-info-div">
-                        <h2>7511 Behtune Ave</h2>
+                        <h3>7511 Behtune Ave</h3>
                         <p> 3 beds 2 baths</p>
                         <p>1600 SF</p>
                         <p>Completion: September 2021</p>
