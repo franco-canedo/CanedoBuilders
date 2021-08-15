@@ -53,8 +53,10 @@
 
 .p-div {
     margin-top: 20px;
-     padding-top: 50px;
-     animation: P_fade 2s ease 0s forwards;
+    padding-top: 50px;
+    animation: P_fade 2s ease 0s forwards;
+    border-bottom: ridge;
+    width: 200px;
 }
 
 @keyframes P_fade {

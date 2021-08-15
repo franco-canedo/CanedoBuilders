@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Header.css';
 import logo from '../photos/Logo.jpg';
-
+import Button from 'react-bootstrap/Button'
 
 function debounce(fn, ms) {
     let timer
@@ -52,8 +52,8 @@ function Header({ toggleTab }) {
 
                     {
                         width < 550 ?
-                            <div className="button-div">
-                                <div onClick={handleMenu}>MENU</div>
+                            <div className="button-div" onClick={handleMenu}>
+                                <p>MENU</p>
                             </div> :
                             <>
                                 <div className="tab-div"
@@ -78,17 +78,26 @@ function Header({ toggleTab }) {
                 </div>
             </div>
             <div className={menu}>
-                <div onClick={() => toggleTab("gallery")}>
+                <div className="option"
+                onClick={() => toggleTab("gallery")}>
                     <p>Gallery</p>
                 </div>
-                <div onClick={() => toggleTab("current projects")}>
+                <div className="option"
+                onClick={() => toggleTab("current projects")}>
                     <p>Current Projects</p>
                 </div>
-                <div onClick={() => toggleTab("about")}>
+                <div className="option"
+                onClick={() => toggleTab("about")}>
                     <p>About</p>
                 </div>
-                <div onClick={() => toggleTab("contact")}>
+                <div className="option"
+                onClick={() => toggleTab("contact")}>
                     <p>Contact</p>
+                </div>
+                <div className="button"
+                onClick={handleMenu}>
+                    <Button variant="dark" onClick={handleMenu}
+                    >Exit</Button>
                 </div>
             </div>
         </>

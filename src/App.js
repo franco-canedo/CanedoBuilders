@@ -6,6 +6,7 @@ import Gallery from './containers/Gallery';
 import CurrentProjects from './containers/CurrentProjects';
 import About from './containers/About';
 import Contact from './containers/Contact';
+import Footer from './containers/Footer';
 
 
 
@@ -42,6 +43,7 @@ function App() {
     <div className="App">
       <Header toggleTab={toggleTab} />
       {tabDelivery()}
+      <Footer />
     </div>
   );
 }

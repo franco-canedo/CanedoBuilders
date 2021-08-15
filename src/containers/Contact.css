@@ -1,11 +1,9 @@
 .contact-container {
-    /* padding-top: 2%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; 
     height: 100%;
-    /* position: absolute; */
 }
 
 .info-div {
@@ -25,6 +23,8 @@
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     animation: Form_slide_in 2s ease 0s forwards;
 }
+
+
 
 @keyframes Form_slide_in {
     0%{

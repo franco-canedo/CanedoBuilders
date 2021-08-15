@@ -32,8 +32,15 @@
 .tab-div {
    min-width: 175px;
    padding: 5px;
-   box-shadow: rgb(204, 219, 232) 2px 0px inset, rgba(255, 255, 255, 0.5)  0px 1px inset;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+   /* box-shadow: rgb(204, 219, 232) 2px 0px inset, rgba(255, 255, 255, 0.5)  0px 1px inset; */
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tab-div:hover {
+    transition: transform 300ms;
+  transform: translate3d(0, calc(1% - 1rem), 0);
+  transform: translateY(-10px);
 }
 
 .logo-div {
@@ -43,25 +50,36 @@
 }
 
 .mobile-menu-hidden {
-    animation: Slide_Out 2s ease 0s forwards;
+    animation: Slide_Out 1s ease 0s forwards;
     position: absolute;
     width: 100%;
-    height: 250px;
+    height: 300px;
     background-color: white;
     box-shadow: 5px 5px #424040;
     overflow: hidden;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    padding-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .mobile-menu-in {
-    animation: Slide_In 1s ease 0s forwards;
+    animation: Slide_In .5s ease 0s forwards;
     position: absolute;
     width: 100%;
-    height: 250px;
+    height: 300px;
     background-color: white;
     box-shadow: 5px 5px #424040;
     overflow: hidden;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 1;
+    padding-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @keyframes Slide_In {
@@ -79,10 +97,12 @@
 @keyframes Slide_Out {
     0%{
       transform: translateY(0px);
+      z-index: 1;
     }
     100%{
-      transform: translateY(3000px);
+      transform: translateY(1000px);
       overflow: hidden;
+      visibility: hidden;
     }
   }
   
@@ -95,10 +115,22 @@
   }
 
   .button-div {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-      margin: 20px;
-      margin-left: 80%;
+      min-width: 100px;
+      height: 50px;
+      margin-left: 200px;
+      padding-top:10px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
      
   }
+
+  .option {
+      border-bottom: ridge;
+      margin-top: 10px;
+      width: 200px;
+  }
+
+  .button {
+    margin-top: 10px;
+    padding-top: 25px;
+    width: 200px;
+}
