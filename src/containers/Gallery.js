@@ -88,10 +88,10 @@ function Gallery({ toCurrent }) {
                 </div>
                 <div className="grid-item">
                 <div>
-                        <h2>EXTERIOR</h2>
+                        <h2>OUTDOOR</h2>
                     </div>
                     <div>
-                        <LivingCarousel />
+                        <OutdoorCarousel />
                     </div>
                     
 
