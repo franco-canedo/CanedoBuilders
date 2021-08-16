@@ -7,7 +7,7 @@ import house5 from '../photos/house5.jpg';
 import house6 from '../photos/house6.jpg';
 
 
-function Home() {
+function Home({ toGallery }) {
     return (
         <div className="gallery-master-container">
             <div className="head-div">
@@ -17,7 +17,8 @@ function Home() {
                 <p>
                     Creating beautiful and unique living spaces that
                     blend seamlessly with the character and culture of the city of Austin.  </p>
-                    <Button variant="contained" color="primary">
+                    <Button onClick={() => toGallery("gallery")}
+                    variant="contained" color="primary">
                             Find Out More
                         </Button>
             </div>

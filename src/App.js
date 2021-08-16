@@ -20,7 +20,7 @@ function App() {
   const tabDelivery = () => {
     switch (tab) {
         case "home":
-          return <Home />
+          return <Home toGallery={toggleTab}/>
           
         case "gallery":
           return <Gallery />
