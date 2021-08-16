@@ -15,6 +15,12 @@ import FloatingActionButtons from '../components/FloatingButton';
 
 
 function Gallery({toCurrent}) {
+    useEffect(() => {
+        window.scrollTo({
+            top: 400,
+            left: 400,
+            behavior: 'smooth'});
+    },[])
     return (
         <div className="gallery-master-container">
             <div className="head-picture-container">

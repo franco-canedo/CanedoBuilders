@@ -11,19 +11,21 @@ function Home({ toGallery }) {
     return (
         <div className="gallery-master-container">
             <div className="head-div">
-                <img className="head-imager" src={house}></img>
-            </div>
             <div className="paragraph-div">
-                <p>
-                    Creating beautiful and unique living spaces that
-                    blend seamlessly with the character and culture of the city of Austin.  </p>
+                    <p>
+                        Creating beautiful and unique living spaces that
+                        blend seamlessly with the character and culture of the city of Austin.  </p>
                     <Button onClick={() => toGallery("gallery")}
-                    variant="contained" color="primary">
-                            Find Out More
-                        </Button>
+                        variant="contained" color="primary">
+                        Find Out More
+                    </Button>
+                </div>
+                <img className="head-imager" src={house}></img>
+               
             </div>
+
             <div className='hero-btns'>
-                
+
 
             </div>
             <div className="sliders=container">
