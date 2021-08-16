@@ -58,7 +58,7 @@ function CurrentProjects() {
                         </a>
 
                         <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                            <Button variant="contained" color="secondary" className="button-c">Contact Us
+                            <Button variant="contained"  className="button-c">Contact Us
 
                             </Button>
                         </a>
@@ -92,7 +92,7 @@ function CurrentProjects() {
                         </a>
 
                         <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                            <Button variant="contained" color="secondary" className="button-c">Contact Us
+                            <Button variant="contained"  className="button-c">Contact Us
 
                             </Button>
                         </a>

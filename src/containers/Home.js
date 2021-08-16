@@ -38,7 +38,7 @@ function Home({ toGallery }) {
                     Creating beautiful and unique living spaces that
                     blend seamlessly with the character and culture of the city of Austin.  </p>
                 <Button onClick={() => toGallery("gallery")}
-                    variant="contained" color="primary">
+                    variant="contained">
                     View Gallery
                 </Button>
 
