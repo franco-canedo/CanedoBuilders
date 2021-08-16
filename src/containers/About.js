@@ -15,8 +15,9 @@ function About() {
                     </div>
 
                     <div className="p-div">
-                        <p>Guido</p>
-                        <p>President</p>
+                        <b>Guido Canedo Macouzet</b>
+                        <p></p>
+                        <p>Founder, Managing Director</p>
                     </div>
                 </div>
                 <div className="profile-pic-div">
@@ -24,8 +25,9 @@ function About() {
                         <img className="profile-pic2" src={guido}></img>
                     </div>
                     <div className="p-div">
-                        <p>Guido Jr.</p>
-                        <p>Manager</p>
+                        <b>Guido Canedo Flores</b>
+                        <p></p>
+                        <p>Project Management & Operations</p>
                     </div>
 
                 </div>
@@ -34,8 +36,9 @@ function About() {
                         <img className="profile-pic3" src={franco}></img>
                     </div>
                     <div className="p-div">
-                        <p>Franco</p>
-                        <p>Sales</p>
+                        <b>Franco Canedo Flores</b>
+                        <p></p>
+                        <p>Sales & Administration</p>
                     </div>
 
                 </div>

@@ -28,9 +28,10 @@
     background-color: white;
     animation: paragraph_slide 3s ease;
     z-index: 1;
-    margin-top: 300px;
+    margin-top: 400px;
     margin-left: 100px;
-    padding: 50px;
+    cursor: pointer;
+    /* padding: 50px; */
     font-size: 20px;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }

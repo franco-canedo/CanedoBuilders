@@ -17,7 +17,7 @@ function Contact() {
                     <p></p>
                     
                     <p>(512)-373-5885</p>
-                    <p>canedoguido65@gmail.com</p>
+                    <p>info@canedobuilders.com</p>
                 </div>
                 <div className="form-div">
                     <h3>Send us a Message!</h3>
@@ -32,9 +32,12 @@ function Contact() {
                             <Form.Label>Message:</Form.Label>
                             <Form.Control as="textarea" rows={3} />
                         </Form.Group>
+                        <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
                         <Button variant="contained" color="primary">
+                        
                             Submit
                         </Button>
+                        </a>
                     </Form>
                 </div>
             </div>

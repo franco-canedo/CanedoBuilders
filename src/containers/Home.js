@@ -12,11 +12,11 @@ function Home({ toGallery }) {
         <div className="gallery-master-container">
             <div className="head-div">
             <div className="paragraph-div">
-                    <p>
+                    {/* <p>
                         Creating beautiful and unique living spaces that
-                        blend seamlessly with the character and culture of the city of Austin.  </p>
+                        blend seamlessly with the character and culture of the city of Austin.  </p> */}
                     <Button onClick={() => toGallery("gallery")}
-                        variant="contained" color="primary">
+                        variant="contained" color="dark">
                         Find Out More
                     </Button>
                 </div>
