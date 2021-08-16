@@ -4,3 +4,111 @@
     max-height: 300px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.bounce-div {
+    animation: bounce 2s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%,100%
+    {
+        transform: translateY(0px);
+    }
+    30% 
+    {
+        transform: translateY(-20px);
+    }
+    40% 
+    {
+        transform: translateY(-25px);
+    }
+ } 
+
+ .collage-div {
+     animation: Project_slide 2s ease;
+     margin-top: 50px;
+     max-width: 400px;
+     max-height: 300px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ @keyframes Project_slide {
+    0%{
+        
+      opacity: 0%;
+    }
+    100%{
+      opacity: 100%;
+    }
+  }
+
+.project-div {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center; 
+    border-bottom: solid;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .project-div {
+        flex-direction: column;       
+    }
+
+    .p-info-div {
+        margin-top: 30px;
+        text-align: left;
+       width: 100%;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    }
+  }
+
+.p-info-div {
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: left;
+    padding-left: 40px;
+    animation: info_slide 2s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.projects-container {
+    padding: 10px;
+}
+
+
+
+@keyframes info_slide {
+    0%{
+      transform: translateX(500px);
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0%;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 100%;
+    }
+  }
+
+/* @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ }  */
+
+
+ @-webkit-keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);} 
+    60% {-webkit-transform: translateY(-15px);} 
+ } 
+
+.button-c {
+    margin-left: 10px;
+}

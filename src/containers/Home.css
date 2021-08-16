@@ -1,20 +1,49 @@
-.head-div {
-    /* max-height: auto; */
+.head-div > p {
+    position: absolute;
+    color: white;
 }
 
 .head-imager {
     width: 100%;
     max-height: 600px;
     object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .slider-container {
     display: flex;
     margin-top: 50px;
+
 }
 
 .slide-img {
+    margin-bottom: 5px;;
     margin-top: 50px;
     max-width: 600px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.paragraph-div {
+    position: absolute;
+    background-color: white;
+    animation: paragraph_slide 3s ease;
+    z-index: 1;
+    margin-top: 300px;
+    margin-left: 100px;
+    padding: 50px;
+    font-size: 20px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+@keyframes paragraph_slide {
+    0%{
+      transform: translateY(1500px);
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0%;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 100%;
+    }
+  }

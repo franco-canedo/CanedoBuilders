@@ -24,6 +24,12 @@
     animation: Form_slide_in 2s ease 0s forwards;
 }
 
+@media only screen and (max-width: 600px) {
+    .form-div {
+        width: 100%;
+    }
+  }
+
 
 
 @keyframes Form_slide_in {

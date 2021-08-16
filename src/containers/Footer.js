@@ -21,13 +21,13 @@ function Footer() {
                         </a>
                         <a target="_blank"
                             class='social-icon-link facebook'
-                            aria-label='Github'
+                            aria-label='Instagram'
                             href="https://www.instagram.com/canedobuilders/">
                             <i class='fab fa-instagram' />
                         </a>
                         <a target="_blank"
                             class='social-icon-link facebook'
-                            aria-label='Medium'
+                            aria-label='Facebook'
                             href="https://www.facebook.com/guido.canedo">
                             <i class='fab fa-facebook' />
                         </a>

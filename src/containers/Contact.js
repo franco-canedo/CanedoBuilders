@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import './Contact.css';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button'
 import house from '../photos/house.jpg';
+import Button from '@material-ui/core/Button';
 
 
 function Contact() {
@@ -32,7 +32,9 @@ function Contact() {
                             <Form.Label>Message:</Form.Label>
                             <Form.Control as="textarea" rows={3} />
                         </Form.Group>
-                        <Button variant="dark">Submit</Button>
+                        <Button variant="contained" color="primary">
+                            Submit
+                        </Button>
                     </Form>
                 </div>
             </div>
