@@ -46,10 +46,10 @@ function CurrentProjects() {
                         </a>
                     </div>
                     <div className="p-info-div">
-                        <h3>2511 Givens Ave</h3>
-                        <p>3 Beds 2 Baths</p>
+                        <h3>2511 GIVENS AVE #2</h3>
+                        <p>3 BEDS 2 BATHS</p>
                         <p>1100 SF</p>
-                        <p>Completion: August 2021</p>
+                        <p>COMPLETION: AUGUST 2021</p>
 
                         <a href="https://www.google.com/maps/place/2511+Givens+Ave,+Austin,+TX+78722/@30.2814499,-97.7170645,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b5ebdbf0e0fb:0x5c83881d1141d5c5!8m2!3d30.2814499!4d-97.7148758" target="_blank">
                             <Button variant="contained" color="primary">
@@ -78,10 +78,10 @@ function CurrentProjects() {
 
 
                     <div className="p-info-div">
-                        <h3>7511 Behtune Ave</h3>
-                        <p> 3 Beds 2 Baths</p>
+                        <h3>7511 BETHUNE</h3>
+                        <p> 3 BEDS 2 BATHS</p>
                         <p>1600 SF</p>
-                        <p>Completion: September 2021</p>
+                        <p>COMPLETION: SEPTEMBER 2021</p>
 
 
 
