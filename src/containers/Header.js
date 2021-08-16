@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Header.css';
 import logo from '../photos/Logo.jpg';
-import Button from 'react-bootstrap/Button'
+import Button from '@material-ui/core/Button';
 
 function debounce(fn, ms) {
     let timer
@@ -70,7 +70,7 @@ function Header({ toggleTab }) {
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("about")}>
-                                    <p>ABOUT</p>
+                                    <p>OUR TEAM</p>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("contact")}>
@@ -87,32 +87,32 @@ function Header({ toggleTab }) {
                     toggleTab("gallery");
                     handleMenu();
                     }}>
-                    <p>Gallery</p>
+                    <p>GALLERY</p>
                 </div>
                 <div className="option"
                 onClick={() => {
                     toggleTab("current projects");
                     handleMenu();
                 }}>
-                    <p>Current Projects</p>
+                    <p>CURRENT PROJECTS</p>
                 </div>
                 <div className="option"
                 onClick={() => {
                     toggleTab("about");
                     handleMenu();
                     }}>
-                    <p>About</p>
+                    <p>OUR TEAM</p>
                 </div>
                 <div className="option"
                 onClick={() => {
                     toggleTab("contact");
                     handleMenu();
                 }}>
-                    <p>Contact</p>
+                    <p>CONTACT</p>
                 </div>
                 <div className="button"
                 onClick={handleMenu}>
-                    <Button variant="dark" onClick={handleMenu}
+                    <Button variant="contained" onClick={handleMenu}
                     >Exit</Button>
                 </div>
             </div>

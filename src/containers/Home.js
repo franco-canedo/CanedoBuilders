@@ -35,8 +35,7 @@ function Home({ toGallery }) {
 
             <div className='quote'>
                 <p>
-                    Creating beautiful and unique living spaces that
-                    blend seamlessly with the character and culture of the city of Austin.  </p>
+                    Creating beautiful and unique living spaces in the city of Austin since 2014</p>
                 <Button onClick={() => toGallery("gallery")}
                     variant="contained">
                     View Gallery
