@@ -15,7 +15,7 @@ function Contact() {
                 <div className="info-div">
                     <h1>Canedo Builders</h1>
                     <p></p>
-                    <p>1613 S Capital of Texas HWY Ste 224 Austin, TX 78746</p>
+                    
                     <p>(512)-373-5885</p>
                     <p>canedoguido65@gmail.com</p>
                 </div>
