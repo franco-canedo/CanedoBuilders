@@ -26,9 +26,9 @@
 .paragraph-div {
     position: absolute;
     background-color: white;
-    animation: paragraph_slide 5s ease;
+    animation: paragraph_slide 3s ease;
     z-index: 1;
-    margin-top: 400px;
+    margin-top: 300px;
     margin-left: 100px;
     padding: 50px;
     font-size: 20px;

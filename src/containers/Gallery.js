@@ -21,6 +21,13 @@ function Gallery({ toCurrent }) {
         setButtonStatus(false)
     }
 
+    
+
+    useEffect(() => {
+        window.scrollTo(0, 400);
+       
+    },[])
+
     return (
         <div className="gallery-master-container">
             <div className="head-picture-container">

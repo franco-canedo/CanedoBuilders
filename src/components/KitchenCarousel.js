@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import house from '../photos/house.jpg';
+import house from '../photos/house6.jpg';
 import house2 from '../photos/house2.jpg';
 import house3 from '../photos/house3.jpg';
 import house4 from '../photos/house4.jpg';

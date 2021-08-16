@@ -57,7 +57,11 @@ function Header({ toggleTab }) {
                             </div> :
                             <>
                                 <div className="tab-div"
-                                onClick={() => toggleTab("gallery")}>
+                                onClick={() => {
+                                    
+                                    toggleTab("gallery");
+                                    
+                                    }}>
                                     <p>GALLERY</p>
                                 </div>
                                 <div className="tab-div"
@@ -79,19 +83,31 @@ function Header({ toggleTab }) {
             </div>
             <div className={menu}>
                 <div className="option"
-                onClick={() => toggleTab("gallery")}>
+                onClick={() => {
+                    toggleTab("gallery");
+                    handleMenu();
+                    }}>
                     <p>Gallery</p>
                 </div>
                 <div className="option"
-                onClick={() => toggleTab("current projects")}>
+                onClick={() => {
+                    toggleTab("current projects");
+                    handleMenu();
+                }}>
                     <p>Current Projects</p>
                 </div>
                 <div className="option"
-                onClick={() => toggleTab("about")}>
+                onClick={() => {
+                    toggleTab("about");
+                    handleMenu();
+                    }}>
                     <p>About</p>
                 </div>
                 <div className="option"
-                onClick={() => toggleTab("contact")}>
+                onClick={() => {
+                    toggleTab("contact");
+                    handleMenu();
+                }}>
                     <p>Contact</p>
                 </div>
                 <div className="button"
