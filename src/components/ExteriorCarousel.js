@@ -1,9 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel';
-import house from '../photos/house.jpg';
-import house2 from '../photos/grass.jpg';
-import house3 from '../photos/house3.jpg';
-import house4 from '../photos/house4.jpg';
-import house5 from '../photos/house5.jpg';
+import e1 from '../exterior/e1.jpg';
+import e2 from '../exterior/e2.jpg';
+import e3 from '../exterior/e3.jpg';
+import e4 from '../exterior/e4.jpg';
+import e5 from '../exterior/e5.jpg';
+import e6 from '../exterior/e6.jpg';
+
 
 
 
@@ -13,45 +15,36 @@ function ExteriorCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={house}
+                    src={e1}
                     alt="First slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={house2}
+                    src={e2}
                     alt="Second slide"
                 />
 
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
+                
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={house5}
+                    src={e3}
                     alt="Third slide"
                 />
 
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
+                
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={house4}
+                    src={e4}
                     alt="Third slide"
                 />
 
-                <Carousel.Caption>
-                    <h3>Fourth slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
+                
             </Carousel.Item>
         </Carousel>
 

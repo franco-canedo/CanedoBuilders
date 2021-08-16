@@ -13,15 +13,29 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.logo-img:hover {
+  transition: transform 300ms;
+transform: translate3d(0, calc(1% - 1rem), 0);
+transform: translateY(-3px);
+background-color: rgb(102, 98, 98);
+}
+
 
 .logo-img {
     object-fit: cover;
-    width: 200px;
+    width: 150px;
     height: 150px;
     position: absolute;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 } 
+
+@media only screen and (max-width: 600px) {
+  .logo-img {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 .tabs-container {
     display: flex;
@@ -43,7 +57,7 @@
 .tab-div:hover {
     transition: transform 300ms;
   transform: translate3d(0, calc(1% - 1rem), 0);
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   background-color: rgb(102, 98, 98);
 }
 
@@ -59,7 +73,7 @@
     width: 100%;
     height: 300px;
     background-color: white;
-    box-shadow: 5px 5px #424040;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -76,7 +90,7 @@
     width: 100%;
     height: 300px;
     background-color: white;
-    box-shadow: 5px 5px #424040;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -129,7 +143,7 @@
   }
 
   .option {
-      border-bottom: ridge;
+      /* border-bottom: ridge; */
       margin-top: 10px;
       width: 200px;
   }

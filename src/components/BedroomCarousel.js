@@ -1,8 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
-import house from '../photos/house.jpg';
-import house2 from '../photos/house2.jpg';
-import house3 from '../photos/house6.jpg';
-import house4 from '../photos/house4.jpg';
+import b1 from '../bedroom/b1.jpg';
+import b2 from '../bedroom/b2.jpg';
+import b3 from '../bedroom/b3.jpg';
+import b4 from '../bedroom/b4.jpg';
+import b5 from '../bedroom/b5.jpg';
+
 
 
 
@@ -12,7 +14,7 @@ function BedroomCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={house}
+                    src={b1}
                     alt="First slide"
                 />
               
@@ -20,7 +22,7 @@ function BedroomCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={house2}
+                    src={b2}
                     alt="Second slide"
                 />
 
@@ -29,19 +31,15 @@ function BedroomCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={house3}
+                    src={b3}
                     alt="Third slide"
                 />
 
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={house4}
+                    src={b4}
                     alt="Third slide"
                 />
 

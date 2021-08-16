@@ -17,8 +17,8 @@
 }
 
 .slide-img {
-    margin-bottom: 5px;;
-    margin-top: 50px;
+    margin-bottom: 50px;;
+    
     max-width: 600px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -28,19 +28,15 @@
     background-color: white;
     animation: paragraph_slide 3s ease;
     z-index: 1;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 100px;
-    padding: 50px;
+    cursor: pointer;
+    /* padding: 50px; */
     font-size: 20px;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
-@media only screen and (max-width: 600px) {
-    .paragraph-div {
-        font-size: 15px;
-        padding: 30px;
-    }
-  }
+
 
 @keyframes paragraph_slide {
     0%{
@@ -54,3 +50,30 @@
       opacity: 100%;
     }
   }
+
+.quote {
+    padding: 50px;
+    font-size: 25px;
+    margin: 50px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .quote {
+       font-size: 15px !important;
+       padding: 10px;
+       margin: 20px;
+    }
+  }
+
+.quote-absolute {
+    position: absolute;
+    color: white;
+    padding: 50px;
+    font-size: 25px;
+    width: 800px;
+    /* margin-left: 20%; */
+    margin-top: 10%;
+    
+    
+}

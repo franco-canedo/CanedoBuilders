@@ -56,50 +56,54 @@ function Gallery({ toCurrent }) {
 
                 </div>
                 <div className="grid-item">
-                    <div>
-                        <BedroomCarousel />
-                    </div>
-                    <div>
+                <div>
                         <h2>BEDROOM</h2>
 
                     </div>
+                    <div>
+                        <BedroomCarousel />
+                    </div>
+                    
 
                 </div>
                 <div className="grid-item">
+                <div>
+                        <h2>BATHROOM</h2>
+                    </div>
                     <div>
                         <BathroomCarousel />
                     </div>
-                    <div>
-                        <h2>BATHROOM</h2>
-                    </div>
+                   
 
                 </div>
                 <div className="grid-item">
-                    <div>
-                        <LivingCarousel />
-                    </div>
-                    <div>
+                <div>
                         <h2>LIVING</h2>
                     </div>
-
-                </div>
-                <div className="grid-item">
                     <div>
                         <LivingCarousel />
                     </div>
-                    <div>
-                        <h2>EXTERIOR</h2>
+                   
+
+                </div>
+                <div className="grid-item">
+                <div>
+                        <h2>OUTDOOR</h2>
                     </div>
+                    <div>
+                        <OutdoorCarousel />
+                    </div>
+                    
 
                 </div>
                 
-                    <div 
+                    {/* <div 
                         className={buttonStatus ? "action-button" : "action-button-x"}>
                             <p>Check out our Current Projects!</p>
                             
                         <FloatingActionButtons closeButton={closeButton}
                         toCurrent={toCurrent}/>
-                    </div>
+                    </div> */}
                     
 
 
