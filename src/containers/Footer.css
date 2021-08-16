@@ -49,5 +49,18 @@
     align-items: center;
     width: 240px;
   }
+
   
+  @media only screen and (max-width: 600px) {
+    .social-icons {
+        width: 10px;
+        flex-direction: column;
+    }
+
+    .social-media {
+        max-width: 1000px;
+        width: 100%;
+        margin-left: 0px;
+      }
+  }
   

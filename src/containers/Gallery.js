@@ -96,6 +96,7 @@ function Gallery({ toCurrent }) {
                     <div 
                         className={buttonStatus ? "action-button" : "action-button-x"}>
                             <p>Check out our Current Projects!</p>
+                            
                         <FloatingActionButtons closeButton={closeButton}
                         toCurrent={toCurrent}/>
                     </div>

@@ -35,6 +35,13 @@
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
+@media only screen and (max-width: 600px) {
+    .paragraph-div {
+        font-size: 15px;
+        padding: 30px;
+    }
+  }
+
 @keyframes paragraph_slide {
     0%{
       transform: translateY(1500px);
