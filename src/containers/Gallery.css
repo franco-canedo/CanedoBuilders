@@ -1,5 +1,5 @@
 .head-picture-container {
-  
+    max-height: 400px;
 }
 
 .gallery-master-container {
@@ -37,6 +37,8 @@
     .gallery-container {
         grid-template-columns: 2fr;
     }
+
+    
   }
 
 .grid-item {
@@ -65,13 +67,61 @@ h2 {
 
 .action-button {
     position: fixed;
+    background-color: white;
+    width: 400px;
     z-index: 1;
-    animation: bounce2 2s linear infinite;
+    /* animation: bounce2 2s linear infinite; */
     cursor: pointer;
-    margin-left: 42%;
-    padding-top:5%;
-    
+    margin-left: 18%;
+    height: 200px;
+    opacity: 95%;
+    padding:1%;
+    animation: button-slide-up 10s ease;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
+
+.action-button-x {
+    overflow: hidden;
+      visibility: hidden;
+    position: fixed;
+    background-color: white;
+    width: 400px;
+    z-index: 1;
+    /* animation: bounce2 2s linear infinite; */
+    cursor: pointer;
+    margin-left: 18%;
+    height: 200px;
+    padding:1%;
+    animation: button-slide-down 2s ease;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+@keyframes button-slide-down {
+    0%{
+      transform: translateY(0px);
+      
+    }
+    100%{
+      transform: translateY(500px);
+      overflow: hidden;
+      visibility: hidden;
+      /* opacity: 50%; */
+    }
+  }
+
+
+@keyframes button-slide-up {
+    0%{
+      transform: translateY(500px);
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 50%;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 100%;
+    }
+  }
 
 @keyframes bounce2 {
     0%,100%
@@ -80,10 +130,10 @@ h2 {
     }
     30% 
     {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
     40% 
     {
-        transform: translateY(-15px);
+        transform: translateY(-25px);
     }
  } 

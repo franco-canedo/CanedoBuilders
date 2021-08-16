@@ -14,13 +14,13 @@ import FloatingActionButtons from '../components/FloatingButton';
 
 
 
-function Gallery({toCurrent}) {
-    useEffect(() => {
-        window.scrollTo({
-            top: 400,
-            left: 400,
-            behavior: 'smooth'});
-    },[])
+function Gallery({ toCurrent }) {
+    const [buttonStatus, setButtonStatus] = useState(true);
+
+    const closeButton = () => {
+        setButtonStatus(false)
+    }
+
     return (
         <div className="gallery-master-container">
             <div className="head-picture-container">
@@ -30,20 +30,22 @@ function Gallery({toCurrent}) {
             <div className="gallery-container">
                 <div className="grid-item">
                     <div>
-                        <ExteriorCarousel />
-                    </div>
-                    <div>
                         <h2>EXTERIOR</h2>
                     </div>
+                    <div>
+                        <ExteriorCarousel />
+                    </div>
+
 
                 </div>
                 <div className="grid-item">
                     <div>
-                        <KitchenCarousel />
-                    </div>
-                    <div>
                         <h2>KITCHEN</h2>
                     </div>
+                    <div>
+                        <KitchenCarousel />
+                    </div>
+
 
                 </div>
                 <div className="grid-item">
@@ -83,11 +85,16 @@ function Gallery({toCurrent}) {
                     </div>
 
                 </div>
-                <div onClick={() => toCurrent("current projects")}
-                className="action-button">
-                <FloatingActionButtons/>
-                </div>
                 
+                    <div 
+                        className={buttonStatus ? "action-button" : "action-button-x"}>
+                            <p>Check out our Current Projects!</p>
+                        <FloatingActionButtons closeButton={closeButton}
+                        toCurrent={toCurrent}/>
+                    </div>
+                    
+
+
 
             </div>
         </div>

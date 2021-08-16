@@ -15,14 +15,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function FloatingActionButtons() {
+export default function FloatingActionButtons({closeButton, toCurrent}) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}> 
-      <Fab variant="extended" color="primary">
+      <Fab onClick={() => closeButton()}
+      variant="extended" color="black">
         
-        Current Projects ->
+         Close
+      </Fab>
+      <Fab onClick={() => toCurrent("current projects")}
+      variant="extended" color="primary">
+        
+         GO ->
       </Fab>
       
     </div>
