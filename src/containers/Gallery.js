@@ -10,10 +10,11 @@ import ConstructionCarousel from '../components/ConstructionCarousel';
 import LivingCarousel from '../components/LivingCarousel';
 import OutdoorCarousel from '../components/OutdoorCarousel';
 import DiningCarousel from '../components/DiningCarousel';
+import FloatingActionButtons from '../components/FloatingButton';
 
 
 
-function Gallery() {
+function Gallery({toCurrent}) {
     return (
         <div className="gallery-master-container">
             <div className="head-picture-container">
@@ -45,6 +46,7 @@ function Gallery() {
                     </div>
                     <div>
                         <h2>BEDROOM</h2>
+
                     </div>
 
                 </div>
@@ -75,8 +77,12 @@ function Gallery() {
                     </div>
 
                 </div>
-
+                <div onClick={() => toCurrent("current projects")}
+                className="action-button">
+                <FloatingActionButtons/>
+                </div>
                 
+
             </div>
         </div>
 

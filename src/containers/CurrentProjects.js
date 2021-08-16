@@ -26,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function CurrentProjects() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    },[])
+   
     const [images, setImages] = useState([house5, house6, house5, house6, house5, house6])
     const classes = useStyles();
     return (
