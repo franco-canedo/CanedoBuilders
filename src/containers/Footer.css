@@ -53,8 +53,8 @@
   
   @media only screen and (max-width: 600px) {
     .social-icons {
-        width: 10px;
-        flex-direction: column;
+        width: 100px;
+        /* flex-direction: column; */
     }
 
     .social-media {
@@ -62,5 +62,28 @@
         width: 100%;
         margin-left: 0px;
       }
+
+    .footer-container {
+      flex-direction: column;
+    }
+
+    .author {
+      margin-right: 200px;
+      padding-top: 20px;
+    }
+
+    .footer-subscription {
+      margin-right: 200px;
+      margin-bottom: 25px;
+    }
   }
   
+.author {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+
+.anchor-a-tag {
+  color: white !important;
+}

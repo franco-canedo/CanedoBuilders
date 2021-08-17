@@ -35,6 +35,12 @@ function Footer() {
                     </div>
                 </div>
             </section>
+            <section className='author'>
+                <p>Website designed by 
+                    <a className="author-a-tag"
+                    target="_blank"
+                    href="https://franco-canedo.herokuapp.com/"> Franco Canedo</a></p>
+            </section>
         </div>
     );
 }

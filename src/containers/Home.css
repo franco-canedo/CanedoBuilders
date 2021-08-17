@@ -52,6 +52,7 @@
   }
 
 .quote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 50px;
     font-size: 25px;
     margin: 50px;
