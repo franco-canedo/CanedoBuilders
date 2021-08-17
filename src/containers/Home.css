@@ -40,13 +40,13 @@
 
 @keyframes paragraph_slide {
     0%{
-      transform: translateY(1500px);
+      transform: translateX(-1500px);
       overflow: hidden;
       visibility: hidden;
       opacity: 0%;
     }
     100%{
-      transform: translateY(0px);
+      transform: translateX(0px);
       opacity: 100%;
     }
   }
