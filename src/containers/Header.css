@@ -50,15 +50,14 @@ background-color: rgb(102, 98, 98);
    min-width: 175px;
    padding-top: 15px;
    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-   /* box-shadow: rgb(204, 219, 232) 2px 0px inset, rgba(255, 255, 255, 0.5)  0px 1px inset; */
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
 }
 
 .tab-div:hover {
     transition: transform 300ms;
   transform: translate3d(0, calc(1% - 1rem), 0);
   transform: translateY(-5px);
-  background-color: rgb(102, 98, 98);
+  /* background-color: rgb(102, 98, 98); */
 }
 
 .logo-div {
@@ -81,7 +80,7 @@ background-color: rgb(102, 98, 98);
     align-items: center; 
     padding-bottom: 25px;
     z-index: 1;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 .mobile-menu-in {
@@ -98,7 +97,7 @@ background-color: rgb(102, 98, 98);
     align-items: center; 
     z-index: 1;
     padding-bottom: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 @keyframes Slide_In {

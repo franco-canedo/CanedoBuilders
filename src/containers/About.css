@@ -13,7 +13,7 @@
 .bio-div {
     padding: 50px;
     font-size: 20px;
-   
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -70,6 +70,7 @@
 
 
 .p-div {
+  font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 20px;
     padding-top: 50px;
     animation: P_fade 2s ease 0s forwards;

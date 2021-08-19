@@ -40,18 +40,19 @@
 
 @keyframes paragraph_slide {
     0%{
-      transform: translateY(1500px);
+      transform: translateX(-1500px);
       overflow: hidden;
       visibility: hidden;
       opacity: 0%;
     }
     100%{
-      transform: translateY(0px);
+      transform: translateX(0px);
       opacity: 100%;
     }
   }
 
 .quote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 50px;
     font-size: 25px;
     margin: 50px;
@@ -63,6 +64,11 @@
        font-size: 15px !important;
        padding: 10px;
        margin: 20px;
+    }
+
+    .paragraph-div {
+      opacity: 0%;
+      animation: none;
     }
   }
 

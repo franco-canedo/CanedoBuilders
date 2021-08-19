@@ -51,9 +51,9 @@ function CurrentProjects() {
                         <p>1100 SF</p>
                         <p>COMPLETION: AUGUST 2021</p>
 
-                        <a href="https://www.google.com/maps/place/2511+Givens+Ave,+Austin,+TX+78722/@30.2814499,-97.7170645,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b5ebdbf0e0fb:0x5c83881d1141d5c5!8m2!3d30.2814499!4d-97.7148758" target="_blank">
+                        <a href="https://www.realtor.com/realestateandhomes-detail/M9108565249" target="_blank">
                             <Button variant="contained" color="primary">
-                                Google Maps
+                                Realtor.com
                             </Button>
                         </a>
 
@@ -62,6 +62,7 @@ function CurrentProjects() {
 
                             </Button>
                         </a>
+                       
                     </div>
                 </div>
                 <div className="project-div">
@@ -85,9 +86,9 @@ function CurrentProjects() {
 
 
 
-                        <a href="https://www.google.com/maps/place/7511+Bethune+Ave,+Austin,+TX+78752/@30.3339437,-97.6978076,17z/data=!3m1!4b1!4m5!3m4!1s0x8644c988585db87d:0xd080a186795eefab!8m2!3d30.3339437!4d-97.6956189" target="_blank">
+                        <a href="https://www.realtor.com/realestateandhomes-detail/M9550589495" target="_blank">
                             <Button variant="contained" color="primary">
-                                Google Maps
+                                Realtor.com
                             </Button>
                         </a>
 
@@ -96,6 +97,8 @@ function CurrentProjects() {
 
                             </Button>
                         </a>
+
+                       
 
                     </div>
                 </div>

@@ -4,6 +4,9 @@ import l2 from '../living/l2.jpg';
 import l3 from '../living/l3.jpg';
 import l4 from '../living/l4.jpg';
 import l5 from '../living/l5.jpg';
+import l6 from '../living/l6.jpg';
+import l7 from '../living/l7.jpg';
+import l8 from '../living/l8.jpg';
 
 
 
@@ -42,9 +45,35 @@ function LivingCarousel() {
                     className="d-block w-100"
                     src={l4}
                     alt="Third slide"
-                />
-
-               
+                />       
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={l5}
+                    alt="Third slide"
+                />       
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={l6}
+                    alt="Third slide"
+                />       
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={l7}
+                    alt="Third slide"
+                />       
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={l8}
+                    alt="Third slide"
+                />       
             </Carousel.Item>
         </Carousel>
 
