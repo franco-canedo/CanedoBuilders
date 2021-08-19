@@ -35,15 +35,6 @@ function HeadCarousel() {
 
                
             </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="head-image"
-                    src={house2}
-                    alt="Third slide"
-                />
-
-               
-            </Carousel.Item>
         </Carousel>
 
 

@@ -4,6 +4,9 @@ import b2 from '../bedroom/b2.jpg';
 import b3 from '../bedroom/b3.jpg';
 import b4 from '../bedroom/b4.jpg';
 import b5 from '../bedroom/b5.jpg';
+import b6 from '../bedroom/b6.jpg';
+import b7 from '../bedroom/b7.jpg';
+import b8 from '../bedroom/b8.jpg';
 
 
 
@@ -41,9 +44,35 @@ function BedroomCarousel() {
                     className="d-block w-100"
                     src={b4}
                     alt="Third slide"
-                />
-
-               
+                />       
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={b5}
+                    alt="Third slide"
+                />       
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={b6}
+                    alt="Third slide"
+                />       
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={b7}
+                    alt="Third slide"
+                />       
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={b8}
+                    alt="Third slide"
+                />       
             </Carousel.Item>
         </Carousel>
 

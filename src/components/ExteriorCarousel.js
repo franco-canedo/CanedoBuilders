@@ -5,6 +5,8 @@ import e3 from '../exterior/e3.jpg';
 import e4 from '../exterior/e4.jpg';
 import e5 from '../exterior/e5.jpg';
 import e6 from '../exterior/e6.jpg';
+import e7 from '../exterior/e7.jpg';
+import e8 from '../exterior/e8.jpg';
 
 
 
@@ -42,9 +44,35 @@ function ExteriorCarousel() {
                     className="d-block w-100"
                     src={e4}
                     alt="Third slide"
-                />
-
-                
+                />        
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={e5}
+                    alt="Third slide"
+                />        
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={e6}
+                    alt="Third slide"
+                />        
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={e7}
+                    alt="Third slide"
+                />        
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={e8}
+                    alt="Third slide"
+                />        
             </Carousel.Item>
         </Carousel>
 
