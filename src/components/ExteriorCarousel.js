@@ -17,7 +17,7 @@ function ExteriorCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={e1}
+                    src={e7}
                     alt="First slide"
                 />
             </Carousel.Item>
@@ -49,13 +49,6 @@ function ExteriorCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={e5}
-                    alt="Third slide"
-                />        
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
                     src={e6}
                     alt="Third slide"
                 />        
@@ -63,14 +56,14 @@ function ExteriorCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={e7}
+                    src={e8}
                     alt="Third slide"
                 />        
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={e8}
+                    src={e1}
                     alt="Third slide"
                 />        
             </Carousel.Item>

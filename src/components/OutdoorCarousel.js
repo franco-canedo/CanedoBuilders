@@ -4,9 +4,9 @@ import o2 from '../outdoor/o2.jpg';
 import o3 from '../outdoor/o3.jpg';
 import o4 from '../outdoor/o4.jpg';
 import o5 from '../outdoor/o5.jpg';
-import o6 from '../outdoor/o5.jpg';
-import o7 from '../outdoor/o5.jpg';
-import o8 from '../outdoor/o5.jpg';
+import o6 from '../outdoor/o6.jpg';
+import o7 from '../outdoor/o7.jpg';
+import o8 from '../outdoor/o8.jpg';
 
 
 
@@ -57,7 +57,7 @@ function OutdoorCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={o6}
+                    src={o8}
                     alt="Third slide"
                 />     
             </Carousel.Item>
@@ -71,7 +71,7 @@ function OutdoorCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={o8}
+                    src={o6}
                     alt="Third slide"
                 />     
             </Carousel.Item>
