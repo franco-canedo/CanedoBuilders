@@ -17,7 +17,7 @@ function debounce(fn, ms) {
 
 function Header({ toggleTab }) {
 
-    const [menu, setMenu] = useState("mobile-menu-hidden");
+    const [menu, setMenu] = useState("menu-hidden-start");
 
     const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => {
@@ -35,7 +35,7 @@ function Header({ toggleTab }) {
     const handleMenu = () => {
         if (menu === "mobile-menu-in") {
             setMenu("mobile-menu-hidden")
-        } else if (menu === "mobile-menu-hidden") {
+        } else if (menu === "mobile-menu-hidden" || menu === "menu-hidden-start") {
             setMenu("mobile-menu-in")
         }
     }
@@ -81,7 +81,10 @@ function Header({ toggleTab }) {
 
                 </div>
             </div>
-            <div className={menu}>
+
+            {
+                width < 550 ?
+                <div className={menu}>
                 <div className="option"
                 onClick={() => {
                     toggleTab("gallery");
@@ -115,7 +118,9 @@ function Header({ toggleTab }) {
                     <Button variant="contained" onClick={handleMenu}
                     >Exit</Button>
                 </div>
-            </div>
+            </div> : null
+            }
+            
         </>
 
     );

@@ -18,63 +18,63 @@ function ProjectCarousel() {
         <Carousel>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={givens1}
                     alt="First slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={givens2}
                     alt="Second slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={givens3}
                     alt="Third slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={givens4}
                     alt="Third slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={givens5}
                     alt="Third slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={givens6}
                     alt="Third slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={givens7}
                     alt="Third slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={givens8}
                     alt="Third slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={givens9}
                     alt="Third slide"
                 />

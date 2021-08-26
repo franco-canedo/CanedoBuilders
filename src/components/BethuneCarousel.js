@@ -1,12 +1,17 @@
+import './BethuneCarousel.css';
 import Carousel from 'react-bootstrap/Carousel';
 import render1 from '../bethune/render1.jpg';
 import render2 from '../bethune/render2.jpg';
 import render3 from '../bethune/render3.jpg';
 import render4 from '../bethune/render4.jpg';
 import render5 from '../bethune/render5.jpg';
-import render6 from '../bethune/render6.jpg';
-import render7 from '../bethune/render7.jpg';
-import render8 from '../bethune/render8.jpg';
+import plan1 from '../bethune/plan1.jpg';
+import plan2 from '../bethune/plan2.png';
+import construction1 from '../bethune/IMG-1453.jpg';
+import construction2 from '../bethune/IMG-1454.jpg';
+import construction3 from '../bethune/IMG-1456.jpg';
+import construction4 from '../bethune/IMG-1457.jpg';
+
 
 import grass from '../photos/grass.jpg';
 
@@ -17,60 +22,71 @@ function BethuneCarousel() {
         <Carousel>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={render1}
                     alt="First slide"
                 />
             </Carousel.Item>
+           
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src={render2}
-                    alt="Second slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={render3}
-                    alt="Third slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={render4}
-                    alt="Third slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
+                    className="project-images"
                     src={render5}
                     alt="Third slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src={render6}
+                    className="project-images"
+                    src={render4}
+                    alt="Third slide"
+                />
+            </Carousel.Item>
+           
+            <Carousel.Item>
+                <img
+                    className="project-images"
+                    src={plan1}
                     alt="Third slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src={render7}
+                    className="project-images"
+                    src={plan2}
+                    alt="Third slide"
+                />
+            </Carousel.Item>
+             <Carousel.Item>
+                <img
+                    className="project-images"
+                    src={construction1}
                     alt="Third slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src={render8}
+                    className="project-images"
+                    src={construction2}
                     alt="Third slide"
                 />
             </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="project-images"
+                    src={construction3}
+                    alt="Third slide"
+                />
+            </Carousel.Item>
+             <Carousel.Item>
+                <img
+                    className="project-images"
+                    src={construction4}
+                    alt="Third slide"
+                />
+            </Carousel.Item>
+           
+            
         </Carousel>
 
 

@@ -66,6 +66,23 @@ background-color: rgb(102, 98, 98);
     margin: 20px;
 }
 
+.menu-hidden-start {
+  animation: Slide_Out .5s ease-out 0s forwards;
+  opacity: 0%;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  padding-bottom: 25px;
+  z-index: 1;
+}
+
 .mobile-menu-hidden {
     animation: Slide_Out .5s ease-out 0s forwards;
     position: absolute;
