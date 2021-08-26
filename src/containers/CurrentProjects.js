@@ -79,8 +79,9 @@ function CurrentProjects() {
 
 
                     <div className="p-info-div">
-                        <h3>7511 BETHUNE</h3>
-                        <p> 3 BEDS 2 BATHS</p>
+                        <h3>7511, 7512 & 7513 BETHUNE AVE</h3>
+                        <p>3 DUPLEXES (6 units total)</p>
+                        <p> 3 BEDS 2.5 BATHS</p>
                         <p>1600 SF</p>
                         <p>COMPLETION: SEPTEMBER 2021</p>
 
