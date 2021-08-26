@@ -27,7 +27,7 @@ function BethuneCarousel() {
                     alt="First slide"
                 />
             </Carousel.Item>
-           
+
             <Carousel.Item>
                 <img
                     className="project-images"
@@ -42,7 +42,7 @@ function BethuneCarousel() {
                     alt="Third slide"
                 />
             </Carousel.Item>
-           
+
             <Carousel.Item>
                 <img
                     className="project-images"
@@ -57,7 +57,7 @@ function BethuneCarousel() {
                     alt="Third slide"
                 />
             </Carousel.Item>
-             <Carousel.Item>
+            <Carousel.Item>
                 <img
                     className="project-images"
                     src={construction1}
@@ -78,15 +78,15 @@ function BethuneCarousel() {
                     alt="Third slide"
                 />
             </Carousel.Item>
-             <Carousel.Item>
+            <Carousel.Item>
                 <img
                     className="project-images"
                     src={construction4}
                     alt="Third slide"
                 />
             </Carousel.Item>
-           
-            
+
+
         </Carousel>
 
 

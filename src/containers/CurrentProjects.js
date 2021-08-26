@@ -10,6 +10,9 @@ import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
 import ProjectCarousel from '../components/ProjectCarousel';
 import BethuneCarousel from '../components/BethuneCarousel';
+import E21Carousel from '../components/East21Carousel';
+import e21map from '../East21/e21map.png';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -49,7 +52,7 @@ function CurrentProjects() {
                         <h3>2511 GIVENS AVE #2</h3>
                         <p>3 BEDS 2 BATHS</p>
                         <p>1100 SF</p>
-                        <p>COMPLETION: AUGUST 2021</p>
+                        <p>COMPLETED: ACTIVE UNDER CONTRACT</p>
 
                         <a href="https://www.realtor.com/realestateandhomes-detail/M9108565249" target="_blank">
                             <Button variant="contained" color="primary">
@@ -58,11 +61,11 @@ function CurrentProjects() {
                         </a>
 
                         <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                            <Button variant="contained"  className="button-c">Contact Us
+                            <Button variant="contained" className="button-c">Contact Us
 
                             </Button>
                         </a>
-                       
+
                     </div>
                 </div>
                 <div className="project-div">
@@ -94,12 +97,47 @@ function CurrentProjects() {
                         </a>
 
                         <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                            <Button variant="contained"  className="button-c">Contact Us
+                            <Button variant="contained" className="button-c">Contact Us
 
                             </Button>
                         </a>
 
-                       
+
+
+                    </div>
+                </div>
+
+                <div className="project-div">
+                    <div className="collage-div">
+                        {/* <img src={house6} className="project-img"></img> */}
+                        <E21Carousel />
+                    </div>
+
+                    <a href="https://www.google.com/maps/place/2102+E+21st+St,+Austin,+TX+78722/@30.2894096,-97.7606718,12.39z/data=!4m5!3m4!1s0x8644b5eb504feb99:0xcac99d27fe753df9!8m2!3d30.2823913!4d-97.7194151" target="_blank">
+                        <div className="bounce-div">
+                            <img src={e21map} className="project-img"></img>
+                        </div>
+                    </a>
+
+
+                    <div className="p-info-div">
+                        <h3>EAST 21 ST</h3>
+                        <p>UNIT A & UNIT B ADU</p>
+                        <p>COMPLETION: JANUARY 2022</p>
+
+
+                        <Button variant="contained" disabled>
+                            Realtor.com
+                        </Button>
+
+
+                        <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
+                            <Button variant="contained" className="button-c">Contact Us
+
+                            </Button>
+                        </a>
+
+
 
                     </div>
                 </div>
