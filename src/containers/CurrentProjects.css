@@ -70,6 +70,18 @@
     .collage-div {
         max-width: 400px;
     }
+
+    .slideshow-shown {
+        max-height: 300px;
+        margin-top:400px;
+        background-color: none;
+        border: none;
+    }
+
+    .slideshow-hidden {
+        height: 300px;
+        margin-top:400px;
+    }
   }
 
 .p-info-div {
@@ -136,8 +148,8 @@ a {
 
 .slideshow-shown {
     position: absolute;
-    width: 700;
-    height: 700;
+    width: 600;
+    height: 600;
     z-index: 1;
     margin-left:15%;
     background-color: azure;
@@ -148,8 +160,8 @@ a {
 
 .slideshow-hidden {
     position: absolute;
-    width: 700;
-    height: 700;
+    width: 600;
+    height: 600;
     z-index: 1;
     margin-left:15%;
     background-color: azure;
@@ -185,3 +197,8 @@ a {
       visibility: hidden;
     }
   }
+
+.info-buttons-div {
+   
+    bottom: 0px;
+}
