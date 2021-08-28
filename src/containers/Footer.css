@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center; 
     min-width: 300px;
+    
   }
 
 .footer-logo {
@@ -66,6 +67,7 @@
 
     .footer-container {
       flex-direction: column;
+      margin-top: 150px;
     }
 
     .author {

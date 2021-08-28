@@ -128,14 +128,14 @@ function CurrentProjects() {
         {
             original: BuncheLot,
 
-            originalHeight: 600,
-            originalWidth: 600,
+            originalHeight: 500,
+            originalWidth: 500,
         },
         {
             original: bunche1,
 
-            originalHeight: 600,
-            originalWidth: 600,
+            originalHeight: 500,
+            originalWidth: 500,
         },
         {
             original: bunche2,
@@ -209,11 +209,13 @@ function CurrentProjects() {
                             <p>1100 SQFT</p>
                             <p>COMPLETED: ACTIVE UNDER CONTRACT</p>
                             <div className="info-buttons-div">
+                                
                                 <a href="https://www.realtor.com/realestateandhomes-detail/M9108565249" target="_blank">
                                     <Button variant="contained" color="primary">
                                         Realtor.com
                                     </Button>
                                 </a>
+                            
 
                                 <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
                                     <Button variant="contained" className="button-c">
@@ -264,6 +266,7 @@ function CurrentProjects() {
                             <p>1614 SQFT</p>
                             <p>COMPLETION: SEPTEMBER 2021</p>
 
+                            <div className="info-buttons-div">
                             <a href="https://www.realtor.com/realestateandhomes-detail/M9550589495" target="_blank">
                                 <Button variant="contained" color="primary">
                                     Realtor.com
@@ -277,11 +280,12 @@ function CurrentProjects() {
                             </a>
                             {
                                 width > 550 ?
-                                    <Button onClick={togglePlans}
+                                    <Button onClick={togglePlansBethune}
                                         variant="contained" className="button-c">
                                         Floor Plans
                                     </Button> : null
                             }
+                            </div>
                         </div>
                     </div>
                     <div className="progress-div">
@@ -314,12 +318,12 @@ function CurrentProjects() {
                         <div className="p-info-div">
 
                             <p>UNIT A WITH ACCESSORY UNIT</p>
-                            <p>2934 SQFT</p>
+                            <p>2540 SQFT</p>
                             <p>& UNIT B ADU</p>
-                            <p>1771 SQFT</p>
+                            <p>1047 SQFT</p>
                             <p>COMPLETION: JANUARY 2022</p>
 
-
+                            <div className="info-buttons-div">
                             <Button variant="contained" disabled>
                                 Realtor.com
                             </Button>
@@ -331,11 +335,12 @@ function CurrentProjects() {
                             </a>
                             {
                                 width > 550 ?
-                                    <Button onClick={togglePlans}
+                                    <Button onClick={togglePlansEast21}
                                         variant="contained" className="button-c">
                                         Floor Plans
                                     </Button> : null
                             }
+                            </div>
                         </div>
                     </div>
                     <div className="progress-div">
@@ -374,6 +379,7 @@ function CurrentProjects() {
                             <p>916 SQFT, 2 BEDS 2.5 BATHS</p>
                             <p>COMPLETION: JANUARY 2022</p>
 
+                            <div className="info-buttons-div">
                             <Button variant="contained" disabled>
                                 Realtor.com
                             </Button>
@@ -385,11 +391,12 @@ function CurrentProjects() {
                             </a>
                             {
                                 width > 550 ?
-                                    <Button onClick={togglePlans}
+                                    <Button onClick={togglePlansBunche}
                                         variant="contained" className="button-c">
                                         Floor Plans
                                     </Button> : null
                             }
+                            </div>
                         </div>
                     </div>
                     <div className="progress-div">
