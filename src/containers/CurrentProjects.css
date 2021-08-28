@@ -48,27 +48,32 @@
     display: flex;
     /* justify-content: space-evenly; */
     align-items: center; 
-    border-bottom: solid;
-    padding: 20px;
+   
+    padding-left: 30px;
 }
 
 @media only screen and (max-width: 600px) {
     .project-div {
-        flex-direction: column;       
+        flex-direction: column;  
+        padding-left: 0px;     
     }
 
     .p-info-div {
         margin-top: 30px;
         text-align: left;
-       width: 100%;
+        min-width: 400px;
     padding-left: 10px;
     padding-top: 30px;
     padding-bottom: 40px;
     }
+
+    .collage-div {
+        max-width: 400px;
+    }
   }
 
 .p-info-div {
-    
+    min-height: 250px;
     width: 100%;
     padding-left: 10px;
     padding-top: 30px;
@@ -76,7 +81,7 @@
     text-align: left;
     padding-left: 40px;
     animation: info_slide 2s ease;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; */
 }
 
 .projects-container {
@@ -109,10 +114,22 @@ a {
 
  @-webkit-keyframes bounce { 
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
-    40% {-webkit-transform: translateY(-30px);} 
+    40% {-webkit-transform: translateY(-20px);} 
     60% {-webkit-transform: translateY(-15px);} 
  } 
 
 .button-c {
     margin-left: 10px;
+}
+
+.progress-div {
+    margin: 30px;
+    border-bottom: solid;
+    text-align: left;
+}
+
+.project-title-div {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 30px;
 }

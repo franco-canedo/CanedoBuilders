@@ -12,6 +12,10 @@ import ProjectCarousel from '../components/ProjectCarousel';
 import BethuneCarousel from '../components/BethuneCarousel';
 import E21Carousel from '../components/East21Carousel';
 import e21map from '../East21/e21map.png';
+import Modal1 from './Modal1';
+import ProjectPlans from '../components/ProjectPlans';
+import { Progress } from 'semantic-ui-react';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,13 +35,21 @@ const useStyles = makeStyles((theme) => ({
 function CurrentProjects() {
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [])
+    }, []);
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const [images, setImages] = useState([house5, house6, house5, house6, house5, house6])
     const classes = useStyles();
     return (
         <div className="gallery-master-container">
             <div className="projects-container">
+                <div className="project-title-div">
+                    <h2>2511 GIVENS AVE #2</h2>
+                </div>
                 <div className="project-div">
                     <div className="collage-div">
                         {/* <img src={house5} className="project-img"></img> */}
@@ -49,9 +61,8 @@ function CurrentProjects() {
                         </a>
                     </div>
                     <div className="p-info-div">
-                        <h3>2511 GIVENS AVE #2</h3>
                         <p>3 BEDS 2 BATHS</p>
-                        <p>1100 SF</p>
+                        <p>1100 SQFT</p>
                         <p>COMPLETED: ACTIVE UNDER CONTRACT</p>
 
                         <a href="https://www.realtor.com/realestateandhomes-detail/M9108565249" target="_blank">
@@ -66,7 +77,15 @@ function CurrentProjects() {
                             </Button>
                         </a>
 
+
                     </div>
+                </div>
+                <div className="progress-div">
+                    <h3>PROGRESS</h3>
+                    <Progress percent="100" indicating />
+                </div>
+                <div className="project-title-div">
+                    <h1>Bethune Ave</h1>
                 </div>
                 <div className="project-div">
                     <div className="collage-div">
@@ -82,13 +101,10 @@ function CurrentProjects() {
 
 
                     <div className="p-info-div">
-                        <h3>7511, 7512 & 7513 BETHUNE AVE</h3>
                         <p>3 DUPLEXES (6 units total)</p>
                         <p> 3 BEDS 2.5 BATHS</p>
-                        <p>1600 SF</p>
+                        <p>1614 SQFT</p>
                         <p>COMPLETION: SEPTEMBER 2021</p>
-
-
 
                         <a href="https://www.realtor.com/realestateandhomes-detail/M9550589495" target="_blank">
                             <Button variant="contained" color="primary">
@@ -101,12 +117,15 @@ function CurrentProjects() {
 
                             </Button>
                         </a>
-
-
-
                     </div>
                 </div>
-
+                <div className="progress-div">
+                    <h3>PROGRESS</h3>
+                    <Progress percent="80" indicating />
+                </div>
+                <div className="project-title-div">
+                    <h1>East 21 Street</h1>
+                </div>
                 <div className="project-div">
                     <div className="collage-div">
                         {/* <img src={house6} className="project-img"></img> */}
@@ -122,7 +141,10 @@ function CurrentProjects() {
 
                     <div className="p-info-div">
                         <h3>EAST 21 ST</h3>
-                        <p>UNIT A & UNIT B ADU</p>
+                        <p>UNIT A WITH ACCESSORY UNIT</p>
+                        <p>2934 SQFT</p>
+                        <p>& UNIT B ADU</p>
+                        <p>1771 SQFT</p>
                         <p>COMPLETION: JANUARY 2022</p>
 
 
@@ -130,16 +152,16 @@ function CurrentProjects() {
                             Realtor.com
                         </Button>
 
-
                         <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
                             <Button variant="contained" className="button-c">Contact Us
 
                             </Button>
                         </a>
-
-
-
                     </div>
+                </div>
+                <div className="progress-div">
+                    <h3>PROGRESS</h3>
+                    <Progress percent="20" indicating />
                 </div>
             </div>
 

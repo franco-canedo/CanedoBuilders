@@ -5,9 +5,11 @@ import render2 from '../bethune/render2.jpg';
 import render3 from '../bethune/render3.jpg';
 import render4 from '../bethune/render4.jpg';
 import render5 from '../bethune/render5.jpg';
+import latestKitchen from '../bethune/latestKitchen.jpg';
+import latestKitchen2 from '../bethune/latestKitchen2.jpg';
+import construction1 from '../bethune/construction1.jpg';
 import plan1 from '../bethune/plan1.jpg';
 import plan2 from '../bethune/plan2.png';
-import construction1 from '../bethune/IMG-1453.jpg';
 import construction2 from '../bethune/IMG-1454.jpg';
 import construction3 from '../bethune/IMG-1456.jpg';
 import construction4 from '../bethune/IMG-1457.jpg';
@@ -46,20 +48,6 @@ function BethuneCarousel() {
             <Carousel.Item>
                 <img
                     className="project-images"
-                    src={plan1}
-                    alt="Third slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="project-images"
-                    src={plan2}
-                    alt="Third slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="project-images"
                     src={construction1}
                     alt="Third slide"
                 />
@@ -67,7 +55,14 @@ function BethuneCarousel() {
             <Carousel.Item>
                 <img
                     className="project-images"
-                    src={construction2}
+                    src={latestKitchen}
+                    alt="Third slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="project-images"
+                    src={latestKitchen2}
                     alt="Third slide"
                 />
             </Carousel.Item>
@@ -85,8 +80,6 @@ function BethuneCarousel() {
                     alt="Third slide"
                 />
             </Carousel.Item>
-
-
         </Carousel>
 
 
