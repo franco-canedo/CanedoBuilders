@@ -61,8 +61,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function CurrentProjects() {
+    const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => {
         window.scrollTo(0, 0);
+        const debouncedHandleResize = debounce(function handleResize() {
+            setWidth(window.innerWidth)
+        }, 1000)
+
+        window.addEventListener('resize', debouncedHandleResize)
+
+        return _ => {
+            window.removeEventListener('resize', debouncedHandleResize)
+        }
     }, []);
 
     const [showPlansGivens, setPlans] = useState(false);
@@ -85,13 +95,13 @@ function CurrentProjects() {
     const [floorPlansBethune] = useState([
         {
             original: bethunePlan1,
-           
+
             originalHeight: 600,
             originalWidth: 600,
         },
         {
             original: bethunePlan2,
-            
+
             originalHeight: 600,
             originalWidth: 600,
         },
@@ -101,13 +111,13 @@ function CurrentProjects() {
     const [floorPlansEast21] = useState([
         {
             original: unitA,
-            
+
             originalHeight: 600,
             originalWidth: 600,
         },
         {
             original: unitB,
-            
+
             originalHeight: 600,
             originalWidth: 600,
         },
@@ -117,19 +127,19 @@ function CurrentProjects() {
     const [floorPlansBunche] = useState([
         {
             original: BuncheLot,
-            
+
             originalHeight: 600,
             originalWidth: 600,
         },
         {
             original: bunche1,
-           
+
             originalHeight: 600,
             originalWidth: 600,
         },
         {
             original: bunche2,
-            
+
             originalHeight: 600,
             originalWidth: 600,
         },
@@ -210,10 +220,14 @@ function CurrentProjects() {
                                         Contact Us
                                     </Button>
                                 </a>
-                                <Button onClick={togglePlans}
-                                    variant="contained" className="button-c">
-                                    Floor Plans
-                                </Button>
+                                {
+                                    width > 550 ?
+                                        <Button onClick={togglePlans}
+                                            variant="contained" className="button-c">
+                                            Floor Plans
+                                        </Button> : null
+                                }
+
                             </div>
                         </div>
                     </div>
@@ -261,10 +275,13 @@ function CurrentProjects() {
 
                                 </Button>
                             </a>
-                            <Button onClick={togglePlansBethune}
-                                variant="contained" className="button-c">
-                                Floor Plans
-                            </Button>
+                            {
+                                width > 550 ?
+                                    <Button onClick={togglePlans}
+                                        variant="contained" className="button-c">
+                                        Floor Plans
+                                    </Button> : null
+                            }
                         </div>
                     </div>
                     <div className="progress-div">
@@ -295,7 +312,7 @@ function CurrentProjects() {
 
 
                         <div className="p-info-div">
-                            
+
                             <p>UNIT A WITH ACCESSORY UNIT</p>
                             <p>2934 SQFT</p>
                             <p>& UNIT B ADU</p>
@@ -312,10 +329,13 @@ function CurrentProjects() {
 
                                 </Button>
                             </a>
-                            <Button onClick={togglePlansEast21}
-                                variant="contained" className="button-c">
-                                Floor Plans
-                            </Button>
+                            {
+                                width > 550 ?
+                                    <Button onClick={togglePlans}
+                                        variant="contained" className="button-c">
+                                        Floor Plans
+                                    </Button> : null
+                            }
                         </div>
                     </div>
                     <div className="progress-div">
@@ -347,7 +367,7 @@ function CurrentProjects() {
 
 
                         <div className="p-info-div">
-                           
+
                             <p>UNIT A</p>
                             <p>2152 SQFT, 3 BEDS 3 BATHS</p>
                             <p>& UNIT B ADU</p>
@@ -363,10 +383,13 @@ function CurrentProjects() {
 
                                 </Button>
                             </a>
-                            <Button onClick={togglePlansBunche}
-                                variant="contained" className="button-c">
-                                Floor Plans
-                            </Button>
+                            {
+                                width > 550 ?
+                                    <Button onClick={togglePlans}
+                                        variant="contained" className="button-c">
+                                        Floor Plans
+                                    </Button> : null
+                            }
                         </div>
                     </div>
                     <div className="progress-div">
