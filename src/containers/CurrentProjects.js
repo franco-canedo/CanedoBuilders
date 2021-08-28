@@ -15,6 +15,9 @@ import e21map from '../East21/e21map.png';
 import Modal1 from './Modal1';
 import ProjectPlans from '../components/ProjectPlans';
 import { Progress } from 'semantic-ui-react';
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
+
 
 
 
@@ -37,15 +40,35 @@ function CurrentProjects() {
         window.scrollTo(0, 0);
     }, []);
 
-    const [show, setShow] = useState(false);
+    const [showPlans, setPlans] = useState(false);
+    const [floorPlans, setImager] = useState([
+        {
+            original: givens,
+            thumbnail: givens,
+            originalHeight: 700,
+            originalWidth: 700,
+        },
+        {
+            original: bethune,
+            thumbnail: bethune,
+            originalHeight: 700,
+            originalWidth: 700,
+        },
+    ]);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const togglePlans = () => {
+        if (showPlans === true) {
+            setPlans(false);
+        } else if (showPlans === false) {
+            setPlans(true);
+        }
+    }
 
     const [images, setImages] = useState([house5, house6, house5, house6, house5, house6])
     const classes = useStyles();
     return (
-        <div className="gallery-master-container">
+        <div onClick={togglePlans}
+        className="gallery-master-container">
             <div className="projects-container">
                 <div className="project-title-div">
                     <h2>2511 GIVENS AVE #2</h2>
@@ -55,10 +78,15 @@ function CurrentProjects() {
                         {/* <img src={house5} className="project-img"></img> */}
                         <ProjectCarousel />
                     </div>
+
                     <div className="bounce-div">
                         <a href="https://www.google.com/maps/place/2511+Givens+Ave,+Austin,+TX+78722/@30.2814499,-97.7170645,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b5ebdbf0e0fb:0x5c83881d1141d5c5!8m2!3d30.2814499!4d-97.7148758" target="_blank">
                             <img src={givens} className="project-img"></img>
                         </a>
+                    </div>
+                    {/* IMAGE GALLERY ///////////// */}
+                    <div className={showPlans ? "slideshow-shown" : "slideshow-hidden"}>
+                        <ImageGallery items={floorPlans} />
                     </div>
                     <div className="p-info-div">
                         <p>3 BEDS 2 BATHS</p>
@@ -72,12 +100,14 @@ function CurrentProjects() {
                         </a>
 
                         <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                            <Button variant="contained" className="button-c">Contact Us
-
+                            <Button variant="contained" className="button-c">
+                                Contact Us
                             </Button>
                         </a>
-
-
+                        <Button onClick={togglePlans}
+                        variant="contained" className="button-c">
+                            Floor Plans
+                        </Button>
                     </div>
                 </div>
                 <div className="progress-div">
