@@ -209,13 +209,13 @@ function CurrentProjects() {
                             <p>1100 SQFT</p>
                             <p>COMPLETED: ACTIVE UNDER CONTRACT</p>
                             <div className="info-buttons-div">
-                                
+
                                 <a href="https://www.realtor.com/realestateandhomes-detail/M9108565249" target="_blank">
                                     <Button variant="contained" color="primary">
                                         Realtor.com
                                     </Button>
                                 </a>
-                            
+
 
                                 <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
                                     <Button variant="contained" className="button-c">
@@ -238,7 +238,7 @@ function CurrentProjects() {
                         <Progress percent="100" indicating />
                     </div>
                     <div className="project-title-div">
-                        <h1>Bethune Ave</h1>
+                        <h1>BETHUNE AVE</h1>
                     </div>
                     <div className="project-div">
                         <div className={showPlansBethune ? "slideshow-shown" : "slideshow-hidden"}>
@@ -267,24 +267,24 @@ function CurrentProjects() {
                             <p>COMPLETION: SEPTEMBER 2021</p>
 
                             <div className="info-buttons-div">
-                            <a href="https://www.realtor.com/realestateandhomes-detail/M9550589495" target="_blank">
-                                <Button variant="contained" color="primary">
-                                    Realtor.com
-                                </Button>
-                            </a>
+                                <a href="https://www.realtor.com/realestateandhomes-detail/M9550589495" target="_blank">
+                                    <Button variant="contained" color="primary">
+                                        Realtor.com
+                                    </Button>
+                                </a>
 
-                            <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                                <Button variant="contained" className="button-c">Contact Us
+                                <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
+                                    <Button variant="contained" className="button-c">Contact Us
 
-                                </Button>
-                            </a>
-                            {
-                                width > 550 ?
-                                    <Button onClick={togglePlansBethune}
-                                        variant="contained" className="button-c">
-                                        Floor Plans
-                                    </Button> : null
-                            }
+                                    </Button>
+                                </a>
+                                {
+                                    width > 550 ?
+                                        <Button onClick={togglePlansBethune}
+                                            variant="contained" className="button-c">
+                                            Floor Plans
+                                        </Button> : null
+                                }
                             </div>
                         </div>
                     </div>
@@ -293,7 +293,7 @@ function CurrentProjects() {
                         <Progress percent="80" indicating />
                     </div>
                     <div className="project-title-div">
-                        <h1>East 21 Street</h1>
+                        <h1>EAST 21 ST</h1>
                     </div>
                     <div className="project-div">
                         <div className={showPlansEast21 ? "slideshow-shown" : "slideshow-hidden"}>
@@ -324,22 +324,22 @@ function CurrentProjects() {
                             <p>COMPLETION: JANUARY 2022</p>
 
                             <div className="info-buttons-div">
-                            <Button variant="contained" disabled>
-                                Realtor.com
-                            </Button>
-
-                            <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                                <Button variant="contained" className="button-c">Contact Us
-
+                                <Button variant="contained" disabled>
+                                    Realtor.com
                                 </Button>
-                            </a>
-                            {
-                                width > 550 ?
-                                    <Button onClick={togglePlansEast21}
-                                        variant="contained" className="button-c">
-                                        Floor Plans
-                                    </Button> : null
-                            }
+
+                                <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
+                                    <Button variant="contained" className="button-c">Contact Us
+
+                                    </Button>
+                                </a>
+                                {
+                                    width > 550 ?
+                                        <Button onClick={togglePlansEast21}
+                                            variant="contained" className="button-c">
+                                            Floor Plans
+                                        </Button> : null
+                                }
                             </div>
                         </div>
                     </div>
@@ -380,22 +380,22 @@ function CurrentProjects() {
                             <p>COMPLETION: JANUARY 2022</p>
 
                             <div className="info-buttons-div">
-                            <Button variant="contained" disabled>
-                                Realtor.com
-                            </Button>
-
-                            <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                                <Button variant="contained" className="button-c">Contact Us
-
+                                <Button variant="contained" disabled>
+                                    Realtor.com
                                 </Button>
-                            </a>
-                            {
-                                width > 550 ?
-                                    <Button onClick={togglePlansBunche}
-                                        variant="contained" className="button-c">
-                                        Floor Plans
-                                    </Button> : null
-                            }
+
+                                <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
+                                    <Button variant="contained" className="button-c">Contact Us
+
+                                    </Button>
+                                </a>
+                                {
+                                    width > 550 ?
+                                        <Button onClick={togglePlansBunche}
+                                            variant="contained" className="button-c">
+                                            Floor Plans
+                                        </Button> : null
+                                }
                             </div>
                         </div>
                     </div>
