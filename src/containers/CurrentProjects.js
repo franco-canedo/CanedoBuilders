@@ -205,9 +205,9 @@ function CurrentProjects() {
                         {/* IMAGE GALLERY ///////////// */}
 
                         <div className="p-info-div">
-                            <p>3 BEDS 2 BATHS</p>
-                            <p>1100 SQFT</p>
-                            <p>COMPLETED: ACTIVE UNDER CONTRACT</p>
+                            <h3>3 BEDS 2 BATHS</h3>
+                            <h3>1100 SQFT</h3>
+                            
                             <div className="info-buttons-div">
 
                                 <a href="https://www.realtor.com/realestateandhomes-detail/M9108565249" target="_blank">
@@ -234,7 +234,7 @@ function CurrentProjects() {
                         </div>
                     </div>
                     <div className="progress-div">
-                        <h3>PROGRESS</h3>
+                        <h3>PROGRESS | COMPLETED: UNDER CONTRACT</h3>
                         <Progress percent="100" indicating />
                     </div>
                     <div className="project-title-div">
@@ -261,10 +261,10 @@ function CurrentProjects() {
 
 
                         <div className="p-info-div">
-                            <p>3 DUPLEXES (6 units total)</p>
-                            <p> 3 BEDS 2.5 BATHS</p>
-                            <p>1614 SQFT</p>
-                            <p>COMPLETION: SEPTEMBER 2021</p>
+                            <h3>3 DUPLEXES (6 units total)</h3>
+                            <h3> 3 BEDS 2.5 BATHS</h3>
+                            <h3>1614 SQFT</h3>
+                            
 
                             <div className="info-buttons-div">
                                 <a href="https://www.realtor.com/realestateandhomes-detail/M9550589495" target="_blank">
@@ -289,7 +289,7 @@ function CurrentProjects() {
                         </div>
                     </div>
                     <div className="progress-div">
-                        <h3>PROGRESS</h3>
+                        <h3>PROGRESS | COMPLETION: SEPTEMBER 2021</h3>
                         <Progress percent="80" indicating />
                     </div>
                     <div className="project-title-div">
@@ -317,11 +317,11 @@ function CurrentProjects() {
 
                         <div className="p-info-div">
 
-                            <p>UNIT A WITH ACCESSORY UNIT</p>
-                            <p>2540 SQFT</p>
-                            <p>& UNIT B ADU</p>
-                            <p>1047 SQFT</p>
-                            <p>COMPLETION: JANUARY 2022</p>
+                            <h3>UNIT A WITH ACCESSORY UNIT</h3>
+                            <h3>2540 SQFT</h3>
+                            <h3>& UNIT B ADU</h3>
+                            <h3>1047 SQFT</h3>
+                           
 
                             <div className="info-buttons-div">
                                 <Button variant="contained" disabled>
@@ -344,7 +344,7 @@ function CurrentProjects() {
                         </div>
                     </div>
                     <div className="progress-div">
-                        <h3>PROGRESS</h3>
+                        <h3>PROGRESS | COMPLETION: JANUARY 2022</h3>
                         <Progress percent="20" indicating />
                     </div>
 
@@ -373,11 +373,11 @@ function CurrentProjects() {
 
                         <div className="p-info-div">
 
-                            <p>UNIT A</p>
-                            <p>2152 SQFT, 3 BEDS 3 BATHS</p>
-                            <p>& UNIT B ADU</p>
-                            <p>916 SQFT, 2 BEDS 2.5 BATHS</p>
-                            <p>COMPLETION: JANUARY 2022</p>
+                            <h3>UNIT A</h3>
+                            <h3>2152 SQFT, 3 BEDS 3 BATHS</h3>
+                            <h3>& UNIT B ADU</h3>
+                            <h3>916 SQFT, 2 BEDS 2.5 BATHS</h3>
+                            
 
                             <div className="info-buttons-div">
                                 <Button variant="contained" disabled>
@@ -400,7 +400,7 @@ function CurrentProjects() {
                         </div>
                     </div>
                     <div className="progress-div">
-                        <h3>PROGRESS</h3>
+                        <h3>PROGRESS | COMPLETION: DECEMBER 2021</h3>
                         <Progress percent="30" indicating />
                     </div>
                 </div>
