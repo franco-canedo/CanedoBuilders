@@ -189,7 +189,7 @@ function CurrentProjects() {
                 className="gallery-master-container">
                 <div className="projects-container">
                     <div className="project-title-div">
-                        <h2>2511 GIVENS AVE #2</h2>
+                        <h1>2511 GIVENS AVE #2</h1>
                     </div>
                     <div className="project-div">
                         <div className="collage-div">
