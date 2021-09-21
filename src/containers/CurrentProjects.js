@@ -26,12 +26,21 @@ import bethunePlan2 from '../bethune/plan2.png';
 
 import unitA from '../East21/unitA.png';
 import unitB from '../East21/unitB.png';
+import attic from '../East21/atticFloor.png';
 
 import BuncheCarousel from '../components/BuncheCarousel';
 import BuncheLot from '../bunche/BuncheLot.png';
 import bunche1 from '../bunche/FirstFloorPlansBunche.png';
 import bunche2 from '../bunche/SecondFloorPlansBunche.png';
+import bunche3 from '../bunche/ThirdFloorPlanBunche.png';
 import buncheMap from '../bunche/buncheMap.png';
+
+import OaklawnMap from '../oaklawn/oaklawnMap.png';
+import OaklawnLayout from '../oaklawn/oaklawnLayout.png';
+import OaklawnLevel1 from '../oaklawn/oaklawnLevel1.png';
+import OaklawnLevel2 from '../oaklawn/oaklawnLevel2.png';
+import OaklawnLevel3 from '../oaklawn/oaklawnLevel3.png';
+import OaklawnCarousel from '../components/OaklawnCarousel';
 
 function debounce(fn, ms) {
     let timer
@@ -75,21 +84,6 @@ function CurrentProjects() {
         }
     }, []);
 
-    const [showPlansGivens, setPlans] = useState(false);
-    const [floorPlansGivens] = useState([
-        {
-            original: givensPlan1,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: givensPlan2,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-    ]);
 
     const [showPlansBethune, setPlansBethune] = useState(false);
     const [floorPlansBethune] = useState([
@@ -121,6 +115,12 @@ function CurrentProjects() {
             originalHeight: 600,
             originalWidth: 600,
         },
+        {
+            original: attic,
+
+            originalHeight: 600,
+            originalWidth: 600,
+        },
     ]);
 
     const [showPlansBunche, setPlansBunche] = useState(false);
@@ -128,14 +128,14 @@ function CurrentProjects() {
         {
             original: BuncheLot,
 
-            originalHeight: 500,
-            originalWidth: 500,
+            originalHeight: 600,
+            originalWidth: 600,
         },
         {
             original: bunche1,
 
-            originalHeight: 500,
-            originalWidth: 500,
+            originalHeight: 600,
+            originalWidth: 600,
         },
         {
             original: bunche2,
@@ -143,12 +143,41 @@ function CurrentProjects() {
             originalHeight: 600,
             originalWidth: 600,
         },
+        {
+            original: bunche3,
+
+            originalHeight: 600,
+            originalWidth: 600,
+        },
     ]);
 
+    const [showPlansOaklawn, setPlansOaklawn] = useState(false);
+    const [floorPlansOaklawn] = useState([
+        {
+            original: OaklawnLayout,
 
-    const togglePlans = () => {
-        setPlans(true);
-    }
+            originalHeight: 600,
+            originalWidth: 600,
+        },
+        {
+            original: OaklawnLevel1,
+
+            originalHeight: 600,
+            originalWidth: 600,
+        },
+        {
+            original: OaklawnLevel2,
+
+            originalHeight: 600,
+            originalWidth: 600,
+        },
+        {
+            original: OaklawnLevel3,
+
+            originalHeight: 600,
+            originalWidth: 600,
+        },
+    ]);
 
     const togglePlansBethune = () => {
         setPlansBethune(true);
@@ -162,83 +191,30 @@ function CurrentProjects() {
         setPlansBunche(true);
     }
 
+    const togglePlansOaklawn = () => {
+        setPlansOaklawn(true);
+    }
+
     const hideAllPlans = () => {
-        if (showPlansGivens === true ||
-            showPlansBethune === true ||
+        if (showPlansBethune === true ||
             showPlansEast21 === true ||
-            showPlansBunche === true) {
-            setPlans(false);
+            showPlansBunche === true || 
+            showPlansOaklawn) {
             setPlansBethune(false);
             setPlansEast21(false);
             setPlansBunche(false);
+            setPlansOaklawn(false);
         }
     }
 
     const classes = useStyles();
     return (
-        <>
-            <div className={showPlansGivens ? "slideshow-shown" : "slideshow-hidden"}>
-
-                <ImageGallery items={floorPlansGivens} />
-                <Button onClick={hideAllPlans}
-                    variant="contained" color="primary" className="button-c">
-                    Exit
-                </Button>
-            </div>
+        <>   
             <div
                 className="gallery-master-container">
-                <div className="projects-container">
+                <div className="projects-container">         
                     <div className="project-title-div">
-                        <h1>2511 GIVENS AVE #2</h1>
-                    </div>
-                    <div className="project-div">
-                        <div className="collage-div">
-                            {/* <img src={house5} className="project-img"></img> */}
-                            <ProjectCarousel />
-                        </div>
-
-                        <div className="bounce-div">
-                            <a href="https://www.google.com/maps/place/2511+Givens+Ave,+Austin,+TX+78722/@30.2814499,-97.7170645,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b5ebdbf0e0fb:0x5c83881d1141d5c5!8m2!3d30.2814499!4d-97.7148758" target="_blank">
-                                <img src={givens} className="project-img"></img>
-                            </a>
-                        </div>
-                        {/* IMAGE GALLERY ///////////// */}
-
-                        <div className="p-info-div">
-                            <h3>3 BEDS 2 BATHS</h3>
-                            <h3>1100 SQFT</h3>
-                            
-                            <div className="info-buttons-div">
-
-                                <a href="https://www.realtor.com/realestateandhomes-detail/M9108565249" target="_blank">
-                                    <Button variant="contained" color="primary">
-                                        Realtor.com
-                                    </Button>
-                                </a>
-
-
-                                <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                                    <Button variant="contained" className="button-c">
-                                        Contact Us
-                                    </Button>
-                                </a>
-                                {
-                                    width > 550 ?
-                                        <Button onClick={togglePlans}
-                                            variant="contained" className="button-c">
-                                            Floor Plans
-                                        </Button> : null
-                                }
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="progress-div">
-                        <h3>PROGRESS | COMPLETED: UNDER CONTRACT</h3>
-                        <Progress percent="100" indicating />
-                    </div>
-                    <div className="project-title-div">
-                        <h1>BETHUNE AVE</h1>
+                        <h1>7511, 7509, 7507 BETHUNE AVE</h1>
                     </div>
                     <div className="project-div">
                         <div className={showPlansBethune ? "slideshow-shown" : "slideshow-hidden"}>
@@ -290,10 +266,10 @@ function CurrentProjects() {
                     </div>
                     <div className="progress-div">
                         <h3>PROGRESS | COMPLETION: SEPTEMBER 2021</h3>
-                        <Progress percent="80" indicating />
+                        <Progress percent="95" indicating />
                     </div>
                     <div className="project-title-div">
-                        <h1>EAST 21 ST</h1>
+                        <h1>2102 EAST 21 ST</h1>
                     </div>
                     <div className="project-div">
                         <div className={showPlansEast21 ? "slideshow-shown" : "slideshow-hidden"}>
@@ -317,10 +293,10 @@ function CurrentProjects() {
 
                         <div className="p-info-div">
 
-                            <h3>UNIT A WITH ACCESSORY UNIT</h3>
-                            <h3>2540 SQFT</h3>
-                            <h3>& UNIT B ADU</h3>
-                            <h3>1047 SQFT</h3>
+                            <h3>UNIT A WITH CASITA</h3>
+                            <h3>3 BEDS, 3.5 BATHS | 2540 SQFT</h3>
+                            <h3>UNIT B ADU</h3>
+                            <h3>2 BEDS, 2.5 BATHS | 1047 SQFT</h3>
                            
 
                             <div className="info-buttons-div">
@@ -345,11 +321,11 @@ function CurrentProjects() {
                     </div>
                     <div className="progress-div">
                         <h3>PROGRESS | COMPLETION: JANUARY 2022</h3>
-                        <Progress percent="20" indicating />
+                        <Progress percent="30" indicating />
                     </div>
 
                     <div className="project-title-div">
-                        <h1>BUNCHE RD</h1>
+                        <h1>1729 BUNCHE RD</h1>
                     </div>
                     <div className="project-div">
                         <div className={showPlansBunche ? "slideshow-shown" : "slideshow-hidden"}>
@@ -374,9 +350,9 @@ function CurrentProjects() {
                         <div className="p-info-div">
 
                             <h3>UNIT A</h3>
-                            <h3>2152 SQFT, 3 BEDS 3 BATHS</h3>
-                            <h3>& UNIT B ADU</h3>
-                            <h3>916 SQFT, 2 BEDS 2.5 BATHS</h3>
+                            <h3>3 BEDS 3 BATHS | 2152 SQFT</h3>
+                            <h3>UNIT B ADU</h3>
+                            <h3>2 BEDS 2.5 BATHS | 916 SQFT</h3>
                             
 
                             <div className="info-buttons-div">
@@ -401,7 +377,63 @@ function CurrentProjects() {
                     </div>
                     <div className="progress-div">
                         <h3>PROGRESS | COMPLETION: DECEMBER 2021</h3>
-                        <Progress percent="30" indicating />
+                        <Progress percent="40" indicating />
+                    </div>
+                    <div className="project-title-div">
+                        <h1>2604 OAKLAWN AVE</h1>
+                    </div>
+                    <div className="project-div">
+                        <div className={showPlansOaklawn ? "slideshow-shown" : "slideshow-hidden"}>
+                            <ImageGallery items={floorPlansOaklawn} />
+                            <Button onClick={hideAllPlans}
+                                variant="contained" color="primary" className="button-c">
+                                Exit
+                            </Button>
+                        </div>
+                        <div className="collage-div">
+                            {/* <img src={house6} className="project-img"></img> */}
+                            <OaklawnCarousel />
+                        </div>
+
+                        <a href="https://www.google.com/maps/place/2604+Oaklawn+Ave,+Austin,+TX+78722/@30.2809014,-97.748243,13z/data=!4m5!3m4!1s0x8644b5ec1c83f37d:0xbb28aa0184db56d5!8m2!3d30.2841395!4d-97.7148334" target="_blank">
+                            <div className="bounce-div">
+                                <img src={OaklawnMap} className="project-img"></img>
+                            </div>
+                        </a>
+
+
+                        <div className="p-info-div">
+                            <h3>UNIT A</h3>
+                            <h3>4 BEDS, 4 BATHS | SQFT</h3>
+                            <h3>UNIT B</h3>
+                            <h3>2 BEDS, 2 BATHS | SQFT</h3>
+                            
+
+                            <div className="info-buttons-div">
+                               
+                                    <Button variant="contained" disabled>
+                                        Realtor.com
+                                    </Button>
+                                
+
+                                <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
+                                    <Button variant="contained" className="button-c">Contact Us
+
+                                    </Button>
+                                </a>
+                                {
+                                    width > 550 ?
+                                        <Button onClick={togglePlansOaklawn}
+                                            variant="contained" className="button-c">
+                                            Floor Plans
+                                        </Button> : null
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div className="progress-div">
+                        <h3>PROGRESS | COMPLETION: FEBRUARY 2021</h3>
+                        <Progress percent="20" indicating />
                     </div>
                 </div>
 
