@@ -404,9 +404,9 @@ function CurrentProjects() {
 
                         <div className="p-info-div">
                             <h3>UNIT A</h3>
-                            <h3>4 BEDS, 4 BATHS | SQFT</h3>
+                            <h3>4 BEDS, 4 BATHS | 2303 SQFT</h3>
                             <h3>UNIT B</h3>
-                            <h3>2 BEDS, 2 BATHS | SQFT</h3>
+                            <h3>2 BEDS, 2 BATHS | 1112 SQFT</h3>
                             
 
                             <div className="info-buttons-div">

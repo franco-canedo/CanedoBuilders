@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import unitA from '../East21/unitA.png';
 import unitB from '../East21/unitB.png';
 import site from '../East21/site.png';
+import OaklawnLot from '../oaklawn/oaklawnLot.jpeg';
 
 
 function E21Carousel() {
@@ -11,21 +12,7 @@ function E21Carousel() {
             <Carousel.Item>
                 <img
                     className="project-images"
-                    src={unitA}
-                    alt="First slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="project-images"
-                    src={unitB}
-                    alt="First slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="project-images"
-                    src={site}
+                    src={OaklawnLot}
                     alt="First slide"
                 />
             </Carousel.Item>

@@ -15,8 +15,6 @@ import bethune12 from '../bethune/bethune1605.jpg';
 import bethune13 from '../bethune/bethune1607.jpg';
 
 
-
-
 function BethuneCarousel() {
     return (
         <Carousel>
@@ -110,12 +108,8 @@ function BethuneCarousel() {
                     src={bethune13}
                     alt="First slide"
                 />
-            </Carousel.Item>
-
-           
+            </Carousel.Item>          
         </Carousel>
-
-
     );
 }
 

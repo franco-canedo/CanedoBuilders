@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import BuncheLot from '../bunche/BuncheLot.png';
 import bunche1 from '../bunche/FirstFloorPlansBunche.png';
 import bunche2 from '../bunche/SecondFloorPlansBunche.png';
+import OaklawnLot from '../oaklawn/oaklawnLot.jpeg';
 
 
 function BuncheCarousel() {
@@ -11,21 +12,7 @@ function BuncheCarousel() {
             <Carousel.Item>
                 <img
                     className="project-images"
-                    src={BuncheLot}
-                    alt="First slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="project-images"
-                    src={bunche1}
-                    alt="First slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="project-images"
-                    src={bunche2}
+                    src={OaklawnLot}
                     alt="First slide"
                 />
             </Carousel.Item>
