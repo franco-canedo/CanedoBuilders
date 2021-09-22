@@ -9,13 +9,13 @@ import OaklawnLot from '../oaklawn/oaklawnLot.jpeg';
 function BuncheCarousel() {
     return (
         <Carousel>
-            <Carousel.Item>
+            {/* <Carousel.Item>
                 <img
                     className="project-images"
-                    src={OaklawnLot}
+                    src={}
                     alt="First slide"
                 />
-            </Carousel.Item>
+            </Carousel.Item> */}
         </Carousel>
     );
 }

@@ -18,12 +18,11 @@ import { Progress } from 'semantic-ui-react';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
-import givensPlan1 from '../givens/planfirstgivens.png';
-import givensPlan2 from '../givens/plansecondgivens.png';
 
 import bethunePlan1 from '../bethune/plan1.jpg';
 import bethunePlan2 from '../bethune/plan2.png';
 
+import e21Layout from '../East21/site.png';
 import unitA from '../East21/unitA.png';
 import unitB from '../East21/unitB.png';
 import attic from '../East21/atticFloor.png';
@@ -103,6 +102,12 @@ function CurrentProjects() {
 
     const [showPlansEast21, setPlansEast21] = useState(false);
     const [floorPlansEast21] = useState([
+        {
+            original: e21Layout,
+
+            originalHeight: 600,
+            originalWidth: 600,
+        },
         {
             original: unitA,
 
@@ -225,7 +230,6 @@ function CurrentProjects() {
                             </Button>
                         </div>
                         <div className="collage-div">
-                            {/* <img src={house6} className="project-img"></img> */}
                             <BethuneCarousel />
                         </div>
 
