@@ -383,7 +383,7 @@ function CurrentProjects() {
                         <h3>PROGRESS | COMPLETION: DECEMBER 2021</h3>
                         <Progress percent="40" indicating />
                     </div>
-                    <div className="project-title-div">
+                    {/* <div className="project-title-div">
                         <h1>2604 OAKLAWN AVE</h1>
                     </div>
                     <div className="project-div">
@@ -395,7 +395,6 @@ function CurrentProjects() {
                             </Button>
                         </div>
                         <div className="collage-div">
-                            {/* <img src={house6} className="project-img"></img> */}
                             <OaklawnCarousel />
                         </div>
 
@@ -438,7 +437,7 @@ function CurrentProjects() {
                     <div className="progress-div">
                         <h3>PROGRESS | COMPLETION: FEBRUARY 2021</h3>
                         <Progress percent="20" indicating />
-                    </div>
+                    </div> */}
                 </div>
 
 
