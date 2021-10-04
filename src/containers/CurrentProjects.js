@@ -269,8 +269,8 @@ function CurrentProjects() {
                         </div>
                     </div>
                     <div className="progress-div">
-                        <h3>PROGRESS | COMPLETION: SEPTEMBER 2021</h3>
-                        <Progress percent="95" indicating />
+                        <h3>PROGRESS | COMPLETED</h3>
+                        <Progress percent="100" indicating />
                     </div>
                     <div className="project-title-div">
                         <h1>2102 EAST 21 ST</h1>
@@ -297,7 +297,7 @@ function CurrentProjects() {
 
                         <div className="p-info-div">
 
-                            <h3>UNIT A WITH CASITA</h3>
+                            <h3>UNIT A WITH ACCESSORY CASITA</h3>
                             <h3>3 BEDS, 3.5 BATHS | 2540 SQFT</h3>
                             <h3>UNIT B ADU</h3>
                             <h3>2 BEDS, 2.5 BATHS | 1047 SQFT</h3>
