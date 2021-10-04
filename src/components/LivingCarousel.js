@@ -7,6 +7,7 @@ import l5 from '../living/l5.jpg';
 import l6 from '../living/l6.jpg';
 import l7 from '../living/l7.jpg';
 import l8 from '../living/l8.jpg';
+import l9 from '../givens/givens2.jpg';
 
 
 
@@ -14,6 +15,14 @@ import l8 from '../living/l8.jpg';
 function LivingCarousel() {
     return (
         <Carousel fade>
+             <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={l9}
+                    alt="First slide"
+                />
+             
+            </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"

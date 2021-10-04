@@ -1,0 +1,13 @@
+.img-modal {
+    min-width: 1000px;
+    height: 600px;
+    object-fit: contain;
+    
+}
+
+.div-modal {
+    min-width: 1000px;
+    height: 600px;
+    text-align: center;
+   padding-right: 300px;
+}

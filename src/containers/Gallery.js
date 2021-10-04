@@ -21,12 +21,12 @@ function Gallery({ toCurrent }) {
         setButtonStatus(false)
     }
 
-    
+
 
     useEffect(() => {
         window.scrollTo(0, 400);
-       
-    },[])
+
+    }, [])
 
     return (
         <div className="gallery-master-container">
@@ -56,55 +56,56 @@ function Gallery({ toCurrent }) {
 
                 </div>
                 <div className="grid-item">
-                <div>
+                    <div>
+                        <h2>LIVING</h2>
+                    </div>
+                    <div>
+                        <LivingCarousel />
+                    </div>
+
+
+                </div>
+                <div className="grid-item">
+                    <div>
+                        <h2>OUTDOOR</h2>
+                    </div>
+                    <div>
+                        <OutdoorCarousel />
+                    </div>
+
+
+                </div>
+                <div className="grid-item">
+                    <div>
                         <h2>BEDROOM</h2>
 
                     </div>
                     <div>
                         <BedroomCarousel />
                     </div>
-                    
+
 
                 </div>
                 <div className="grid-item">
-                <div>
+                    <div>
                         <h2>BATHROOM</h2>
                     </div>
                     <div>
                         <BathroomCarousel />
                     </div>
-                   
+
 
                 </div>
-                <div className="grid-item">
-                <div>
-                        <h2>LIVING</h2>
-                    </div>
-                    <div>
-                        <LivingCarousel />
-                    </div>
-                   
+               
 
-                </div>
-                <div className="grid-item">
-                <div>
-                        <h2>OUTDOOR</h2>
-                    </div>
-                    <div>
-                        <OutdoorCarousel />
-                    </div>
-                    
-
-                </div>
-                
-                    {/* <div 
+                {/* <div 
                         className={buttonStatus ? "action-button" : "action-button-x"}>
                             <p>Check out our Current Projects!</p>
                             
                         <FloatingActionButtons closeButton={closeButton}
                         toCurrent={toCurrent}/>
                     </div> */}
-                    
+
 
 
 

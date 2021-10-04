@@ -7,13 +7,22 @@ import b5 from '../bedroom/b5.jpg';
 import b6 from '../bedroom/b6.jpg';
 import b7 from '../bedroom/b7.jpg';
 import b8 from '../bedroom/b8.jpg';
+import b9 from '../givens/givens7.jpg';
 
 
 
 
 function BedroomCarousel() {
     return (
-        <Carousel >
+        <Carousel fade>
+             <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={b9}
+                    alt="First slide"
+                />
+              
+            </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"

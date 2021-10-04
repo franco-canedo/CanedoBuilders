@@ -8,6 +8,7 @@
 .bounce-div {
     animation: bounce 2s linear infinite;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 @keyframes bounce {
@@ -17,11 +18,11 @@
     }
     30% 
     {
-        transform: translateY(-20px);
+        transform: translateY(-5px);
     }
     40% 
     {
-        transform: translateY(-25px);
+        transform: translateY(-10px);
     }
  } 
 
@@ -30,8 +31,9 @@
      margin-top: 50px;
      min-width: 400px;
      max-height: 300px;
+     
      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-     background-color: cadetblue;
+     background-color: gray;
  }
 
  @keyframes Project_slide {
@@ -48,27 +50,52 @@
     display: flex;
     /* justify-content: space-evenly; */
     align-items: center; 
-    border-bottom: solid;
-    padding: 20px;
+   
+    padding-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
     .project-div {
-        flex-direction: column;       
+        flex-direction: column;  
+        padding-left: 0px;     
     }
 
     .p-info-div {
         margin-top: 30px;
-        text-align: left;
-       width: 100%;
-    padding-left: 10px;
-    padding-top: 30px;
-    padding-bottom: 40px;
+        text-align: center;
+        min-width: 400px;
+        padding-left: 65px !important;
+        padding-top: 30px;
+        padding-bottom: 10px !important;
     }
+
+    .collage-div {
+        max-width: 400px;
+    }
+
+    .slideshow-shown {
+        max-height: 300px;
+        margin-top:400px;
+        background-color: none;
+        border: none;
+    }
+
+    .slideshow-hidden {
+        height: 300px;
+        margin-top:400px;
+    }
+
+    .project-title-div {
+      padding-left: 0px;
+    }
+
+    .info-buttons-div {
+     max-width: 250px;
+   }
   }
 
 .p-info-div {
-    
+    min-height: 250px;
     width: 100%;
     padding-left: 10px;
     padding-top: 30px;
@@ -76,7 +103,7 @@
     text-align: left;
     padding-left: 40px;
     animation: info_slide 2s ease;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; */
 }
 
 .projects-container {
@@ -109,10 +136,82 @@ a {
 
  @-webkit-keyframes bounce { 
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
-    40% {-webkit-transform: translateY(-30px);} 
-    60% {-webkit-transform: translateY(-15px);} 
+    40% {-webkit-transform: translateY(-10px);} 
+    60% {-webkit-transform: translateY(-5px);} 
  } 
 
 .button-c {
     margin-left: 10px;
+}
+
+.progress-div {
+    margin: 30px;
+    border-bottom: solid;
+    text-align: left;
+}
+
+.project-title-div {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.slideshow-shown {
+    position: absolute;
+    width: 600;
+    height: 600;
+    z-index: 1;
+    margin-left:15%;
+    background-image: linear-gradient(to bottom, rgb(133, 122, 122),rgb(41, 37, 37));
+    border: solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: slideshow-slide 2s ease;
+}
+
+.slideshow-hidden {
+    position: absolute;
+    width: 600;
+    height: 600;
+    z-index: 1;
+    margin-left:15%;
+    background-color: rgb(121, 126, 126);
+    border: solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    visibility: hidden;
+    animation: slideshow-hide 2s ease;
+}
+
+@keyframes slideshow-slide {
+    0%{
+      transform: translateY(20px);
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0%;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 100%;
+    }
+  }
+
+  @keyframes slideshow-hide {
+    0%{
+      transform: translateY(0px);
+      opacity: 100%;
+    }
+    100%{
+      transform: translateY(20px);
+      /* opacity: 0%; */
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+
+.info-buttons-div {
+   display: flex;
+   justify-content: space-between;
+    bottom: 0px;
+    width: 375px;
+    margin-top: 50px;
 }
