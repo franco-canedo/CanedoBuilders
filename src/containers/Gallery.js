@@ -25,7 +25,6 @@ function Gallery({ toCurrent }) {
 
     useEffect(() => {
         window.scrollTo(0, 400);
-
     }, [])
 
     return (
@@ -37,7 +36,7 @@ function Gallery({ toCurrent }) {
             <div className="gallery-container">
                 <div className="grid-item">
                     <div>
-                        <h2>EXTERIOR</h2>
+                        <h2 className="floorplan-titles">EXTERIOR</h2>
                     </div>
                     <div>
                         <ExteriorCarousel />
@@ -47,7 +46,7 @@ function Gallery({ toCurrent }) {
                 </div>
                 <div className="grid-item">
                     <div>
-                        <h2>KITCHEN</h2>
+                        <h2 className="floorplan-titles">KITCHEN</h2>
                     </div>
                     <div>
                         <KitchenCarousel />
@@ -57,7 +56,7 @@ function Gallery({ toCurrent }) {
                 </div>
                 <div className="grid-item">
                     <div>
-                        <h2>LIVING</h2>
+                        <h2 className="floorplan-titles">LIVING</h2>
                     </div>
                     <div>
                         <LivingCarousel />
@@ -67,7 +66,7 @@ function Gallery({ toCurrent }) {
                 </div>
                 <div className="grid-item">
                     <div>
-                        <h2>OUTDOOR</h2>
+                        <h2 className="floorplan-titles">OUTDOOR</h2>
                     </div>
                     <div>
                         <OutdoorCarousel />
@@ -77,7 +76,7 @@ function Gallery({ toCurrent }) {
                 </div>
                 <div className="grid-item">
                     <div>
-                        <h2>BEDROOM</h2>
+                        <h2 className="floorplan-titles">BEDROOM</h2>
 
                     </div>
                     <div>
@@ -88,7 +87,7 @@ function Gallery({ toCurrent }) {
                 </div>
                 <div className="grid-item">
                     <div>
-                        <h2>BATHROOM</h2>
+                        <h2 className="floorplan-titles">BATHROOM</h2>
                     </div>
                     <div>
                         <BathroomCarousel />

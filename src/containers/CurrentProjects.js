@@ -41,6 +41,8 @@ import OaklawnLevel2 from '../oaklawn/oaklawnLevel2.png';
 import OaklawnLevel3 from '../oaklawn/oaklawnLevel3.png';
 import OaklawnCarousel from '../components/OaklawnCarousel';
 
+import E21UnitA from '../units/2102A';
+
 function debounce(fn, ms) {
     let timer
     return _ => {
@@ -68,9 +70,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function CurrentProjects() {
+function CurrentProjects({normal}) {
     const [width, setWidth] = useState(window.innerWidth);
+    const [unit, setUnit] = useState("");
+
     useEffect(() => {
+        setUnit("normal");
         window.scrollTo(0, 0);
         const debouncedHandleResize = debounce(function handleResize() {
             setWidth(window.innerWidth)
@@ -82,6 +87,13 @@ function CurrentProjects() {
             window.removeEventListener('resize', debouncedHandleResize)
         }
     }, []);
+
+    
+
+    const handleUnitSelect = (unit) => {
+        setUnit(unit);
+    }
+
 
 
     const [showPlansBethune, setPlansBethune] = useState(false);
@@ -203,7 +215,7 @@ function CurrentProjects() {
     const hideAllPlans = () => {
         if (showPlansBethune === true ||
             showPlansEast21 === true ||
-            showPlansBunche === true || 
+            showPlansBunche === true ||
             showPlansOaklawn) {
             setPlansBethune(false);
             setPlansEast21(false);
@@ -214,10 +226,14 @@ function CurrentProjects() {
 
     const classes = useStyles();
     return (
-        <>   
+        <>
+            {
+                unit === "E21UnitA" ? <E21UnitA handleUnitSelect={handleUnitSelect}/> : 
+        
+            
             <div
                 className="gallery-master-container">
-                <div className="projects-container">         
+                <div className="projects-container">
                     <div className="project-title-div">
                         <h1>7511, 7509, 7507 BETHUNE AVE</h1>
                     </div>
@@ -244,7 +260,7 @@ function CurrentProjects() {
                             <h3>3 DUPLEXES (6 units total)</h3>
                             <h3> 3 BEDS 2.5 BATHS</h3>
                             <h3>1614 SQFT</h3>
-                            
+
 
                             <div className="info-buttons-div">
                                 <a href="https://www.realtor.com/realestateandhomes-detail/M9550589495" target="_blank">
@@ -258,13 +274,13 @@ function CurrentProjects() {
 
                                     </Button>
                                 </a>
-                                {
+                                {/* {
                                     width > 550 ?
                                         <Button onClick={togglePlansBethune}
                                             variant="contained" className="button-c">
                                             Floor Plans
                                         </Button> : null
-                                }
+                                } */}
                             </div>
                         </div>
                     </div>
@@ -296,12 +312,16 @@ function CurrentProjects() {
 
 
                         <div className="p-info-div">
+                            {/* //////////////////////  */}
+                            <h3>UNIT A</h3>
+                            <Button variant="contained"
+                                onClick={() => handleUnitSelect("E21UnitA")}>
+                                MORE INFO
+                            </Button>
 
-                            <h3>UNIT A WITH ACCESSORY CASITA</h3>
-                            <h3>3 BEDS, 3.5 BATHS | 2540 SQFT</h3>
                             <h3>UNIT B ADU</h3>
                             <h3>2 BEDS, 2.5 BATHS | 1047 SQFT</h3>
-                           
+
 
                             <div className="info-buttons-div">
                                 <Button variant="contained" disabled>
@@ -313,13 +333,13 @@ function CurrentProjects() {
 
                                     </Button>
                                 </a>
-                                {
+                                {/* {
                                     width > 550 ?
                                         <Button onClick={togglePlansEast21}
                                             variant="contained" className="button-c">
                                             Floor Plans
                                         </Button> : null
-                                }
+                                } */}
                             </div>
                         </div>
                     </div>
@@ -357,7 +377,7 @@ function CurrentProjects() {
                             <h3>3 BEDS 3 BATHS | 2152 SQFT</h3>
                             <h3>UNIT B ADU</h3>
                             <h3>2 BEDS 2.5 BATHS | 916 SQFT</h3>
-                            
+
 
                             <div className="info-buttons-div">
                                 <Button variant="contained" disabled>
@@ -369,13 +389,13 @@ function CurrentProjects() {
 
                                     </Button>
                                 </a>
-                                {
+                                {/* {
                                     width > 550 ?
                                         <Button onClick={togglePlansBunche}
                                             variant="contained" className="button-c">
                                             Floor Plans
                                         </Button> : null
-                                }
+                                } */}
                             </div>
                         </div>
                     </div>
@@ -442,6 +462,7 @@ function CurrentProjects() {
 
 
             </div>
+        }
         </>
     );
 }

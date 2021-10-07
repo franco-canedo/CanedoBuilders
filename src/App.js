@@ -26,7 +26,7 @@ function App() {
           return <Gallery toCurrent={toggleTab}/>
           
         case "current projects":
-          return <CurrentProjects />
+          return <CurrentProjects normal={"normal"}/>
           
         case "about":
           return <About />
