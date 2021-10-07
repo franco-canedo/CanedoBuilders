@@ -17,10 +17,19 @@ function E21UnitA({ handleUnitSelect }) {
 
     return (
         <>
-            <h1>2102 E 21 ST UNIT A</h1>
-            {/* <Button variant="contained" color="primary"
+           
+                
+                <h1>2102 E 21 ST UNIT A</h1>
+                
+               {/* <div className="back-button">
+
+
+                <Button variant="contained" color="primary"
                 onClick={() => handleUnitSelect("normal")}
-            >BACK</Button> */}
+                >BACK</Button>
+                </div> */}
+            
+
             <div>
                 <div className="head-div">
                     <img className="head-imager" src={unitA}></img>

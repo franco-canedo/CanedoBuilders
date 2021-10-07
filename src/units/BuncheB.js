@@ -4,9 +4,8 @@ import { useEffect, useState } from 'react';
 import Button from '@material-ui/core/Button';
 
 import BuncheLot from '../bunche/BuncheLot.png';
-import bunche1 from '../bunche/FirstFloorPlansBunche.png';
-import bunche2 from '../bunche/SecondFloorPlansBunche.png';
-import bunche3 from '../bunche/ThirdFloorPlanBunche.png';
+import Blevel1 from '../bunche/Blevel1.png';
+import Blevel2 from '../bunche/Blevel2.png';
 import frontB from '../bunche/frontUnitB.png';
 
 
@@ -24,7 +23,7 @@ function BuncheB({ handleUnitSelect }) {
             >BACK</Button> */}
             <div>
                 <div className="head-div">
-                    <img className="head-imager" src={frontB}></img>
+                    <img className="non-render" src={frontB}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
@@ -39,12 +38,12 @@ function BuncheB({ handleUnitSelect }) {
                 </div>
                 <div className="floorplans-div">
                     <div className="floorplan-item">
-                        <h2 className="floorplan-titles">1ST & 2ND FLOOR</h2>
-                        <img className="floorPlan-image" src={bunche1}></img>
+                        <h2 className="floorplan-titles">1ST FLOOR</h2>
+                        <img className="floorPlan-image" src={Blevel1}></img>
                     </div>
                     <div className="floorplan-item">
-                        <h2 className="floorplan-titles">3RD FLOOR</h2>
-                        <img className="floorPlan-image" src={bunche2}></img>
+                        <h2 className="floorplan-titles">2ND FLOOR</h2>
+                        <img className="floorPlan-image" src={Blevel2}></img>
                     </div>
 
                     <div className="floorplan-item">

@@ -297,8 +297,8 @@ function CurrentProjects({normal}) {
                                     </Button>
                                 </a>
 
-                                <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                                    <Button variant="contained" className="button-c">Contact Us
+                                <a href="https://www.seetheproperty.com/396982" target="_blank">
+                                    <Button variant="contained" className="button-c">VIRTUAL 3D TOUR
 
                                     </Button>
                                 </a>
@@ -346,7 +346,7 @@ function CurrentProjects({normal}) {
                                 <div className="info-buttons-div">
                                     <Button variant="contained"
                                     onClick={() => handleUnitSelect("E21UnitA")}>
-                                    MORE INFO
+                                    MORE INFO & FLOOR PLANS
                                     </Button>
                                     <Button variant="contained" disabled>
                                     Realtor.com
@@ -371,7 +371,7 @@ function CurrentProjects({normal}) {
                                 <div className="info-buttons-div">
                                     <Button variant="contained"
                                     onClick={() => handleUnitSelect("E21UnitB")}>
-                                    MORE INFO
+                                    MORE INFO & FLOOR PLANS
                                     </Button>
                                     <Button variant="contained" disabled>
                                     Realtor.com
@@ -425,7 +425,7 @@ function CurrentProjects({normal}) {
                                 <div className="info-buttons-div">
                                     <Button variant="contained"
                                     onClick={() => handleUnitSelect("BuncheA")}>
-                                    MORE INFO
+                                    MORE INFO & FLOOR PLANS
                                     </Button>
                                     <Button variant="contained" disabled>
                                     Realtor.com
@@ -449,7 +449,7 @@ function CurrentProjects({normal}) {
                                 <div className="info-buttons-div">
                                     <Button variant="contained"
                                     onClick={() => handleUnitSelect("BuncheB")}>
-                                    MORE INFO
+                                    MORE INFO & FLOOR PLANS
                                     </Button>
                                     <Button variant="contained" disabled>
                                     Realtor.com
