@@ -42,6 +42,9 @@ import OaklawnLevel3 from '../oaklawn/oaklawnLevel3.png';
 import OaklawnCarousel from '../components/OaklawnCarousel';
 
 import E21UnitA from '../units/2102A';
+import E21UnitB from '../units/2102B';
+import BuncheA from '../units/BuncheA';
+import BuncheB from '../units/BuncheB';
 
 function debounce(fn, ms) {
     let timer
@@ -224,12 +227,37 @@ function CurrentProjects({normal}) {
         }
     }
 
+    // const unitDelivery = (unit) => {
+    //     switch (unit) {
+    //         case "normal":
+    //           return <Home toGallery={toggleTab}/>
+              
+    //         case "E21UnitA":
+    //           return <Gallery toCurrent={toggleTab}/>
+              
+    //         case "E21UnitAB":
+    //           return <CurrentProjects normal={"normal"}/>
+              
+    //         case "BuncheA":
+    //           return <About />
+              
+    //         case "BuncheB":
+    //           return <Contact />
+              
+    //         default:
+    //           return <Home />
+    //       }
+    //   }
+
     const classes = useStyles();
     return (
         <>
             {
                 unit === "E21UnitA" ? <E21UnitA handleUnitSelect={handleUnitSelect}/> : 
-        
+                unit === "E21UnitB" ? <E21UnitB handleUnitSelect={handleUnitSelect}/> : 
+                unit === "BuncheA" ? <BuncheA handleUnitSelect={handleUnitSelect}/> : 
+                unit === "BuncheB" ? <BuncheB handleUnitSelect={handleUnitSelect}/> : 
+                
             
             <div
                 className="gallery-master-container">
@@ -311,36 +339,55 @@ function CurrentProjects({normal}) {
                         </a>
 
 
-                        <div className="p-info-div">
-                            {/* //////////////////////  */}
-                            <h3>UNIT A</h3>
-                            <Button variant="contained"
-                                onClick={() => handleUnitSelect("E21UnitA")}>
-                                MORE INFO
-                            </Button>
-
-                            <h3>UNIT B ADU</h3>
-                            <h3>2 BEDS, 2.5 BATHS | 1047 SQFT</h3>
-
-
-                            <div className="info-buttons-div">
-                                <Button variant="contained" disabled>
+                        <div className="p-info-div">                           
+                            <h3>UNIT A & ACCESSORY CASITA</h3>
+                            {
+                                width > 550 ?  
+                                <div className="info-buttons-div">
+                                    <Button variant="contained"
+                                    onClick={() => handleUnitSelect("E21UnitA")}>
+                                    MORE INFO
+                                    </Button>
+                                    <Button variant="contained" disabled>
                                     Realtor.com
                                 </Button>
+                                </div> : 
+                                <div>
+                                    <h3>3 BEDS | 3.5 BATHS | 2540 SQFT</h3>
+                            
+                                    <div className="info-buttons-div">
+                                    <Button variant="contained" disabled>
+                                        Realtor.com
+                                    </Button>                              
+                                    </div>
+                                </div>
+                                
+                            }
+                            
 
-                                <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                                    <Button variant="contained" className="button-c">Contact Us
-
+                            <h3>UNIT B</h3>
+                            {
+                                width > 550 ?  
+                                <div className="info-buttons-div">
+                                    <Button variant="contained"
+                                    onClick={() => handleUnitSelect("E21UnitB")}>
+                                    MORE INFO
                                     </Button>
-                                </a>
-                                {/* {
-                                    width > 550 ?
-                                        <Button onClick={togglePlansEast21}
-                                            variant="contained" className="button-c">
-                                            Floor Plans
-                                        </Button> : null
-                                } */}
+                                    <Button variant="contained" disabled>
+                                    Realtor.com
+                                </Button>
+                                </div> : 
+                                <div>
+                                <h3>2 BEDS | 2.5 BATHS | 1047 SQFT</h3>
+                        
+                                <div className="info-buttons-div">
+                                <Button variant="contained" disabled>
+                                    Realtor.com
+                                </Button>                              
+                                </div>
                             </div>
+                            
+                            }
                         </div>
                     </div>
                     <div className="progress-div">
@@ -372,31 +419,52 @@ function CurrentProjects({normal}) {
 
 
                         <div className="p-info-div">
-
-                            <h3>UNIT A</h3>
-                            <h3>3 BEDS 3 BATHS | 2152 SQFT</h3>
-                            <h3>UNIT B ADU</h3>
-                            <h3>2 BEDS 2.5 BATHS | 916 SQFT</h3>
-
-
-                            <div className="info-buttons-div">
-                                <Button variant="contained" disabled>
+                        <h3>UNIT A</h3>
+                            {
+                                width > 550 ?  
+                                <div className="info-buttons-div">
+                                    <Button variant="contained"
+                                    onClick={() => handleUnitSelect("BuncheA")}>
+                                    MORE INFO
+                                    </Button>
+                                    <Button variant="contained" disabled>
                                     Realtor.com
                                 </Button>
+                                </div> : 
+                                 <div>
+                                 <h3>3 BEDS | 3 BATHS | 2152 SQFT</h3>
+                         
+                                 <div className="info-buttons-div">
+                                 <Button variant="contained" disabled>
+                                     Realtor.com
+                                 </Button>                              
+                                 </div>
+                             </div>
+                            }
+                            
 
-                                <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
-                                    <Button variant="contained" className="button-c">Contact Us
-
+                            <h3>UNIT B</h3>
+                            {
+                                width > 550 ?  
+                                <div className="info-buttons-div">
+                                    <Button variant="contained"
+                                    onClick={() => handleUnitSelect("BuncheB")}>
+                                    MORE INFO
                                     </Button>
-                                </a>
-                                {/* {
-                                    width > 550 ?
-                                        <Button onClick={togglePlansBunche}
-                                            variant="contained" className="button-c">
-                                            Floor Plans
-                                        </Button> : null
-                                } */}
-                            </div>
+                                    <Button variant="contained" disabled>
+                                    Realtor.com
+                                </Button>
+                                </div> : 
+                                 <div>
+                                 <h3>2 BEDS | 2.5 BATHS | 916 SQFT</h3>
+                         
+                                 <div className="info-buttons-div">
+                                 <Button variant="contained" disabled>
+                                     Realtor.com
+                                 </Button>                              
+                                 </div>
+                             </div>
+                            }
                         </div>
                     </div>
                     <div className="progress-div">
