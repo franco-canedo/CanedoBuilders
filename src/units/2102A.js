@@ -7,6 +7,7 @@ import e21Layout from '../East21/site.png';
 import floorPlans from '../East21/unitA.png';
 import attic from '../East21/atticFloor.png';
 import unitA from '../East21/renderingUnitA.jpg';
+import casita from '../East21/casita.png';
 
 
 function E21UnitA({ handleUnitSelect }) {
@@ -36,13 +37,13 @@ function E21UnitA({ handleUnitSelect }) {
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
-                        <h3>2500 SQFT</h3>
+                        <h3>2540 SQFT</h3>
                     </div>
                     <div className="info-item">
-                        <h3>3 BEDS</h3>
+                        <h3>4 BEDS + ACCESSORY CASITA</h3>
                     </div>
                     <div className="info-item">
-                        <h3>2.5 BATHS</h3>
+                        <h3>3.5 BATHS</h3>
                     </div>
                 </div>
                 <div className="floorplans-div">
@@ -53,6 +54,10 @@ function E21UnitA({ handleUnitSelect }) {
                     <div className="floorplan-item">
                         <h2 className="floorplan-titles">3RD FLOOR</h2>
                         <img className="floorPlan-image" src={attic}></img>
+                    </div>
+                    <div className="floorplan-item">
+                        <h2 className="floorplan-titles">ACCESSORY CASITA</h2>
+                        <img className="floorPlan-image" src={casita}></img>
                     </div>
 
                     <div className="floorplan-item">

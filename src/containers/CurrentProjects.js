@@ -353,7 +353,7 @@ function CurrentProjects({normal}) {
                                 </Button>
                                 </div> : 
                                 <div>
-                                    <h3>3 BEDS | 3.5 BATHS | 2540 SQFT</h3>
+                                    <h3>4 BEDS | 3.5 BATHS | 2540 SQFT</h3>
                             
                                     <div className="info-buttons-div">
                                     <Button variant="contained" disabled>
