@@ -344,8 +344,8 @@ function CurrentProjects({normal}) {
                             {
                                 width > 550 ?  
                                 <div className="info-buttons-div">
-                                    <Button variant="contained"
-                                    onClick={() => handleUnitSelect("E21UnitA")}>
+                                    <Button variant="contained" 
+                                    onClick={() => handleUnitSelect("E21UnitA")} color="primary">
                                     MORE INFO & FLOOR PLANS
                                     </Button>
                                     <Button variant="contained" disabled>
@@ -370,7 +370,7 @@ function CurrentProjects({normal}) {
                                 width > 550 ?  
                                 <div className="info-buttons-div">
                                     <Button variant="contained"
-                                    onClick={() => handleUnitSelect("E21UnitB")}>
+                                    onClick={() => handleUnitSelect("E21UnitB")} color="primary">
                                     MORE INFO & FLOOR PLANS
                                     </Button>
                                     <Button variant="contained" disabled>
@@ -424,7 +424,7 @@ function CurrentProjects({normal}) {
                                 width > 550 ?  
                                 <div className="info-buttons-div">
                                     <Button variant="contained"
-                                    onClick={() => handleUnitSelect("BuncheA")}>
+                                    onClick={() => handleUnitSelect("BuncheA")} color="primary">
                                     MORE INFO & FLOOR PLANS
                                     </Button>
                                     <Button variant="contained" disabled>
@@ -448,7 +448,7 @@ function CurrentProjects({normal}) {
                                 width > 550 ?  
                                 <div className="info-buttons-div">
                                     <Button variant="contained"
-                                    onClick={() => handleUnitSelect("BuncheB")}>
+                                    onClick={() => handleUnitSelect("BuncheB")} color="primary">
                                     MORE INFO & FLOOR PLANS
                                     </Button>
                                     <Button variant="contained" disabled>

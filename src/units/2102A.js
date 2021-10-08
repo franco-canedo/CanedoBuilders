@@ -5,9 +5,11 @@ import Button from '@material-ui/core/Button';
 
 import e21Layout from '../East21/site.png';
 import floorPlans from '../East21/unitA.png';
-import attic from '../East21/atticFloor.png';
+import attic from '../East21/attic2.png';
 import unitA from '../East21/renderingUnitA.jpg';
 import casita from '../East21/casita.png';
+import floorAlone1 from '../East21/floorAlone1.png';
+import floorAlone2 from '../East21/floorAlone2.png';
 
 
 function E21UnitA({ handleUnitSelect }) {
@@ -51,6 +53,7 @@ function E21UnitA({ handleUnitSelect }) {
                         <h2 className="floorplan-titles">1ST & 2ND FLOOR</h2>
                         <img className="floorPlan-image" src={floorPlans}></img>
                     </div>
+                    
                     <div className="floorplan-item">
                         <h2 className="floorplan-titles">3RD FLOOR</h2>
                         <img className="floorPlan-image" src={attic}></img>
