@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import BuncheLot from '../bunche/BuncheLot.png';
 import Blevel1 from '../bunche/Blevel1.png';
 import Blevel2 from '../bunche/Blevel2.png';
-import frontB from '../bunche/frontUnitB.png';
+import frontB from '../bunche/7.jpg';
 
 
 function BuncheB({ handleUnitSelect }) {
@@ -23,7 +23,7 @@ function BuncheB({ handleUnitSelect }) {
             >BACK</Button> */}
             <div>
                 <div className="head-div">
-                    <img className="non-render" src={frontB}></img>
+                    <img className="head-imager" src={frontB}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">

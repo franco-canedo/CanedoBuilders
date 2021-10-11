@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import Button from '@material-ui/core/Button';
 
-import frontA from '../bunche/frontUnitA.png';
+import frontA from '../bunche/1-1.jpg';
 import BuncheLot from '../bunche/BuncheLot.png';
 import Alevel1 from '../bunche/Alevel1.png';
 import Alevel2 from '../bunche/Alevel2.png';
@@ -24,7 +24,7 @@ function BuncheA({ handleUnitSelect }) {
             >BACK</Button> */}
             <div>
                 <div className="head-div">
-                    <img className="non-render" src={frontA}></img>
+                    <img className="head-imager" src={frontA}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
