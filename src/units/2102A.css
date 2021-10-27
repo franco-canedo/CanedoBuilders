@@ -16,6 +16,13 @@
     object-fit:fill;
 }
 
+@media only screen and (max-width: 600px) {
+    .floorPlan-image {
+      max-width: 250px;
+      max-height: 250px;
+    }
+  }
+
 .floorplan-titles {
     margin-left: 10px;
 }
