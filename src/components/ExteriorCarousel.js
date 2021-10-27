@@ -8,6 +8,7 @@ import e6 from '../exterior/e6.jpg';
 import e7 from '../exterior/e7.jpg';
 import e8 from '../exterior/e8.jpg';
 import e9 from '../givens/givens1.jpg';
+import be1 from '../bethune/be1.jpg';
 
 
 
@@ -15,7 +16,14 @@ import e9 from '../givens/givens1.jpg';
 function ExteriorCarousel() {
     return (
         <Carousel fade>
-             <Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={e7}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
                 <img
                     className="d-block w-100"
                     src={e9}
@@ -25,10 +33,12 @@ function ExteriorCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={e7}
-                    alt="First slide"
-                />
+                    src={be1}
+                    alt="Third slide"
+                />        
             </Carousel.Item>
+             
+            
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -68,13 +78,7 @@ function ExteriorCarousel() {
                     alt="Third slide"
                 />        
             </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={e1}
-                    alt="Third slide"
-                />        
-            </Carousel.Item>
+            
         </Carousel>
 
 
