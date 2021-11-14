@@ -24,7 +24,7 @@ function BuncheA({ handleUnitSelect }) {
             >BACK</Button> */}
             <div>
                 <div className="head-div">
-                    <img className="head-imager" src={frontA}></img>
+                    <img className="head-imager-unit" src={frontA}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">

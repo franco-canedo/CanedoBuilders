@@ -23,7 +23,7 @@ function BuncheB({ handleUnitSelect }) {
             >BACK</Button> */}
             <div>
                 <div className="head-div">
-                    <img className="head-imager" src={frontB}></img>
+                    <img className="head-imager-unit" src={frontB}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">

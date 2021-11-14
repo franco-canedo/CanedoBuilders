@@ -295,7 +295,7 @@ function CurrentProjects({ normal }) {
                                                     {timer()}
                                                     {
                                                         loading === true ? <div className="bounce">
-                                                            <img className="project-img" src={load}></img>
+                                                            <img className="project-img3" src={load}></img>
                                                         </div>
                                                             :  <img src={bethune} className="project-img"></img>
                                                             
@@ -356,7 +356,7 @@ function CurrentProjects({ normal }) {
                                                 <div className="bounce-div">
                                                 {
                                                         loading === true ? <div className="bounce">
-                                                            <img className="project-img" src={load}></img>
+                                                            <img className="project-img3" src={load}></img>
                                                         </div>
                                                             :  <img src={e21map} className="project-img"></img>
                                                             
@@ -423,7 +423,7 @@ function CurrentProjects({ normal }) {
                                                 <div className="bounce-div">
                                                 {
                                                         loading === true ? <div className="bounce">
-                                                            <img className="project-img" src={load}></img>
+                                                            <img className="project-img3" src={load}></img>
                                                         </div>
                                                             :  <img src={buncheMap} className="project-img"></img>
                                                             

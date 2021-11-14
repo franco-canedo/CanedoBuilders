@@ -35,7 +35,7 @@ function E21UnitA({ handleUnitSelect }) {
 
             <div>
                 <div className="head-div">
-                    <img className="head-imager" src={unitA}></img>
+                    <img className="head-imager-unit" src={unitA}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">

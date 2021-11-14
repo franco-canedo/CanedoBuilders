@@ -16,6 +16,7 @@
 }
 
 .head-imager {
+  margin-bottom: 50px;
     width: 100%;
     /* filter: blur(3px); */
     max-height: 600px;
@@ -48,14 +49,14 @@
 .paragraph-div {
     position: absolute;
     background-color: white;
-    animation: paragraph_slide 7s ease;
+    animation: paragraph_slide 5s ease;
     z-index: 1;
     margin-top: 200px;
     /* margin-left: 700px; */
     left: 45%;
     cursor: pointer;
     font-size: 20px;
-  
+    background-image: linear-gradient(to bottom, rgb(158, 149, 149),rgb(134, 123, 123));
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
@@ -76,7 +77,7 @@
 
 .quote {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 50px;
+    padding: 10px;
     font-size: 25px;
     margin: 50px;
     /* box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em; */
@@ -84,23 +85,24 @@
 
 @media only screen and (max-width: 600px) {
     .quote {
-       font-size: 30px !important;
-       padding: 10px;
+       font-size: 25px !important;
+       padding: 0px;
        margin-top: 40px;
        
       
     }
 
     .paragraph-div {
-      left: 40%;
+      left: 35%;
     }
 
     .head-imager {
-      min-height: 600px;
+      min-height: 500px;
     }
 
     .grid-item-home {
       padding: 10%;
+     
     }
 
     .home-apps-container {
@@ -135,7 +137,7 @@
 
 .grid-item-home {
   max-height: 400px;
-  border: solid;
+  /* border-bottom: solid; */
   border-color: black;
   /* padding: 40%; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

@@ -21,7 +21,7 @@ function Contact() {
                     <p></p>
                     
                     
-                    <h1>INFO@CANEDOBUILDERS.COM</h1>
+                    <h3>INFO@CANEDOBUILDERS.COM</h3>
                 </div>
                 <div className="form-div">
                     <h3>SEND US A MESSAGE</h3>

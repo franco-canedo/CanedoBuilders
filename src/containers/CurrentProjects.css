@@ -12,6 +12,14 @@
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
+.project-img3 {
+  margin-top: 50px;
+  max-width: 400px;
+  max-height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
 .bounce-div {
     animation: bounce 2s linear infinite;
     cursor: pointer;
@@ -80,6 +88,24 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+  .project-img2 {
+    max-width: 200px;
+  }
+
+  .project-img3 {
+    max-width: 200px;
+    margin-right: 25px;
+  }
+
+  .project-img {
+    max-width: 300px;
+    margin-right: 20px;
+  }
+
+  .loader-gif-current-projects {
+    max-width: 200px;
+  }
     .project-div {
         flex-direction: column;  
         padding-left: 0px;     

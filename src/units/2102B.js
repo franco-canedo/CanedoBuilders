@@ -22,7 +22,7 @@ function E21UnitB({ handleUnitSelect }) {
             >BACK</Button> */}
             <div>
                 <div className="head-div">
-                    <img className="head-imager" src={unitB}></img>
+                    <img className="head-imager-unit" src={unitB}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">

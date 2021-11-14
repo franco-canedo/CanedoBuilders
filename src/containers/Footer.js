@@ -37,10 +37,10 @@ function Footer() {
                 </div>
             </section>
             <section className='author'>
-                <p>Website designed by 
+                <p className="designed-by">Website by Franco Canedo
                     <a className="author-a-tag"
                     target="_blank"
-                    href="https://franco-canedo.herokuapp.com/"> Franco Canedo</a></p>
+                    href="https://franco-canedo.herokuapp.com/"> /-> </a></p>
             </section>
         </div>
     );

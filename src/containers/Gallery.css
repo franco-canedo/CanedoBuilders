@@ -115,6 +115,10 @@
       min-height: 200px;
     }
 
+    .loader-gif {
+      max-width: 200px;
+    }
+
    
   }
 
