@@ -22,6 +22,7 @@ function Contact() {
                     
                     
                     <h3>INFO@CANEDOBUILDERS.COM</h3>
+                    <h3>(512)-373-5885</h3>
                 </div>
                 <div className="form-div">
                     <h3>SEND US A MESSAGE</h3>
