@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Header.css';
 import logo from '../photos/Logo.jpg';
+import logoZoom from '../photos/LogoZoom2.png';
 import Button from '@material-ui/core/Button';
 
 function debounce(fn, ms) {
@@ -46,7 +47,7 @@ function Header({ toggleTab }) {
                 <div className="logo-div"
                 onClick={() => toggleTab("home")}>
                     <img className="logo-img"
-                    src={logo}></img>
+                    src={logoZoom}></img>
                 </div>
                 <div className="tabs-container">
 

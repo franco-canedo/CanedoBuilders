@@ -46,6 +46,8 @@ import E21UnitB from '../units/2102B';
 import BuncheA from '../units/BuncheA';
 import BuncheB from '../units/BuncheB';
 
+import load from '../gifs/buffer.gif';
+
 function debounce(fn, ms) {
     let timer
     return _ => {
@@ -91,7 +93,11 @@ function CurrentProjects({ normal }) {
         }
     }, []);
 
+    const [loading, setLoading] = useState(true);
 
+    const timer = () => {
+        setInterval(() => setLoading(false), 4000);
+    }
 
     const handleUnitSelect = (unit) => {
         setUnit(unit);
@@ -274,12 +280,27 @@ function CurrentProjects({ normal }) {
                                                 </Button>
                                             </div>
                                             <div className="collage-div">
-                                                <BethuneCarousel />
+                                            {
+                                                        loading === true ? <div>
+                                                            <img className="project-img2" src={load}></img>
+                                                        </div>
+                                                            :  <BethuneCarousel />
+                                                            
+                                                    }
+                                               
                                             </div>
 
                                             <a href="https://www.google.com/maps/place/7511+Bethune+Ave,+Austin,+TX+78752/@30.3339437,-97.6978076,17z/data=!3m1!4b1!4m5!3m4!1s0x8644c988585db87d:0xd080a186795eefab!8m2!3d30.3339437!4d-97.6956189" target="_blank">
                                                 <div className="bounce-div">
-                                                    <img src={bethune} className="project-img"></img>
+                                                    {timer()}
+                                                    {
+                                                        loading === true ? <div className="bounce">
+                                                            <img className="project-img" src={load}></img>
+                                                        </div>
+                                                            :  <img src={bethune} className="project-img"></img>
+                                                            
+                                                    }
+                                                   
                                                 </div>
                                             </a>
 
@@ -302,7 +323,7 @@ function CurrentProjects({ normal }) {
 
                                                         </Button>
                                                     </a>
-                                                   
+
                                                 </div>
                                             </div>
                                         </div>
@@ -322,13 +343,24 @@ function CurrentProjects({ normal }) {
                                                 </Button>
                                             </div>
                                             <div className="collage-div">
-                                                {/* <img src={house6} className="project-img"></img> */}
-                                                <E21Carousel />
+                                            {
+                                                        loading === true ? <div>
+                                                            <img className="project-img2" src={load}></img>
+                                                        </div>
+                                                            :  <E21Carousel />
+                                                            
+                                                    }
                                             </div>
 
                                             <a href="https://www.google.com/maps/place/2102+E+21st+St,+Austin,+TX+78722/@30.2894096,-97.7606718,12.39z/data=!4m5!3m4!1s0x8644b5eb504feb99:0xcac99d27fe753df9!8m2!3d30.2823913!4d-97.7194151" target="_blank">
                                                 <div className="bounce-div">
-                                                    <img src={e21map} className="project-img"></img>
+                                                {
+                                                        loading === true ? <div className="bounce">
+                                                            <img className="project-img" src={load}></img>
+                                                        </div>
+                                                            :  <img src={e21map} className="project-img"></img>
+                                                            
+                                                    }
                                                 </div>
                                             </a>
 
@@ -342,7 +374,7 @@ function CurrentProjects({ normal }) {
                                                         onClick={() => handleUnitSelect("E21UnitA")} color="primary">
                                                         MORE INFO & FLOOR PLANS
                                                     </Button>
-                                                    
+
                                                 </div>
 
 
@@ -354,7 +386,7 @@ function CurrentProjects({ normal }) {
                                                         onClick={() => handleUnitSelect("E21UnitB")} color="primary">
                                                         MORE INFO & FLOOR PLANS
                                                     </Button>
-                                                    
+
                                                 </div>
 
 
@@ -378,13 +410,24 @@ function CurrentProjects({ normal }) {
                                                 </Button>
                                             </div>
                                             <div className="collage-div">
-                                                {/* <img src={house6} className="project-img"></img> */}
-                                                <BuncheCarousel />
+                                            {
+                                                        loading === true ? <div>
+                                                            <img className="project-img2" src={load}></img>
+                                                        </div>
+                                                            :  <BuncheCarousel />
+                                                            
+                                                    }
                                             </div>
 
                                             <a href="https://www.google.com/maps/place/1729+Bunche+Rd,+Austin,+TX+78721/@30.2719212,-97.7625193,12z/data=!4m5!3m4!1s0x8644b63fe2ce4237:0x88ff16549124f698!8m2!3d30.2805335!4d-97.6764097" target="_blank">
                                                 <div className="bounce-div">
-                                                    <img src={buncheMap} className="project-img"></img>
+                                                {
+                                                        loading === true ? <div className="bounce">
+                                                            <img className="project-img" src={load}></img>
+                                                        </div>
+                                                            :  <img src={buncheMap} className="project-img"></img>
+                                                            
+                                                    }
                                                 </div>
                                             </a>
 
@@ -398,7 +441,7 @@ function CurrentProjects({ normal }) {
                                                         onClick={() => handleUnitSelect("BuncheA")} color="primary">
                                                         MORE INFO & FLOOR PLANS
                                                     </Button>
-                                                   
+
                                                 </div>
 
 
@@ -412,7 +455,7 @@ function CurrentProjects({ normal }) {
                                                         onClick={() => handleUnitSelect("BuncheB")} color="primary">
                                                         MORE INFO & FLOOR PLANS
                                                     </Button>
-                                                    
+
                                                 </div>
 
                                             </div>

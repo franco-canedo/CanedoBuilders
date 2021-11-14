@@ -10,8 +10,10 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 25px;
     background-color: whitesmoke;
-    padding: 25px;
+    padding-bottom: 50px;
+    padding-top: 30px;
     width: 800px;
+
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -23,7 +25,7 @@
     width: 800px;
     padding: 25px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    animation: Form_slide_in 2s ease 0s forwards;
+    animation: Form_slide_in 3s ease 0s forwards;
 }
 
 @media only screen and (max-width: 600px) {
@@ -36,10 +38,10 @@
 
 @keyframes Form_slide_in {
     0%{
-      transform: translateY(-100px);
-      overflow: hidden;
-      visibility: hidden;
-      opacity: 0%;
+      transform: translateY(-15px);
+      /* overflow: hidden;
+      visibility: hidden; */
+      opacity: 90%;
     }
     100%{
       transform: translateY(0px);

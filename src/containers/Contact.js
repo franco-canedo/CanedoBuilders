@@ -13,11 +13,11 @@ function Contact() {
             <div className="contact-container">
             <img src={house} className="img-background"></img>
                 <div className="info-div">
-                    <h1>CANEDO BUILDERS</h1>
+                   
                     <p></p>
                     
-                    <p>(512)-373-5885</p>
-                    <p>INFO@CANEDOBUILDERS.COM</p>
+                    
+                    <h1>INFO@CANEDOBUILDERS.COM</h1>
                 </div>
                 <div className="form-div">
                     <h3>SEND US A MESSAGE</h3>

@@ -12,6 +12,10 @@ import OutdoorCarousel from '../components/OutdoorCarousel';
 import DiningCarousel from '../components/DiningCarousel';
 import FloatingActionButtons from '../components/FloatingButton';
 
+import load from '../gifs/buffer.gif';
+import green from '../gifs/green.png';
+import infinity from '../gifs/infinity.gif';
+import text from '../gifs/text.gif';
 
 
 function Gallery({ toCurrent }) {
@@ -19,6 +23,12 @@ function Gallery({ toCurrent }) {
 
     const closeButton = () => {
         setButtonStatus(false)
+    }
+
+    const [loading, setLoading] = useState(true);
+
+    const timer = () => {
+        setInterval(() => setLoading(false), 4000);
     }
 
 
@@ -31,6 +41,7 @@ function Gallery({ toCurrent }) {
         <div className="gallery-master-container">
             <div className="head-picture-container">
                 {/* <img className="head-image" src={house} alt="house" /> */}
+
                 <HeadCarousel />
             </div>
             <div className="gallery-container">
@@ -39,7 +50,15 @@ function Gallery({ toCurrent }) {
                         <h2 className="floorplan-titles">EXTERIOR</h2>
                     </div>
                     <div>
-                        <ExteriorCarousel />
+                    {timer()}
+                {
+                    loading === true ? <div className="bounce">
+                        <img className="loader-gif" src={load}></img>
+        </div>
+                     :
+                     <ExteriorCarousel />
+                }
+                        {/* <ExteriorCarousel /> */}
                     </div>
 
 
@@ -49,7 +68,13 @@ function Gallery({ toCurrent }) {
                         <h2 className="floorplan-titles">KITCHEN</h2>
                     </div>
                     <div>
-                        <KitchenCarousel />
+                    {
+                    loading === true ? <div className="bounce">
+                    <img className="loader-gif" src={load}></img></div>
+                     :
+                     <KitchenCarousel />
+                }
+                        
                     </div>
 
 
@@ -59,7 +84,14 @@ function Gallery({ toCurrent }) {
                         <h2 className="floorplan-titles">LIVING</h2>
                     </div>
                     <div>
-                        <LivingCarousel />
+
+                    {
+                    loading === true ? <div className="bounce">
+                    <img className="loader-gif" src={load}></img></div>
+                     :
+                     <LivingCarousel />
+                }
+                       
                     </div>
 
 
@@ -69,7 +101,13 @@ function Gallery({ toCurrent }) {
                         <h2 className="floorplan-titles">OUTDOOR</h2>
                     </div>
                     <div>
-                        <OutdoorCarousel />
+                    {
+                    loading === true ? <div className="bounce">
+                    <img className="loader-gif" src={load}></img></div>
+                     :
+                     <OutdoorCarousel />
+                }
+                        
                     </div>
 
 
@@ -80,7 +118,13 @@ function Gallery({ toCurrent }) {
 
                     </div>
                     <div>
-                        <BedroomCarousel />
+                    {
+                    loading === true ? <div className="bounce">
+                    <img className="loader-gif" src={load}></img></div>
+                     :
+                     <BedroomCarousel />
+                }
+                       
                     </div>
 
 
@@ -90,7 +134,13 @@ function Gallery({ toCurrent }) {
                         <h2 className="floorplan-titles">BATHROOM</h2>
                     </div>
                     <div>
-                        <BathroomCarousel />
+                    {
+                    loading === true ? <div className="bounce">
+                    <img className="loader-gif" src={load}></img></div>
+                     :
+                     <BathroomCarousel />
+                }
+                       
                     </div>
 
 

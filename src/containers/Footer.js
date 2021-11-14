@@ -2,13 +2,14 @@ import React from 'react';
 import './Footer.css';
 import Button from 'react-bootstrap/Button';
 import logo from '../photos/Logo.jpg'
+import logoZoom from '../photos/LogoZoom2.png';
 
 
 function Footer() {
     return (
         <div className='footer-container'>
             <section className='footer-subscription'>                
-                    <img src={logo} className="footer-logo"></img>               
+                    <img src={logoZoom} className="footer-logo"></img>               
             </section>
             <section class='social-media'>
                 <div class='social-media-wrap'>
