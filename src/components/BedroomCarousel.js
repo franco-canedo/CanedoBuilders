@@ -12,9 +12,26 @@ import b9 from '../givens/givens7.jpg';
 
 
 
+
 function BedroomCarousel() {
     return (
         <Carousel fade>
+            {/* <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={b10}
+                    alt="First slide"
+                />
+              
+            </Carousel.Item> */}
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={b9}
+                    alt="First slide"
+                />
+              
+            </Carousel.Item>
              <Carousel.Item>
                 <img
                     className="d-block w-100"

@@ -35,6 +35,10 @@
     width: 100%;
     margin-left: 100px;
   }
+
+  .designed-by {
+    color: white;
+  }
   
   /* .social-media-wrap {
     display: flex;
@@ -72,7 +76,8 @@
 
     .author {
       margin-right: 100px;
-      padding-top: 20px;
+      /* padding-top: 20px; */
+      font-size: 1px;
     }
 
     .footer-subscription {

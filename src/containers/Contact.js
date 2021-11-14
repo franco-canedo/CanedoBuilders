@@ -6,6 +6,10 @@ import Button from '@material-ui/core/Button';
 
 
 function Contact() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
     return (
         <div className="gallery-master-container">
             <div></div>
@@ -13,11 +17,12 @@ function Contact() {
             <div className="contact-container">
             <img src={house} className="img-background"></img>
                 <div className="info-div">
-                    <h1>CANEDO BUILDERS</h1>
+                   
                     <p></p>
                     
-                    <p>(512)-373-5885</p>
-                    <p>INFO@CANEDOBUILDERS.COM</p>
+                    
+                    <h3>INFO@CANEDOBUILDERS.COM</h3>
+                    <h3>(512)-373-5885</h3>
                 </div>
                 <div className="form-div">
                     <h3>SEND US A MESSAGE</h3>

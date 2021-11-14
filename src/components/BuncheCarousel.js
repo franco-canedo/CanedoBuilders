@@ -1,8 +1,9 @@
 import './BethuneCarousel.css';
 import Carousel from 'react-bootstrap/Carousel';
 import lot from '../bunche/lot.jpg';
-import frontA from '../bunche/frontUnitA.png';
-import frontB from '../bunche/frontUnitB.png';
+import bothHomes from '../bunche/3-1.jpg';
+import frontA from '../bunche/1-1.jpg';
+import frontB from '../bunche/7.jpg';
 
 
 
@@ -12,7 +13,7 @@ function BuncheCarousel() {
             <Carousel.Item>
                 <img
                     className="project-images"
-                    src={lot}
+                    src={bothHomes}
                     alt="First slide"
                 />
             </Carousel.Item>

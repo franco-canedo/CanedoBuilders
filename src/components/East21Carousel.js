@@ -22,13 +22,6 @@ function E21Carousel() {
                     alt="First slide"
                 />
             </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="project-images"
-                    src={e21Lot}
-                    alt="First slide"
-                />
-            </Carousel.Item>
         </Carousel>
     );
 }

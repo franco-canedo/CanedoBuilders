@@ -8,13 +8,20 @@ import ba6 from '../bathroom/ba6.jpg';
 import ba7 from '../bathroom/ba7.jpg';
 import ba8 from '../bathroom/ba8.jpg';
 import ba9 from '../givens/givens8.jpg';
-
+import ba10 from '../bathroom/ba10.jpg';
 
 
 
 function BathroomCarousel() {
     return (
         <Carousel fade>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={ba10}
+                    alt="First slide"
+                />
+            </Carousel.Item>
               <Carousel.Item>
                 <img
                     className="d-block w-100"
