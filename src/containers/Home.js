@@ -23,7 +23,7 @@ const Image = styled.img`
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 `;
 
-function Home({ toGallery }) {
+function Home({ toPage }) {
 
     const [loading, setLoading] = useState(true);
 
@@ -36,7 +36,7 @@ function Home({ toGallery }) {
             <div className="head-div">
                 <div className="paragraph-div">
 
-                    <Button onClick={() => toGallery("gallery")}
+                    <Button onClick={() => toPage("gallery")}
                         variant="contained" color="dark">
                         <h3>GALLERY</h3>        
                     </Button>
@@ -55,22 +55,30 @@ function Home({ toGallery }) {
                         </div>
                     </div> */}
 
-                <LazyImage
+                {/* <LazyImage
                     uri={house}
                     placeholder={load}
                     render={(house, style) => <Image src={house} style={style} />}
-                />
-                {/* <img className="head-imager" src={house}></img> */}
+                /> */}
+                <img className="head-imager" src={house}></img>
 
             </div>
 
             <div className='quote'>
                 <p>
-                    Creating beautiful and unique living spaces in the city of Austin since 2014</p>
-                <Button onClick={() => toGallery("gallery")}
-                    variant="contained">
-                    View Gallery
-                </Button>
+                    Creating beautiful and unique living spaces in the city of Austin since 2014.</p>
+                <div className="home-apps-container">
+                    
+                    <div className="grid-item-home" onClick={() => toPage("current projects")}>
+                    <h2>PROJECTS</h2>
+                    </div>
+                    <div className="grid-item-home" onClick={() => toPage("about")}>
+                    <h2>ABOUT</h2>
+                    </div>
+                    <div className="grid-item-home" onClick={() => toPage("contact")}>
+                    <h2>CONTACT</h2>
+                    </div>
+                </div>
 
             </div>
 

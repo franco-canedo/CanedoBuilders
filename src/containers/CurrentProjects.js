@@ -96,7 +96,7 @@ function CurrentProjects({ normal }) {
     const [loading, setLoading] = useState(true);
 
     const timer = () => {
-        setInterval(() => setLoading(false), 4000);
+        setInterval(() => setLoading(false), 8000);
     }
 
     const handleUnitSelect = (unit) => {

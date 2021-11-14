@@ -6,6 +6,10 @@ import franco from '../photos/francoR.png';
 
 
 function About() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
     return (
         <div>
             <div>
