@@ -35,6 +35,10 @@ background-color: rgb(102, 98, 98);
     width: 100px;
     height: 100px;
   }
+
+  /* .header {
+    max-width: 600px;
+  } */
 }
 
 .tabs-container {
@@ -94,6 +98,7 @@ background-color: rgb(102, 98, 98);
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     overflow: hidden;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -125,7 +130,7 @@ background-color: rgb(102, 98, 98);
 
 @keyframes Slide_In {
     0%{
-      transform: translateX(1500px);
+      transform: translateX(400px);
       overflow: hidden;
       visibility: hidden;
     }
@@ -147,13 +152,13 @@ background-color: rgb(102, 98, 98);
     }
   }
   
-  @-webkit-keyframes Slide_Out {
+  /* @-webkit-keyframes Slide_Out {
     to {
         width:0;
         height:0;
         visibility: hidden;
     }
-  }
+  } */
 
   .button-div {
       min-width: 100px;
