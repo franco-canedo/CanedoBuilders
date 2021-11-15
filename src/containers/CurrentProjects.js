@@ -48,6 +48,10 @@ import BuncheB from '../units/BuncheB';
 
 import load from '../gifs/buffer.gif';
 
+import GoogleMaps from '../components/GoogleMaps';
+
+import { Icon } from 'semantic-ui-react'
+
 function debounce(fn, ms) {
     let timer
     return _ => {
@@ -79,6 +83,9 @@ function CurrentProjects({ normal }) {
     const [width, setWidth] = useState(window.innerWidth);
     const [unit, setUnit] = useState("");
 
+    const [buttonIcon] = useState('mars');
+    const [progressIcon] = useState('calendar alternate outline');
+
     useEffect(() => {
         setUnit("normal");
         window.scrollTo(0, 0);
@@ -103,159 +110,6 @@ function CurrentProjects({ normal }) {
         setUnit(unit);
     }
 
-
-
-    const [showPlansBethune, setPlansBethune] = useState(false);
-    const [floorPlansBethune] = useState([
-        {
-            original: bethunePlan1,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: bethunePlan2,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-    ]);
-
-    const [showPlansEast21, setPlansEast21] = useState(false);
-    const [floorPlansEast21] = useState([
-        {
-            original: e21Layout,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: unitA,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: unitB,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: attic,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-    ]);
-
-    const [showPlansBunche, setPlansBunche] = useState(false);
-    const [floorPlansBunche] = useState([
-        {
-            original: BuncheLot,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: bunche1,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: bunche2,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: bunche3,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-    ]);
-
-    const [showPlansOaklawn, setPlansOaklawn] = useState(false);
-    const [floorPlansOaklawn] = useState([
-        {
-            original: OaklawnLayout,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: OaklawnLevel1,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: OaklawnLevel2,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-        {
-            original: OaklawnLevel3,
-
-            originalHeight: 600,
-            originalWidth: 600,
-        },
-    ]);
-
-    const togglePlansBethune = () => {
-        setPlansBethune(true);
-    }
-
-    const togglePlansEast21 = () => {
-        setPlansEast21(true);
-    }
-
-    const togglePlansBunche = () => {
-        setPlansBunche(true);
-    }
-
-    const togglePlansOaklawn = () => {
-        setPlansOaklawn(true);
-    }
-
-    const hideAllPlans = () => {
-        if (showPlansBethune === true ||
-            showPlansEast21 === true ||
-            showPlansBunche === true ||
-            showPlansOaklawn) {
-            setPlansBethune(false);
-            setPlansEast21(false);
-            setPlansBunche(false);
-            setPlansOaklawn(false);
-        }
-    }
-
-    // const unitDelivery = (unit) => {
-    //     switch (unit) {
-    //         case "normal":
-    //           return <Home toGallery={toggleTab}/>
-
-    //         case "E21UnitA":
-    //           return <Gallery toCurrent={toggleTab}/>
-
-    //         case "E21UnitAB":
-    //           return <CurrentProjects normal={"normal"}/>
-
-    //         case "BuncheA":
-    //           return <About />
-
-    //         case "BuncheB":
-    //           return <Contact />
-
-    //         default:
-    //           return <Home />
-    //       }
-    //   }
-
-    const classes = useStyles();
     return (
         <>
             {
@@ -269,16 +123,10 @@ function CurrentProjects({ normal }) {
                                     className="gallery-master-container">
                                     <div className="projects-container">
                                         <div className="project-title-div">
-                                            <h1>7511, 7509, 7507 BETHUNE AVE</h1>
+                                            <h1>BETHUNE AVE</h1>
                                         </div>
                                         <div className="project-div">
-                                            <div className={showPlansBethune ? "slideshow-shown" : "slideshow-hidden"}>
-                                                <ImageGallery items={floorPlansBethune} />
-                                                <Button onClick={hideAllPlans}
-                                                    variant="contained" color="primary" className="button-c">
-                                                    Exit
-                                                </Button>
-                                            </div>
+                                            
                                             <div className="collage-div">
                                             {
                                                         loading === true ? <div>
@@ -306,20 +154,21 @@ function CurrentProjects({ normal }) {
 
 
                                             <div className="p-info-div">
-                                                <h3>3 DUPLEXES (6 units total)</h3>
-                                                <h3> 3 BEDS 2.5 BATHS</h3>
-                                                <h3>1614 SQFT</h3>
+                                                <h3>{<Icon name='home' size='large' />} 3 DUPLEXES (6 units total)</h3>
+                                                <h3> {<Icon name='angle right' size='large' />}3 BEDS 2.5 BATHS</h3>
+                                                <h3>{<Icon name='angle right' size='large' />}1614 SQFT</h3>
 
 
                                                 <div className="info-buttons-div">
                                                     <a href="https://www.realtor.com/realestateandhomes-detail/M9550589495" target="_blank">
                                                         <Button variant="contained" color="primary">
-                                                            Realtor.com
+                                                            Realtor.com | {<Icon name='external alternate' size='small' />}
                                                         </Button>
                                                     </a>
 
                                                     <a href="https://www.seetheproperty.com/396982" target="_blank">
-                                                        <Button variant="contained" className="button-c">VIRTUAL 3D TOUR
+                                                        <Button variant="contained" className="button-c">
+                                                            3D TOUR | {<Icon name='external alternate' size='small' />}
 
                                                         </Button>
                                                     </a>
@@ -328,20 +177,14 @@ function CurrentProjects({ normal }) {
                                             </div>
                                         </div>
                                         <div className="progress-div">
-                                            <h3>PROGRESS | COMPLETED</h3>
+                                            <h3>{<Icon name={progressIcon} size='large' />} COMPLETED</h3>
                                             <Progress percent="100" indicating />
                                         </div>
                                         <div className="project-title-div">
                                             <h1>2102 EAST 21 ST</h1>
                                         </div>
                                         <div className="project-div">
-                                            <div className={showPlansEast21 ? "slideshow-shown" : "slideshow-hidden"}>
-                                                <ImageGallery items={floorPlansEast21} />
-                                                <Button onClick={hideAllPlans}
-                                                    variant="contained" color="primary" className="button-c">
-                                                    Exit
-                                                </Button>
-                                            </div>
+                                            
                                             <div className="collage-div">
                                             {
                                                         loading === true ? <div>
@@ -366,25 +209,25 @@ function CurrentProjects({ normal }) {
 
 
                                             <div className="p-info-div">
-                                                <h3>UNIT A & ACCESSORY CASITA</h3>
+                                                <h3>{<Icon name='home' size='large' />} UNIT A & ACCESSORY CASITA</h3>
 
 
                                                 <div className="info-buttons-div">
                                                     <Button variant="contained"
                                                         onClick={() => handleUnitSelect("E21UnitA")} color="primary">
-                                                        MORE INFO & FLOOR PLANS
+                                                        MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
                                                     </Button>
 
                                                 </div>
 
 
-                                                <h3>UNIT B</h3>
+                                                <h3> {<Icon name='home' size='large' />} UNIT B</h3>
 
 
                                                 <div className="info-buttons-div">
                                                     <Button variant="contained"
                                                         onClick={() => handleUnitSelect("E21UnitB")} color="primary">
-                                                        MORE INFO & FLOOR PLANS
+                                                        MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
                                                     </Button>
 
                                                 </div>
@@ -394,7 +237,7 @@ function CurrentProjects({ normal }) {
                                             </div>
                                         </div>
                                         <div className="progress-div">
-                                            <h3>PROGRESS | COMPLETION: JANUARY 2022</h3>
+                                            <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: FEBRUARY 2022</h3>
                                             <Progress percent="30" indicating />
                                         </div>
 
@@ -402,13 +245,7 @@ function CurrentProjects({ normal }) {
                                             <h1>1729 BUNCHE RD</h1>
                                         </div>
                                         <div className="project-div">
-                                            <div className={showPlansBunche ? "slideshow-shown" : "slideshow-hidden"}>
-                                                <ImageGallery items={floorPlansBunche} />
-                                                <Button onClick={hideAllPlans}
-                                                    variant="contained" color="primary" className="button-c">
-                                                    Exit
-                                                </Button>
-                                            </div>
+                                          
                                             <div className="collage-div">
                                             {
                                                         loading === true ? <div>
@@ -433,13 +270,13 @@ function CurrentProjects({ normal }) {
 
 
                                             <div className="p-info-div">
-                                                <h3>UNIT A</h3>
+                                                <h3>{<Icon name='home' size='large' />} UNIT A</h3>
 
 
                                                 <div className="info-buttons-div">
                                                     <Button variant="contained"
                                                         onClick={() => handleUnitSelect("BuncheA")} color="primary">
-                                                        MORE INFO & FLOOR PLANS
+                                                        MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
                                                     </Button>
 
                                                 </div>
@@ -447,13 +284,13 @@ function CurrentProjects({ normal }) {
 
 
 
-                                                <h3>UNIT B</h3>
+                                                <h3>{<Icon name='home' size='large' />} UNIT B</h3>
 
 
                                                 <div className="info-buttons-div">
                                                     <Button variant="contained"
                                                         onClick={() => handleUnitSelect("BuncheB")} color="primary">
-                                                        MORE INFO & FLOOR PLANS
+                                                        MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
                                                     </Button>
 
                                                 </div>
@@ -463,7 +300,7 @@ function CurrentProjects({ normal }) {
                                         </div>
                                     </div>
                                     <div className="progress-div">
-                                        <h3>PROGRESS | COMPLETION: DECEMBER 2021</h3>
+                                        <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: FEBRUARY 2022</h3>
                                         <Progress percent="40" indicating />
                                     </div>
 

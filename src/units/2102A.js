@@ -11,6 +11,8 @@ import casita from '../East21/casita.png';
 import floorAlone1 from '../East21/floorAlone1.png';
 import floorAlone2 from '../East21/floorAlone2.png';
 
+import { Icon } from 'semantic-ui-react'
+
 
 function E21UnitA({ handleUnitSelect }) {
 
@@ -39,13 +41,13 @@ function E21UnitA({ handleUnitSelect }) {
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
-                        <h3>2540 SQFT</h3>
+                        <h2>2540 SQFT <Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
-                        <h3>4 BEDS + ACCESSORY CASITA</h3>
+                        <h2>4 {<Icon name='bed' size='large' />}</h2>
                     </div>
                     <div className="info-item">
-                        <h3>3.5 BATHS</h3>
+                        <h2>3.5 {'     '} {<Icon name='bath' size='large' />}</h2>
                     </div>
                 </div>
                 <div className="floorplans-div">

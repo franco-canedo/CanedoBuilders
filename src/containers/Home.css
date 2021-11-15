@@ -110,6 +110,11 @@
       grid-template-columns: 2fr 2fr;
       
     }
+
+    .grid-item-home:hover {
+      transition: none;
+    
+    }
   }
 
 .quote-absolute {

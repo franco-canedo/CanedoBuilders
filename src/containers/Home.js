@@ -12,6 +12,7 @@ import { Progress } from 'semantic-ui-react';
 
 import styled from 'styled-components';
 import LazyImage from 'react-lazy-blur-image';
+import { Icon } from 'semantic-ui-react'
 
 const Image = styled.img`
   display: block;
@@ -43,23 +44,7 @@ function Home({ toPage }) {
 
                 </div>
                 {timer()}
-                {/* {
-                    loading === true ? <img className="head-imager-load" src={load}></img>
-                     :
-                        <img className="head-imager" src={house}></img>
-                } */}
-
-{/* <div className="loader-div">
-                        <div className="loading-position">
-                            <Progress percent="100" active />
-                        </div>
-                    </div> */}
-
-                {/* <LazyImage
-                    uri={house}
-                    placeholder={load}
-                    render={(house, style) => <Image src={house} style={style} />}
-                /> */}
+                
                 <img className="head-imager" src={house}></img>
 
             </div>
@@ -70,27 +55,17 @@ function Home({ toPage }) {
                 <div className="home-apps-container">
                     
                     <div className="grid-item-home" onClick={() => toPage("current projects")}>
-                    <h2>PROJECTS</h2>
+                    <h2>{<Icon name='building outline' size='large' />} PROJECTS </h2>
                     </div>
                     <div className="grid-item-home" onClick={() => toPage("about")}>
-                    <h2>ABOUT</h2>
+                    <h2>{<Icon name='info circle' size='large' />} ABOUT</h2>
                     </div>
                     <div className="grid-item-home" onClick={() => toPage("contact")}>
-                    <h2>CONTACT</h2>
+                    <h2>{<Icon name='envelope' size='large' />} CONTACT</h2>
                     </div>
                 </div>
 
             </div>
-
-            {/* <div className="sliders=container">
-                <div>
-                    <img className="slide-img" src={house5}></img>
-                </div>
-                <div>
-                    <img className="slide-img" src={house6}></img>
-                </div>
-
-            </div> */}
         </div>
 
     );

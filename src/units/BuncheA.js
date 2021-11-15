@@ -9,6 +9,7 @@ import Alevel1 from '../bunche/Alevel1.png';
 import Alevel2 from '../bunche/Alevel2.png';
 import Alevel3 from '../bunche/Alevel3.png';
 
+import { Icon } from 'semantic-ui-react'
 
 function BuncheA({ handleUnitSelect }) {
 
@@ -27,14 +28,15 @@ function BuncheA({ handleUnitSelect }) {
                     <img className="head-imager-unit" src={frontA}></img>
                 </div>
                 <div className="unit-info-div-cont">
-                    <div className="info-item">
-                        <h3>2152 SQFT</h3>
+
+                <div className="info-item">
+                        <h2>2152 SQFT <Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
-                        <h3>3 BEDS</h3>
+                        <h2>3 {<Icon name='bed' size='large' />}</h2>
                     </div>
                     <div className="info-item">
-                        <h3>3 BATHS</h3>
+                        <h2>3 {'     '} {<Icon name='bath' size='large' />}</h2>
                     </div>
                 </div>
                 <div className="floorplans-div">

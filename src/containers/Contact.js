@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import house from '../photos/house.jpg';
 import Button from '@material-ui/core/Button';
 
+import { Icon } from 'semantic-ui-react'
 
 function Contact() {
 
@@ -40,7 +41,7 @@ function Contact() {
                         <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
                         <Button variant="contained" color="primary">
                         
-                            Submit
+                             {<Icon name='paper plane' size='large' />}
                         </Button>
                         </a>
                     </Form>

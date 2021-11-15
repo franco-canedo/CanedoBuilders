@@ -55,7 +55,7 @@ function Header({ toggleTab }) {
                     {
                         width < 550 ?
                             <div className="button-div" onClick={handleMenu}>
-                              <Icon name='home' size='large' />
+                              <Icon name='list' size='large' />
                                 
                             </div> :
                             <>
@@ -65,19 +65,19 @@ function Header({ toggleTab }) {
                                     toggleTab("gallery");
                                     
                                     }}>
-                                    <p>GALLERY</p>
+                                    <h5>GALLERY</h5>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("current projects")}>
-                                    <p>CURRENT PROJECTS</p>
+                                    <h5>CURRENT PROJECTS</h5>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("about")}>
-                                    <p>OUR TEAM</p>
+                                    <h5>OUR TEAM</h5>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("contact")}>
-                                    <p>CONTACT</p>
+                                    <h5>CONTACT</h5>
                                 </div>
                             </>
                     }
@@ -119,7 +119,7 @@ function Header({ toggleTab }) {
                 <div className="button"
                 onClick={handleMenu}>
                     <Button variant="contained" onClick={handleMenu}
-                    >Exit</Button>
+                    > <Icon name='exit' size='large' /></Button>
                 </div>
             </div> : null
             }

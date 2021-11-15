@@ -7,6 +7,8 @@ import e21Layout from '../East21/site.png';
 import floorPlansB from '../East21/unitB.png';
 import unitB from '../East21/renderingUnitB.jpg';
 
+import { Icon } from 'semantic-ui-react'
+
 
 function E21UnitB({ handleUnitSelect }) {
 
@@ -25,15 +27,18 @@ function E21UnitB({ handleUnitSelect }) {
                     <img className="head-imager-unit" src={unitB}></img>
                 </div>
                 <div className="unit-info-div-cont">
+
                     <div className="info-item">
-                        <h3>1047 SQFT</h3>
+                        <h2>1100 SQFT <Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
-                        <h3>2 BEDS</h3>
+                        <h2>2 {<Icon name='bed' size='large' />}</h2>
                     </div>
                     <div className="info-item">
-                        <h3>2.5 BATHS</h3>
+                        <h2>2.5 {'     '} {<Icon name='bath' size='large' />}</h2>
                     </div>
+
+
                 </div>
                 <div className="floorplans-div">
                     <div className="floorplan-item">
