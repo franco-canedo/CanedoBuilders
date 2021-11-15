@@ -62,7 +62,7 @@ function Home({ toPage }) {
                 <p>
                     Creating beautiful and unique living spaces in the city of Austin since 2014.</p>
                 <div className="home-apps-container">
-                    <div className="grid-item-home" onClick={() => toPage("current projects")}>
+                    <div className="grid-item-home" onClick={() => toPage("gallery")}>
                         <h2>{<Icon name='picture' size='large' />} GALLERY </h2>
                     </div>
                     <div className="grid-item-home" onClick={() => toPage("current projects")}>
