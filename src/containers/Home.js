@@ -35,16 +35,25 @@ function Home({ toPage }) {
     return (
         <div className="gallery-master-container">
             <div className="head-div">
-                <div className="paragraph-div">
+                {/* <div className="paragraph-div">
 
                     <Button onClick={() => toPage("gallery")}
                         variant="contained" color="dark">
-                        <h3>GALLERY</h3>        
+                        <h3>GALLERY</h3>
+                    </Button>
+
+                </div> */}
+
+                <div className="paragraph-div2">
+
+                    <Button onClick={() => window.scrollTo(0, 700)}
+                        variant="contained" color="dark">
+                        <h3>MORE {<Icon name='chevron down' size='small' />}</h3>
                     </Button>
 
                 </div>
                 {timer()}
-                
+
                 <img className="head-imager" src={house}></img>
 
             </div>
@@ -53,15 +62,17 @@ function Home({ toPage }) {
                 <p>
                     Creating beautiful and unique living spaces in the city of Austin since 2014.</p>
                 <div className="home-apps-container">
-                    
                     <div className="grid-item-home" onClick={() => toPage("current projects")}>
-                    <h2>{<Icon name='building outline' size='large' />} PROJECTS </h2>
+                        <h2>{<Icon name='picture' size='large' />} GALLERY </h2>
+                    </div>
+                    <div className="grid-item-home" onClick={() => toPage("current projects")}>
+                        <h2>{<Icon name='building outline' size='large' />} PROJECTS </h2>
                     </div>
                     <div className="grid-item-home" onClick={() => toPage("about")}>
-                    <h2>{<Icon name='info circle' size='large' />} ABOUT</h2>
+                        <h2>{<Icon name='info circle' size='large' />} ABOUT</h2>
                     </div>
                     <div className="grid-item-home" onClick={() => toPage("contact")}>
-                    <h2>{<Icon name='envelope' size='large' />} CONTACT</h2>
+                        <h2>{<Icon name='envelope' size='large' />} CONTACT</h2>
                     </div>
                 </div>
 
