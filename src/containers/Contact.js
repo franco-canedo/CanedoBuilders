@@ -30,13 +30,13 @@ function Contact() {
                     <p></p>
                     <Form>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>EMAIL</Form.Label>
+                            <Form.Label>{<Icon name='envelope outline' size='large' />}</Form.Label>
                             <Form.Control type="email" placeholder="name@example.com" />
                         </Form.Group>
                         <Form.Group className="mb-3" 
                         controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>MESSAGE:</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
+                            <Form.Label>{<Icon name='pencil alternate' size='large' />}</Form.Label>
+                            <Form.Control as="textarea" rows={3}  placeholder="..."/>
                         </Form.Group>
                         <a href="mailto:info@canedobuilders.com?subject=Subject&body=Body">
                         <Button variant="contained" color="primary">

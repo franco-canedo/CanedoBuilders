@@ -93,33 +93,33 @@ function Header({ toggleTab }) {
                     toggleTab("gallery");
                     handleMenu();
                     }}>
-                    <p>GALLERY</p>
+                    <p> {<Icon name='picture' size='large' />} GALLERY</p>
                 </div>
                 <div className="option"
                 onClick={() => {
                     toggleTab("current projects");
                     handleMenu();
                 }}>
-                    <p>CURRENT PROJECTS</p>
+                    <p> {<Icon name='building outline' size='large' />}CURRENT PROJECTS</p>
                 </div>
                 <div className="option"
                 onClick={() => {
                     toggleTab("about");
                     handleMenu();
                     }}>
-                    <p>OUR TEAM</p>
+                    <p> {<Icon name='info circle' size='large' />} OUR TEAM</p>
                 </div>
                 <div className="option"
                 onClick={() => {
                     toggleTab("contact");
                     handleMenu();
                 }}>
-                    <p>CONTACT</p>
+                    <p> {<Icon name='envelope' size='large' />}CONTACT</p>
                 </div>
                 <div className="button"
                 onClick={handleMenu}>
                     <Button variant="contained" onClick={handleMenu}
-                    > <Icon name='exit' size='large' /></Button>
+                    > <Icon name='trash alternate' size='large' /></Button>
                 </div>
             </div> : null
             }
