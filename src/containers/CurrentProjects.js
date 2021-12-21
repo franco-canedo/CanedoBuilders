@@ -164,6 +164,7 @@ function CurrentProjects({ normal }) {
                                                 <h3>{<Icon name='home' size='large' />} 3 DUPLEXES (6 units total)</h3>
                                                 <h3> {<Icon name='angle right' size='large' />}3 BEDS 2.5 BATHS</h3>
                                                 <h3>{<Icon name='angle right' size='large' />}1614 SQFT</h3>
+                                                <h3>{<Icon name='angle right' size='large' />}$574,900</h3>
 
 
                                                 <div className="info-buttons-div">
@@ -217,6 +218,7 @@ function CurrentProjects({ normal }) {
 
                                             <div className="p-info-div">
                                                 <h3>{<Icon name='home' size='large' />} UNIT A & ACCESSORY CASITA</h3>
+                                                <h3>{<Icon name='angle right' size='large' />}$1,300,000</h3>
 
 
                                                 <div className="info-buttons-div">
@@ -229,6 +231,7 @@ function CurrentProjects({ normal }) {
 
 
                                                 <h3> {<Icon name='home' size='large' />} UNIT B</h3>
+                                                <h3>{<Icon name='angle right' size='large' />}$750,000</h3>
 
 
                                                 <div className="info-buttons-div">

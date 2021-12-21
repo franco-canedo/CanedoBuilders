@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './Home.css';
 import Button from '@material-ui/core/Button';
 import house from '../photos/house.jpg';
-import house2 from '../photos/house6.jpg';
+
 import logo from '../photos/Logo.jpg';
 
 import load from '../gifs/buffer.gif'
@@ -13,6 +13,9 @@ import { Progress } from 'semantic-ui-react';
 import styled from 'styled-components';
 import LazyImage from 'react-lazy-blur-image';
 import { Icon } from 'semantic-ui-react'
+
+import house1 from '../landingPage/e7.jpg';
+import house2 from '../landingPage/e7.jpg';
 
 const Image = styled.img`
   display: block;
@@ -26,35 +29,38 @@ const Image = styled.img`
 
 function Home({ toPage }) {
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(house1);
 
-    const timer = () => {
-        setInterval(() => setLoading(false), 7000);
+    const timer1 = () => {
+        setInterval(() => setLoading(house2), 2000);
     }
+
+    const timer2 = () => {
+        setInterval(() => setLoading(house), 4000);
+    }
+
+   
 
     return (
         <div className="gallery-master-container">
             <div className="head-div">
-                {/* <div className="paragraph-div">
+              
+              
 
-                    <Button onClick={() => toPage("gallery")}
-                        variant="contained" color="dark">
-                        <h3>GALLERY</h3>
-                    </Button>
+                <>
+                    <div className="paragraph-div2">
 
-                </div> */}
+                        <Button onClick={() => window.scrollTo(0, 700)}
+                            variant="contained" color="dark">
+                            <h3>MORE {<Icon name='chevron down' size='small' />}</h3>
+                        </Button>
 
-                <div className="paragraph-div2">
+                    </div>
 
-                    <Button onClick={() => window.scrollTo(0, 700)}
-                        variant="contained" color="dark">
-                        <h3>MORE {<Icon name='chevron down' size='small' />}</h3>
-                    </Button>
 
-                </div>
-                {timer()}
+                    <img className="head-imager" src={house}></img>
+                </>
 
-                <img className="head-imager" src={house}></img>
 
             </div>
 
