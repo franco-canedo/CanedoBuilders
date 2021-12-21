@@ -55,7 +55,7 @@ function Header({ toggleTab }) {
                     {
                         width < 550 ?
                             <div className="button-div" onClick={handleMenu}>
-                              <Icon name='home' size='large' />
+                              <Icon name='list' size='large' />
                                 
                             </div> :
                             <>
@@ -65,19 +65,19 @@ function Header({ toggleTab }) {
                                     toggleTab("gallery");
                                     
                                     }}>
-                                    <p>GALLERY</p>
+                                    <h5>GALLERY</h5>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("current projects")}>
-                                    <p>CURRENT PROJECTS</p>
+                                    <h5>CURRENT PROJECTS</h5>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("about")}>
-                                    <p>OUR TEAM</p>
+                                    <h5>OUR TEAM</h5>
                                 </div>
                                 <div className="tab-div"
                                 onClick={() => toggleTab("contact")}>
-                                    <p>CONTACT</p>
+                                    <h5>CONTACT</h5>
                                 </div>
                             </>
                     }
@@ -93,33 +93,33 @@ function Header({ toggleTab }) {
                     toggleTab("gallery");
                     handleMenu();
                     }}>
-                    <p>GALLERY</p>
+                    <p> {<Icon name='picture' size='large' />} GALLERY</p>
                 </div>
                 <div className="option"
                 onClick={() => {
                     toggleTab("current projects");
                     handleMenu();
                 }}>
-                    <p>CURRENT PROJECTS</p>
+                    <p> {<Icon name='building outline' size='large' />}CURRENT PROJECTS</p>
                 </div>
                 <div className="option"
                 onClick={() => {
                     toggleTab("about");
                     handleMenu();
                     }}>
-                    <p>OUR TEAM</p>
+                    <p> {<Icon name='info circle' size='large' />} OUR TEAM</p>
                 </div>
                 <div className="option"
                 onClick={() => {
                     toggleTab("contact");
                     handleMenu();
                 }}>
-                    <p>CONTACT</p>
+                    <p> {<Icon name='envelope' size='large' />}CONTACT</p>
                 </div>
                 <div className="button"
                 onClick={handleMenu}>
                     <Button variant="contained" onClick={handleMenu}
-                    >Exit</Button>
+                    > <Icon name='trash alternate' size='large' /></Button>
                 </div>
             </div> : null
             }

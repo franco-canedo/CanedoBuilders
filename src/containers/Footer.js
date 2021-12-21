@@ -3,7 +3,7 @@ import './Footer.css';
 import Button from 'react-bootstrap/Button';
 import logo from '../photos/Logo.jpg'
 import logoZoom from '../photos/LogoZoom2.png';
-
+import { Icon } from 'semantic-ui-react';
 
 function Footer() {
     return (
@@ -40,7 +40,7 @@ function Footer() {
                 <p className="designed-by">Website by Franco Canedo
                     <a className="author-a-tag"
                     target="_blank"
-                    href="https://franco-canedo.herokuapp.com/"> /-> </a></p>
+                    href="https://franco-canedo.herokuapp.com/"> {<Icon name='external alternate' size='small' />} </a></p>
             </section>
         </div>
     );

@@ -1,6 +1,6 @@
 .project-img {
     margin-top: 50px;
-    max-width: 400px;
+    max-width: 350px;
     max-height: 300px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -21,7 +21,7 @@
 
 
 .bounce-div {
-    animation: bounce 2s linear infinite;
+    animation: bounce 5s linear infinite;
     cursor: pointer;
     margin-left: 20px;
 }
@@ -187,8 +187,8 @@ a {
 
  @-webkit-keyframes bounce { 
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
-    40% {-webkit-transform: translateY(-10px);} 
-    60% {-webkit-transform: translateY(-5px);} 
+    40% {-webkit-transform: translateY(-5px);} 
+    60% {-webkit-transform: translateY(-2px);} 
  } 
 
 .button-c {

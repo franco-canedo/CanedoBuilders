@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './Home.css';
 import Button from '@material-ui/core/Button';
 import house from '../photos/house.jpg';
-import house2 from '../photos/house6.jpg';
+
 import logo from '../photos/Logo.jpg';
 
 import load from '../gifs/buffer.gif'
@@ -12,6 +12,10 @@ import { Progress } from 'semantic-ui-react';
 
 import styled from 'styled-components';
 import LazyImage from 'react-lazy-blur-image';
+import { Icon } from 'semantic-ui-react'
+
+import house1 from '../landingPage/e7.jpg';
+import house2 from '../landingPage/e7.jpg';
 
 const Image = styled.img`
   display: block;
@@ -25,42 +29,38 @@ const Image = styled.img`
 
 function Home({ toPage }) {
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(house1);
 
-    const timer = () => {
-        setInterval(() => setLoading(false), 7000);
+    const timer1 = () => {
+        setInterval(() => setLoading(house2), 2000);
     }
+
+    const timer2 = () => {
+        setInterval(() => setLoading(house), 4000);
+    }
+
+   
 
     return (
         <div className="gallery-master-container">
             <div className="head-div">
-                <div className="paragraph-div">
+              
+              
 
-                    <Button onClick={() => toPage("gallery")}
-                        variant="contained" color="dark">
-                        <h3>GALLERY</h3>        
-                    </Button>
+                <>
+                    <div className="paragraph-div2">
 
-                </div>
-                {timer()}
-                {/* {
-                    loading === true ? <img className="head-imager-load" src={load}></img>
-                     :
-                        <img className="head-imager" src={house}></img>
-                } */}
+                        <Button onClick={() => window.scrollTo(0, 700)}
+                            variant="contained" color="dark">
+                            <h3>MORE {<Icon name='chevron down' size='small' />}</h3>
+                        </Button>
 
-{/* <div className="loader-div">
-                        <div className="loading-position">
-                            <Progress percent="100" active />
-                        </div>
-                    </div> */}
+                    </div>
 
-                {/* <LazyImage
-                    uri={house}
-                    placeholder={load}
-                    render={(house, style) => <Image src={house} style={style} />}
-                /> */}
-                <img className="head-imager" src={house}></img>
+
+                    <img className="head-imager" src={house}></img>
+                </>
+
 
             </div>
 
@@ -68,29 +68,21 @@ function Home({ toPage }) {
                 <p>
                     Creating beautiful and unique living spaces in the city of Austin since 2014.</p>
                 <div className="home-apps-container">
-                    
+                    <div className="grid-item-home" onClick={() => toPage("gallery")}>
+                        <h2>{<Icon name='picture' size='large' />} GALLERY </h2>
+                    </div>
                     <div className="grid-item-home" onClick={() => toPage("current projects")}>
-                    <h2>PROJECTS</h2>
+                        <h2>{<Icon name='building outline' size='large' />} PROJECTS </h2>
                     </div>
                     <div className="grid-item-home" onClick={() => toPage("about")}>
-                    <h2>ABOUT</h2>
+                        <h2>{<Icon name='info circle' size='large' />} ABOUT</h2>
                     </div>
                     <div className="grid-item-home" onClick={() => toPage("contact")}>
-                    <h2>CONTACT</h2>
+                        <h2>{<Icon name='envelope' size='large' />} CONTACT</h2>
                     </div>
                 </div>
 
             </div>
-
-            {/* <div className="sliders=container">
-                <div>
-                    <img className="slide-img" src={house5}></img>
-                </div>
-                <div>
-                    <img className="slide-img" src={house6}></img>
-                </div>
-
-            </div> */}
         </div>
 
     );

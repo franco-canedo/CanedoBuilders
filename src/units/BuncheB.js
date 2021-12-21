@@ -8,6 +8,7 @@ import Blevel1 from '../bunche/Blevel1.png';
 import Blevel2 from '../bunche/Blevel2.png';
 import frontB from '../bunche/7.jpg';
 
+import { Icon } from 'semantic-ui-react'
 
 function BuncheB({ handleUnitSelect }) {
 
@@ -26,15 +27,18 @@ function BuncheB({ handleUnitSelect }) {
                     <img className="head-imager-unit" src={frontB}></img>
                 </div>
                 <div className="unit-info-div-cont">
-                    <div className="info-item">
-                        <h3>916 SQFT</h3>
+
+                <div className="info-item">
+                        <h2>916 SQFT <Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
-                        <h3>2 BEDS</h3>
+                        <h2>2 {<Icon name='bed' size='large' />}</h2>
                     </div>
                     <div className="info-item">
-                        <h3>2.5 BATHS</h3>
+                        <h2>2.5 {'     '} {<Icon name='bath' size='large' />}</h2>
                     </div>
+
+                   
                 </div>
                 <div className="floorplans-div">
                     <div className="floorplan-item">
