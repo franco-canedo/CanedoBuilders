@@ -124,70 +124,9 @@ function CurrentProjects({ normal }) {
                                 <div
                                     className="gallery-master-container">
                                     <div className="projects-container">
-                                        <div className="project-title-div">
-                                            <h1>BETHUNE AVE</h1>
-                                        </div>
-                                        <div className="project-div">
-
-                                            <div className="collage-div">
-                                                {
-                                                    loading === true ? <div>
-                                                        <img className="project-img2" src={load}></img>
-                                                    </div>
-                                                        : <BethuneCarousel />
-
-                                                }
-
-                                            </div>
-
-                                            <a href="https://www.google.com/maps/place/7511+Bethune+Ave,+Austin,+TX+78752/@30.3339437,-97.6978076,17z/data=!3m1!4b1!4m5!3m4!1s0x8644c988585db87d:0xd080a186795eefab!8m2!3d30.3339437!4d-97.6956189" target="_blank">
-                                                <div className="bounce-div">
-                                                    {timer()}
-                                                    {
-                                                        loading === true ? <div className="bounce">
-                                                            <img className="project-img3" src={load}></img>
-                                                        </div>
-                                                            :  <img className="project-img" src={bethune}></img>
-                                                            // <div className="project-img">
-                                                            //     <Map height={300} defaultCenter={[50.879, 4.6997]} defaultZoom={11}>
-                                                            //         <Marker width={50} anchor={[50.879, 4.6997]} />
-                                                            //     </Map>
-                                                            // </div>
-
-                                                    }
-
-                                                </div>
-                                            </a>
-
-
-                                            <div className="p-info-div">
-                                                <h3>{<Icon name='home' size='large' />} 3 DUPLEXES (6 units total)</h3>
-                                                <h3> {<Icon name='angle right' size='large' />}3 BEDS 2.5 BATHS</h3>
-                                                <h3>{<Icon name='angle right' size='large' />}1614 SQFT</h3>
-                                                <h3>{<Icon name='angle right' size='large' />}$579,900</h3>
-
-
-                                                <div className="info-buttons-div">
-                                                    <a href="https://www.realtor.com/realestateandhomes-detail/M9550589495" target="_blank">
-                                                        <Button variant="contained" color="primary">
-                                                            Realtor.com | {<Icon name='external alternate' size='small' />}
-                                                        </Button>
-                                                    </a>
-
-                                                    <a href="https://www.seetheproperty.com/396982" target="_blank">
-                                                        <Button variant="contained" className="button-c">
-                                                            3D TOUR | {<Icon name='external alternate' size='small' />}
-
-                                                        </Button>
-                                                    </a>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="progress-div">
-                                            <h3>{<Icon name={progressIcon} size='large' />} COMPLETED</h3>
-                                            <Progress percent="100" indicating />
-                                        </div>
+                                        
+                                    {timer()}
+                                        
                                         <div className="project-title-div">
                                             <h1>2102 EAST 21 ST</h1>
                                         </div>
@@ -247,8 +186,8 @@ function CurrentProjects({ normal }) {
                                             </div>
                                         </div>
                                         <div className="progress-div">
-                                            <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: FEBRUARY 2022</h3>
-                                            <Progress percent="30" indicating />
+                                            <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: MARCH 2022</h3>
+                                            <Progress percent="80" indicating />
                                         </div>
 
                                         <div className="project-title-div">
@@ -281,6 +220,7 @@ function CurrentProjects({ normal }) {
 
                                             <div className="p-info-div">
                                                 <h3>{<Icon name='home' size='large' />} UNIT A</h3>
+                                                <h3>{<Icon name='angle right' size='large' />}UNDER CONTRACT</h3>
 
 
                                                 <div className="info-buttons-div">
@@ -295,6 +235,7 @@ function CurrentProjects({ normal }) {
 
 
                                                 <h3>{<Icon name='home' size='large' />} UNIT B</h3>
+                                                <h3>{<Icon name='angle right' size='large' />}UNDER CONTRACT</h3>
 
 
                                                 <div className="info-buttons-div">
@@ -310,8 +251,8 @@ function CurrentProjects({ normal }) {
                                         </div>
                                     </div>
                                     <div className="progress-div">
-                                        <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: FEBRUARY 2022</h3>
-                                        <Progress percent="40" indicating />
+                                        <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: MARCH 2022</h3>
+                                        <Progress percent="80" indicating />
                                     </div>
 
                                 </div>
