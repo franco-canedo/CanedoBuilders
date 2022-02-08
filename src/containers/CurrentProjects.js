@@ -1,58 +1,36 @@
 import { useEffect, useState } from 'react';
 import './CurrentProjects.css';
-import house5 from '../photos/house5.jpg';
-import house6 from '../photos/house6.jpg';
-import givens from '../photos/givensMap.png';
-import bethune from '../photos/bethuneMap.png';
+
+import EnchantedLane from '../individualProjects/EnchantedLane';
+import ProspectAve from '../individualProjects/ProspectAve';
+
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-import ImageList from '@material-ui/core/ImageList';
-import ImageListItem from '@material-ui/core/ImageListItem';
-import ProjectCarousel from '../components/ProjectCarousel';
-import BethuneCarousel from '../components/BethuneCarousel';
+
 import E21Carousel from '../components/East21Carousel';
 import e21map from '../East21/e21map.png';
-import Modal1 from './Modal1';
-import ProjectPlans from '../components/ProjectPlans';
+
 import { Progress } from 'semantic-ui-react';
-import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
-
-import bethunePlan1 from '../bethune/plan1.jpg';
-import bethunePlan2 from '../bethune/plan2.png';
-
-import e21Layout from '../East21/site.png';
-import unitA from '../East21/unitA.png';
-import unitB from '../East21/unitB.png';
-import attic from '../East21/atticFloor.png';
-
 import BuncheCarousel from '../components/BuncheCarousel';
-import BuncheLot from '../bunche/BuncheLot.png';
-import bunche1 from '../bunche/FirstFloorPlansBunche.png';
-import bunche2 from '../bunche/SecondFloorPlansBunche.png';
-import bunche3 from '../bunche/ThirdFloorPlanBunche.png';
 import buncheMap from '../bunche/buncheMap.png';
-
-import OaklawnMap from '../oaklawn/oaklawnMap.png';
-import OaklawnLayout from '../oaklawn/oaklawnLayout.png';
-import OaklawnLevel1 from '../oaklawn/oaklawnLevel1.png';
-import OaklawnLevel2 from '../oaklawn/oaklawnLevel2.png';
-import OaklawnLevel3 from '../oaklawn/oaklawnLevel3.png';
-import OaklawnCarousel from '../components/OaklawnCarousel';
 
 import E21UnitA from '../units/2102A';
 import E21UnitB from '../units/2102B';
 import BuncheA from '../units/BuncheA';
 import BuncheB from '../units/BuncheB';
 
+import prospect from '../prospect/demolition.jpg';
+import prospectMap from '../prospect/prospectMap.png';
+
 import load from '../gifs/buffer.gif';
 
-import GoogleMaps from '../components/GoogleMaps';
+
 
 import { Icon } from 'semantic-ui-react'
 
-import { Map, Marker } from "pigeon-maps"
+
 
 function debounce(fn, ms) {
     let timer
@@ -124,9 +102,12 @@ function CurrentProjects({ normal }) {
                                 <div
                                     className="gallery-master-container">
                                     <div className="projects-container">
-                                        
-                                    {timer()}
-                                        
+
+                                        {timer()}
+
+
+
+
                                         <div className="project-title-div">
                                             <h1>2102 EAST 21 ST</h1>
                                         </div>
@@ -148,7 +129,7 @@ function CurrentProjects({ normal }) {
                                                         loading === true ? <div className="bounce">
                                                             <img className="project-img3" src={load}></img>
                                                         </div>
-                                                            : <img src={e21map} className="project-img"></img>
+                                                            : <img src={e21map} className="project-img3"></img>
 
                                                     }
                                                 </div>
@@ -157,7 +138,7 @@ function CurrentProjects({ normal }) {
 
                                             <div className="p-info-div">
                                                 <h3>{<Icon name='home' size='large' />} UNIT A & ACCESSORY CASITA</h3>
-                                                <h3>{<Icon name='angle right' size='large' />}$1,399,000</h3>
+                                                <h3>{<Icon name='angle right' size='large' />}UNDER CONTRACT</h3>
 
 
                                                 <div className="info-buttons-div">
@@ -170,7 +151,7 @@ function CurrentProjects({ normal }) {
 
 
                                                 <h3> {<Icon name='home' size='large' />} UNIT B</h3>
-                                                <h3>{<Icon name='angle right' size='large' />}$775,000</h3>
+                                                <h3>{<Icon name='angle right' size='large' />}UNDER CONTRACT</h3>
 
 
                                                 <div className="info-buttons-div">
@@ -189,6 +170,10 @@ function CurrentProjects({ normal }) {
                                             <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: MARCH 2022</h3>
                                             <Progress percent="80" indicating />
                                         </div>
+
+
+
+
 
                                         <div className="project-title-div">
                                             <h1>1729 BUNCHE RD</h1>
@@ -211,7 +196,7 @@ function CurrentProjects({ normal }) {
                                                         loading === true ? <div className="bounce">
                                                             <img className="project-img3" src={load}></img>
                                                         </div>
-                                                            : <img src={buncheMap} className="project-img"></img>
+                                                            : <img src={buncheMap} className="project-img3"></img>
 
                                                     }
                                                 </div>
@@ -245,15 +230,17 @@ function CurrentProjects({ normal }) {
                                                     </Button>
 
                                                 </div>
-
                                             </div>
-
                                         </div>
                                     </div>
                                     <div className="progress-div">
                                         <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: MARCH 2022</h3>
                                         <Progress percent="80" indicating />
                                     </div>
+
+
+                                    <ProspectAve loading={loading} load={load} />
+                                    <EnchantedLane loading={loading} load={load} />
 
                                 </div>
 
