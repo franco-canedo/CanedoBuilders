@@ -14,14 +14,14 @@ function ProspectAve({ loading, load }) {
     return (
         <>
             <div className="project-title-div">
-                <h1>ENCHATNED LANE</h1>
+                <h1>PROSPECT AVE</h1>
             </div>
             <div className="project-div">
 
                 <div className="collage-div">
                     {
                         loading === true ? <div>
-                            <img className="project-img2" src={load}></img>
+                            <img className="project-images" src={load}></img>
                         </div>
                             : <img className="project-images" src={prospect}></img>
 
@@ -43,7 +43,7 @@ function ProspectAve({ loading, load }) {
 
                 <div className="p-info-div">
                     <h3>{<Icon name='home' size='large' />} UNIT A</h3>
-                    <h3>{<Icon name='angle right' size='large' />}</h3>
+                    <h3>{<Icon name='angle right' size='large' />}Plans in Progress</h3>
                 </div>
             </div>
             <div className="progress-div">

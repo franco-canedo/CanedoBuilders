@@ -43,7 +43,7 @@ function EnchantedLane({ loading, load }) {
 
                 <div className="p-info-div">
                     <h3>{<Icon name='home' size='large' />} UNIT A</h3>
-                    <h3>{<Icon name='angle right' size='large' />}</h3>
+                    <h3>{<Icon name='angle right' size='large' />}Plans in Progress</h3>
                 </div>
             </div>
             <div className="progress-div">
