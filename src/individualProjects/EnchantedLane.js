@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 
 import { Progress } from 'semantic-ui-react';
 import "react-image-gallery/styles/css/image-gallery.css";
-import { Icon } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react';
+import Button from '@material-ui/core/Button';
 
 import green from '../gifs/green.png';
 import enchantedMap from '../enchanted/enchantedMap.png';
@@ -10,6 +11,7 @@ import enchantedMap from '../enchanted/enchantedMap.png';
 function EnchantedLane({ loading, load }) {
 
     const [progressIcon] = useState('calendar alternate outline');
+    const [buttonIcon] = useState('mars');
 
     return (
         <>
@@ -47,7 +49,14 @@ function EnchantedLane({ loading, load }) {
 
                 <div className="p-info-div">
                     <h5>{<Icon name='home' size='large' />} SINGLE FAMILY HOME</h5>
-                    <h5>{<Icon name='angle right' size='large' />}PLANS IN PROGRESS</h5>
+                    {/* <h5>{<Icon name='angle right' size='large' />}PLANS IN PROGRESS</h5> */}
+                    <div className="info-buttons-div">
+                        <Button disabled variant="contained"
+                             color="primary">
+                            PLANS IN PROGRESS {<Icon name={buttonIcon} size='large' />}
+                        </Button>
+
+                    </div>
                 </div>
             </div>
             <div className="progress-div">

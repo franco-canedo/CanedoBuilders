@@ -50,7 +50,7 @@ function ProspectAve({ setUnit, loading, load }) {
 
                 <div className="p-info-div">
                     <h5>{<Icon name='home' size='large' />} SINGLE FAMILY HOME</h5>
-                    <h5>{<Icon name='angle right' size='large' />}$ TBD</h5>
+                    {/* <h5>{<Icon name='angle right' size='large' />}$ TBD</h5> */}
 
                     <div className="info-buttons-div">
                         <Button variant="contained"
