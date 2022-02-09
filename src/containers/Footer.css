@@ -1,6 +1,6 @@
 .footer-container {
   background-image: linear-gradient(to bottom, rgb(133, 122, 122),rgb(41, 37, 37));
-    padding: 4rem 2rem 8rem 10rem;
+    padding: 1rem 2rem 1rem 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -10,8 +10,8 @@
 
 .footer-logo {
     object-fit: cover;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     
     box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 } 
@@ -19,9 +19,9 @@
 
 
 .footer-logo:hover {
-    transition: transform 300ms;
+    transition: transform 500ms;
   transform: translate3d(0, calc(1% - 1rem), 0);
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
   
   /* Social Icons */
@@ -63,6 +63,14 @@
         /* flex-direction: column; */
     }
 
+    .footer-logo {
+     
+      width: 50px;
+      height: 50px;
+      
+      
+  } 
+
     .social-media {
         max-width: 1000px;
         width: 100%;
@@ -71,7 +79,7 @@
 
     .footer-container {
       flex-direction: column;
-      margin-top: 150px;
+      margin-top: 5px;
     }
 
     .author {
@@ -82,14 +90,15 @@
 
     .footer-subscription {
       margin-right: 100px;
-      margin-bottom: 25px;
+      margin-bottom: 10px;
     }
   }
   
 .author {
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 15px;
+  font-size: 10px;
+  margin-top: 4px;
 
 }
 
