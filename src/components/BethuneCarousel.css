@@ -1,6 +1,10 @@
 .project-images {
     object-fit: cover;
-    max-width: 550px;
+    max-width: 400px;
     max-height: 300px;
     min-height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+
 }

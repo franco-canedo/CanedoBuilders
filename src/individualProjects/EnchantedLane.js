@@ -21,7 +21,7 @@ function EnchantedLane({ loading, load }) {
                 <div className="collage-div">
                     {
                         loading === true ? <div>
-                            <img className="project-img2" src={load}></img>
+                            <img className="project-images" src={load}></img>
                         </div>
                             : <img className="project-images" src={prospect}></img>
 

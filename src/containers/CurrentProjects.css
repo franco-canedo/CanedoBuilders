@@ -120,7 +120,7 @@
   }
     .project-div {
         flex-direction: column;  
-        width: 90%;
+        width: 100%;
     }
 
     .p-info-div {
