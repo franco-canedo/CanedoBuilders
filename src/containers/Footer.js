@@ -37,7 +37,7 @@ function Footer() {
                 </div>
             </section>
             <section className='author'>
-                <p className="designed-by">Website by Franco Canedo
+                <p className="designed-by">Website by Franco C.
                     <a className="author-a-tag"
                     target="_blank"
                     href="https://franco-canedo.herokuapp.com/"> {<Icon name='external alternate' size='small' />} </a></p>

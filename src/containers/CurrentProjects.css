@@ -305,7 +305,8 @@ a {
 @media only screen and (max-width: 600px) {
   .bounce-div {
     margin-left: 0px;
-   
+   max-height: 100px;
+   width: 100%;
   }
 
   .project-images9 {
@@ -333,6 +334,7 @@ a {
   .collage-div {
    width: 100%;
    margin-left: 0px;
+  
   }
 
   .project-img3 {
@@ -340,6 +342,17 @@ a {
     /* margin-right: 25px; */
     width: 100%;
     max-width: 300px;
+    max-height: 100px !important;
+    object-fit: cover;
+  }
+
+  .project-img4 {
+    /* max-width: 300px; */
+    /* margin-right: 25px; */
+    width: 100%;
+    max-width: 200px !important;
+    max-height: 100px !important;
+    /* object-fit: fit; */
   }
 
 }
@@ -352,11 +365,20 @@ a {
   border: solid;
 }
 
+.project-img4 {
+  margin-top: 10px;
+  max-width: 400px;
+  max-height: 300px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  border: solid;
+}
+
 .collage-div {
   animation: Project_slide 2s ease;
   margin-top: 10px;
   /* min-width: 400px; */
   max-height: 300px;
+ 
   
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* background-color: gray; */
@@ -369,3 +391,33 @@ a {
   /* margin-right: 50px; */
 }
 
+.project-images-p {
+  object-fit: contain;
+  width: 400px;
+  height: 200px;
+  /* min-height: 300px; */
+  animation: rotating 20s linear infinite;
+  
+}
+
+.rendering-paragraph {
+  position: absolute;
+  margin-left: 10px;
+  background-color: aqua;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px;
+}
+
+
+/* ///////////////Rotating */
+
+@keyframes rotating {
+  0%{
+    transform: rotate(0deg);
+    
+  }
+  100%{
+    transform: rotate(360deg);
+    
+  }
+}

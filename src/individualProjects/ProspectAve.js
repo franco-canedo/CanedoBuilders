@@ -8,6 +8,8 @@ import Button from '@material-ui/core/Button';
 import prospect from '../prospect/demolition.jpg';
 import prospectMap from '../prospect/prospectMap.png';
 
+import green from '../gifs/green.png';
+
 function ProspectAve({ setUnit, loading, load }) {
 
     const [progressIcon] = useState('calendar alternate outline');
@@ -22,20 +24,23 @@ function ProspectAve({ setUnit, loading, load }) {
 
                 <div className="collage-div">
                     {
-                        loading === true ? 
+                        loading === true ?
                             <img className="project-images9" src={load}></img>
-                        
-                            : <img className="project-images-p" src={prospect}></img>
 
+                            : <div>
+                                <p className="rendering-paragraph">RENDERING IN PROGRESS</p>
+                                <img className="project-images-p" src={green}></img>
+                            </div>
                     }
                 </div>
 
                 <a href="https://www.google.com/maps/place/1117+Prospect+Ave,+Austin,+TX+78702/@30.2744928,-97.7535402,13z/data=!4m5!3m4!1s0x8644b5c7d508c813:0x4f40d1fe094e4a59!8m2!3d30.2660746!4d-97.7173787" target="_blank">
                     <div className="bounce-div">
                         {
-                            loading === true ? 
-                                <img className="project-img3" src={load}></img>
-                           
+                            loading === true ?
+                                <img className="project-img4" src={load}></img>
+
+
                                 : <img src={prospectMap} className="project-img3"></img>
 
                         }
@@ -44,8 +49,8 @@ function ProspectAve({ setUnit, loading, load }) {
 
 
                 <div className="p-info-div">
-                    <h5>{<Icon name='home' size='large' />} UNIT A</h5>
-                    <h5>{<Icon name='angle right' size='large' />}$ TBD</h5>
+                    <h5>{<Icon name='home' size='large' />} SINGLE FAMILY HOME</h5>
+                    {/* <h5>{<Icon name='angle right' size='large' />}$ TBD</h5> */}
 
                     <div className="info-buttons-div">
                         <Button variant="contained"

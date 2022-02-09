@@ -35,7 +35,8 @@ function Bunche({setUnit, loading, load }) {
                     <div className="bounce-div">
                         {
                             loading === true ? 
-                                <img className="project-img3" src={load}></img>
+                                <img className="project-img4" src={load}></img>
+                               
                             
                                 : <img src={buncheMap} className="project-img3"></img>
 

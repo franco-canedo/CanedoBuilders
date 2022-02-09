@@ -70,7 +70,7 @@ function Header({ toggleTab }) {
                                     </div>
                                     <div className="tab-div"
                                         onClick={() => toggleTab("current projects")}>
-                                        <h5>CURRENT PROJECTS</h5>
+                                        <h5>LISTINGS</h5>
                                     </div>
                                     <div className="tab-div"
                                         onClick={() => toggleTab("about")}>
@@ -89,41 +89,41 @@ function Header({ toggleTab }) {
 
             {
                 width < 550 ?
-                <div className={menu} style={{ overflowX: "hidden"}}>
-                <div className="option"
-                onClick={() => {
-                    toggleTab("gallery");
-                    handleMenu();
-                    }}>
-                    <p> {<Icon name='picture' size='large' />} GALLERY</p>
-                </div>
-                <div className="option"
-                onClick={() => {
-                    toggleTab("current projects");
-                    handleMenu();
-                }}>
-                    <p> {<Icon name='building outline' size='large' />}CURRENT PROJECTS</p>
-                </div>
-                <div className="option"
-                onClick={() => {
-                    toggleTab("about");
-                    handleMenu();
-                    }}>
-                    <p> {<Icon name='info circle' size='large' />} OUR TEAM</p>
-                </div>
-                <div className="option"
-                onClick={() => {
-                    toggleTab("contact");
-                    handleMenu();
-                }}>
-                    <p> {<Icon name='envelope' size='large' />}CONTACT</p>
-                </div>
-                <div className="button"
-                onClick={handleMenu}>
-                    <Button variant="contained" onClick={handleMenu}
-                    > <Icon name='trash alternate' size='large' /></Button>
-                </div>
-            </div> : null
+                    <div className={menu} style={{ overflowX: "hidden" }}>
+                        <div className="option"
+                            onClick={() => {
+                                toggleTab("gallery");
+                                handleMenu();
+                            }}>
+                            <p> {<Icon name='picture' size='large' />} GALLERY</p>
+                        </div>
+                        <div className="option"
+                            onClick={() => {
+                                toggleTab("current projects");
+                                handleMenu();
+                            }}>
+                            <p> {<Icon name='building outline' size='large' />}LISTINGS</p>
+                        </div>
+                        <div className="option"
+                            onClick={() => {
+                                toggleTab("about");
+                                handleMenu();
+                            }}>
+                            <p> {<Icon name='info circle' size='large' />} OUR TEAM</p>
+                        </div>
+                        <div className="option"
+                            onClick={() => {
+                                toggleTab("contact");
+                                handleMenu();
+                            }}>
+                            <p> {<Icon name='envelope' size='large' />}CONTACT</p>
+                        </div>
+                        <div className="button"
+                            onClick={handleMenu}>
+                            <Button variant="contained" onClick={handleMenu}
+                            > <Icon name='trash alternate' size='large' /></Button>
+                        </div>
+                    </div> : null
             }
 
         </>
