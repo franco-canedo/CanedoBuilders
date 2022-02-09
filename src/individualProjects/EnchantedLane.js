@@ -4,7 +4,7 @@ import { Progress } from 'semantic-ui-react';
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Icon } from 'semantic-ui-react'
 
-import prospect from '../prospect/demolition.jpg';
+import prospect from '../gifs/green.png';
 import enchantedMap from '../enchanted/enchantedMap.png';
 
 function EnchantedLane({ loading, load }) {
@@ -47,8 +47,8 @@ function EnchantedLane({ loading, load }) {
                 </div>
             </div>
             <div className="progress-div">
-                <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: SEPTEMBER 2022</h3>
-                <Progress percent="10" indicating />
+                <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: AUGUST 2022</h3>
+                <Progress percent="5" indicating />
             </div>
 
         </>
