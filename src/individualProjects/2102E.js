@@ -45,8 +45,8 @@ function East({setUnit, loading, load }) {
 
 
                 <div className="p-info-div">
-                    <h3>{<Icon name='home' size='large' />} UNIT A</h3>
-                    <h3>{<Icon name='angle right' size='large' />}UNDER CONTRACT</h3>
+                    <h5>{<Icon name='home' size='large' />} UNIT A</h5>
+                    <h5>{<Icon name='angle right' size='large' />}UNDER CONTRACT</h5>
 
 
                     <div className="info-buttons-div">
@@ -58,8 +58,8 @@ function East({setUnit, loading, load }) {
                     </div>
 
 
-                    <h3> {<Icon name='home' size='large' />} UNIT B</h3>
-                    <h3>{<Icon name='angle right' size='large' />}UNDER CONTRACT</h3>
+                    <h5> {<Icon name='home' size='large' />} UNIT B</h5>
+                    <h5>{<Icon name='angle right' size='large' />}UNDER CONTRACT</h5>
 
 
                     <div className="info-buttons-div">
@@ -75,7 +75,7 @@ function East({setUnit, loading, load }) {
 
 
             <div className="progress-div">
-                <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: MARCH 2022</h3>
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: MARCH 2022</h5>
                 <Progress percent="90" indicating />
             </div>
 

@@ -25,7 +25,7 @@ function ProspectAve({ setUnit, loading, load }) {
                         loading === true ? 
                             <img className="project-images9" src={load}></img>
                         
-                            : <img className="project-images" src={prospect}></img>
+                            : <img className="project-images-p" src={prospect}></img>
 
                     }
                 </div>
@@ -44,8 +44,8 @@ function ProspectAve({ setUnit, loading, load }) {
 
 
                 <div className="p-info-div">
-                    <h3>{<Icon name='home' size='large' />} UNIT A</h3>
-                    <h3>{<Icon name='angle right' size='large' />}$ TBD</h3>
+                    <h5>{<Icon name='home' size='large' />} UNIT A</h5>
+                    <h5>{<Icon name='angle right' size='large' />}$ TBD</h5>
 
                     <div className="info-buttons-div">
                         <Button variant="contained"
@@ -58,7 +58,7 @@ function ProspectAve({ setUnit, loading, load }) {
                 </div>
             </div>
             <div className="progress-div">
-                <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: SEPTEMBER 2022</h3>
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: SEPTEMBER 2022</h5>
                 <Progress percent="10" indicating />
             </div>
 

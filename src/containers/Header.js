@@ -45,49 +45,51 @@ function Header({ toggleTab }) {
     return (
         <>
             <div className="header">
-                <div className="logo-div"
-                onClick={() => toggleTab("home")}>
-                    <img className="logo-img"
-                    src={logoZoom}></img>
-                </div>
-                <div className="tabs-container">
+                <div className="inside-header">
+                    <div className="logo-div"
+                        onClick={() => toggleTab("home")}>
+                        <img className="logo-img"
+                            src={logoZoom}></img>
+                    </div>
+                    <div className="tabs-container">
 
-                    {
-                        width < 550 ?
-                            <div className="button-div" onClick={handleMenu}>
-                              <Icon name='list' size='large' />
-                                
-                            </div> :
-                            <>
-                                <div className="tab-div"
-                                onClick={() => {
-                                    
-                                    toggleTab("gallery");
-                                    
-                                    }}>
-                                    <h5>GALLERY</h5>
-                                </div>
-                                <div className="tab-div"
-                                onClick={() => toggleTab("current projects")}>
-                                    <h5>CURRENT PROJECTS</h5>
-                                </div>
-                                <div className="tab-div"
-                                onClick={() => toggleTab("about")}>
-                                    <h5>OUR TEAM</h5>
-                                </div>
-                                <div className="tab-div"
-                                onClick={() => toggleTab("contact")}>
-                                    <h5>CONTACT</h5>
-                                </div>
-                            </>
-                    }
+                        {
+                            width < 550 ?
+                                <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
+                                    <Icon name='list' size='large' />
 
+                                </div> :
+                                <>
+                                    <div className="tab-div"
+                                        onClick={() => {
+
+                                            toggleTab("gallery");
+
+                                        }}>
+                                        <h5>GALLERY</h5>
+                                    </div>
+                                    <div className="tab-div"
+                                        onClick={() => toggleTab("current projects")}>
+                                        <h5>CURRENT PROJECTS</h5>
+                                    </div>
+                                    <div className="tab-div"
+                                        onClick={() => toggleTab("about")}>
+                                        <h5>OUR TEAM</h5>
+                                    </div>
+                                    <div className="tab-div"
+                                        onClick={() => toggleTab("contact")}>
+                                        <h5>CONTACT</h5>
+                                    </div>
+                                </>
+                        }
+
+                    </div>
                 </div>
             </div>
 
             {
                 width < 550 ?
-                <div className={menu}>
+                <div className={menu} style={{ overflowX: "hidden"}}>
                 <div className="option"
                 onClick={() => {
                     toggleTab("gallery");
@@ -123,7 +125,7 @@ function Header({ toggleTab }) {
                 </div>
             </div> : null
             }
-            
+
         </>
 
     );

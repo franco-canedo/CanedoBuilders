@@ -42,12 +42,12 @@ function EnchantedLane({ loading, load }) {
 
 
                 <div className="p-info-div">
-                    <h3>{<Icon name='home' size='large' />} UNIT A</h3>
-                    <h3>{<Icon name='angle right' size='large' />}Plans in Progress</h3>
+                    <h5>{<Icon name='home' size='large' />} UNIT A</h5>
+                    <h5>{<Icon name='angle right' size='large' />}Plans in Progress</h5>
                 </div>
             </div>
             <div className="progress-div">
-                <h3>{<Icon name={progressIcon} size='large' />} COMPLETION: AUGUST 2022</h3>
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: AUGUST 2022</h5>
                 <Progress percent="5" indicating />
             </div>
 
