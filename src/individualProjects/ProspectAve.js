@@ -22,9 +22,9 @@ function ProspectAve({ setUnit, loading, load }) {
 
                 <div className="collage-div">
                     {
-                        loading === true ? <div>
-                            <img className="project-images" src={load}></img>
-                        </div>
+                        loading === true ? 
+                            <img className="project-images9" src={load}></img>
+                        
                             : <img className="project-images" src={prospect}></img>
 
                     }
@@ -33,9 +33,9 @@ function ProspectAve({ setUnit, loading, load }) {
                 <a href="https://www.google.com/maps/place/1117+Prospect+Ave,+Austin,+TX+78702/@30.2744928,-97.7535402,13z/data=!4m5!3m4!1s0x8644b5c7d508c813:0x4f40d1fe094e4a59!8m2!3d30.2660746!4d-97.7173787" target="_blank">
                     <div className="bounce-div">
                         {
-                            loading === true ? <div className="bounce">
+                            loading === true ? 
                                 <img className="project-img3" src={load}></img>
-                            </div>
+                           
                                 : <img src={prospectMap} className="project-img3"></img>
 
                         }

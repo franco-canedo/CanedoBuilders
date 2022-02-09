@@ -4,7 +4,7 @@ import { Progress } from 'semantic-ui-react';
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Icon } from 'semantic-ui-react'
 
-import prospect from '../gifs/green.png';
+import green from '../gifs/green.png';
 import enchantedMap from '../enchanted/enchantedMap.png';
 
 function EnchantedLane({ loading, load }) {
@@ -20,10 +20,10 @@ function EnchantedLane({ loading, load }) {
 
                 <div className="collage-div">
                     {
-                        loading === true ? <div>
-                            <img className="project-images" src={load}></img>
-                        </div>
-                            : <img className="project-images" src={prospect}></img>
+                        loading === true ? 
+                            <img className="project-images9" src={load}></img>
+                       
+                            : <img className="project-images" src={green}></img>
 
                     }
                 </div>
@@ -31,9 +31,9 @@ function EnchantedLane({ loading, load }) {
                 <a href="https://www.google.com/maps/place/4908+Enchanted+Ln,+Austin,+TX+78745/@30.2477067,-97.8079698,12.16z/data=!4m5!3m4!1s0x865b4b4953dc55c7:0x2c085f210c61418e!8m2!3d30.2217544!4d-97.7910217" target="_blank">
                     <div className="bounce-div">
                         {
-                            loading === true ? <div className="bounce">
+                            loading === true ? 
                                 <img className="project-img3" src={load}></img>
-                            </div>
+                            
                                 : <img src={enchantedMap} className="project-img3"></img>
 
                         }
