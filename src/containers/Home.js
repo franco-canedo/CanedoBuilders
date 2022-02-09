@@ -46,9 +46,6 @@ function Home({ toPage }) {
     return (
         <div className="gallery-master-container">
             <div className="head-div">
-              
-              
-
                 <>
                     <div className="paragraph-div2">
 
@@ -58,12 +55,8 @@ function Home({ toPage }) {
                         </Button>
 
                     </div>
-
-
                     <img className="head-imager" src={house}></img>
                 </>
-
-
             </div>
 
             <div className='quote'>
@@ -81,9 +74,9 @@ function Home({ toPage }) {
                     <div className="grid-item-home" onClick={() => toPage("current projects")}>
                         <h2>{<Icon name='building outline' size='large' />} PROJECTS </h2>
                     </div>
-                    <div className="grid-item-home" onClick={() => toPage("about")}>
+                    {/* <div className="grid-item-home" onClick={() => toPage("about")}>
                         <h2>{<Icon name='info circle' size='large' />} ABOUT</h2>
-                    </div>
+                    </div> */}
                     <div className="grid-item-home" onClick={() => toPage("contact")}>
                         <h2>{<Icon name='envelope' size='large' />} CONTACT</h2>
                     </div>

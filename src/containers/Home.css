@@ -135,7 +135,7 @@
     }
 
     .grid-item-home:hover {
-      transition: none;
+      transition: none !important;
     
     }
   }

@@ -334,6 +334,7 @@ a {
   .collage-div {
    width: 100%;
    margin-left: 0px;
+  
   }
 
   .project-img3 {
@@ -377,6 +378,7 @@ a {
   margin-top: 10px;
   /* min-width: 400px; */
   max-height: 300px;
+ 
   
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* background-color: gray; */
@@ -389,3 +391,17 @@ a {
   /* margin-right: 50px; */
 }
 
+.project-images-p {
+  object-fit: contain;
+  width: 400px;
+  height: 200px;
+  /* min-height: 300px; */
+}
+
+.rendering-paragraph {
+  position: absolute;
+  margin-left: 10px;
+  background-color: aqua;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px;
+}

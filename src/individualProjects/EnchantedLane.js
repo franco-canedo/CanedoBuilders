@@ -23,7 +23,11 @@ function EnchantedLane({ loading, load }) {
                         loading === true ? 
                             <img className="project-images9" src={load}></img>
                        
-                            : <img className="project-images" src={green}></img>
+                            : 
+                            <div>
+                                <p className="rendering-paragraph">RENDERING IN PROGRESS</p>
+                            <img className="project-images-p" src={green}></img>
+                            </div>
 
                     }
                 </div>
@@ -42,8 +46,8 @@ function EnchantedLane({ loading, load }) {
 
 
                 <div className="p-info-div">
-                    <h5>{<Icon name='home' size='large' />} UNIT A</h5>
-                    <h5>{<Icon name='angle right' size='large' />}Plans in Progress</h5>
+                    <h5>{<Icon name='home' size='large' />} SINGLE FAMILY HOME</h5>
+                    <h5>{<Icon name='angle right' size='large' />}PLANS IN PROGRESS</h5>
                 </div>
             </div>
             <div className="progress-div">
