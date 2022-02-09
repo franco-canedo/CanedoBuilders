@@ -7,6 +7,7 @@ import Bunche from '../individualProjects/Bunche';
 import East from '../individualProjects/2102E';
 import EnchantedLane from '../individualProjects/EnchantedLane';
 import ProspectAve from '../individualProjects/ProspectAve';
+import BrentwoodSt from '../individualProjects/Brentwood';
 
 ////// Bunche 
 import BuncheCarousel from '../components/BuncheCarousel';
@@ -18,6 +19,7 @@ import E21UnitB from '../units/2102B';
 import BuncheA from '../units/BuncheA';
 import BuncheB from '../units/BuncheB';
 import ProspectA from '../units/ProspectA';
+
 
 
 import load from '../gifs/buffer.gif';
@@ -111,6 +113,7 @@ function CurrentProjects({ normal }) {
                                             loading={loading} load={load} />
                                         <ProspectAve setUnit={setUnit} loading={loading} load={load} />
                                         <EnchantedLane loading={loading} load={load} />
+                                        <BrentwoodSt loading={loading} load={load}/>
                                     </div>
                                 </div>
             }

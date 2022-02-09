@@ -62,7 +62,7 @@ function Contact() {
 
                 </div>
                 <div className="form-div">
-                    <h2>Warranty Request Form</h2>
+                    <h2>Warranty Support Form</h2>
                     <p>Please fill out the form below for warranty related issues. All fields are required. </p>
                     <Form onSubmit={onSubmit}>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

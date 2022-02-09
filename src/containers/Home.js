@@ -49,7 +49,7 @@ function Home({ toPage }) {
                 <>
                     <div className="paragraph-div2">
 
-                        <Button onClick={() => window.scrollTo(0, 900)}
+                        <Button onClick={() => window.scrollTo(0, 600)}
                             variant="contained" color="dark">
                             <h3>MORE {<Icon name='chevron down' size='small' />}</h3>
                         </Button>

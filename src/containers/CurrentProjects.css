@@ -396,6 +396,8 @@ a {
   width: 400px;
   height: 200px;
   /* min-height: 300px; */
+  animation: rotating 20s linear infinite;
+  
 }
 
 .rendering-paragraph {
@@ -404,4 +406,18 @@ a {
   background-color: aqua;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 5px;
+}
+
+
+/* ///////////////Rotating */
+
+@keyframes rotating {
+  0%{
+    transform: rotate(0deg);
+    
+  }
+  100%{
+    transform: rotate(360deg);
+    
+  }
 }

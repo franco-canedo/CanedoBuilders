@@ -2,13 +2,15 @@ import { useEffect, useState } from 'react';
 
 import { Progress } from 'semantic-ui-react';
 import "react-image-gallery/styles/css/image-gallery.css";
-import { Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react'
 import Button from '@material-ui/core/Button';
 
-import green from '../gifs/green.png';
-import enchantedMap from '../enchanted/enchantedMap.png';
 
-function EnchantedLane({ loading, load }) {
+import brentwoodMap from '../brentwood/brentwoodMap.png';
+
+import green from '../gifs/green.png';
+
+function BrentwoodSt({ setUnit, loading, load }) {
 
     const [progressIcon] = useState('calendar alternate outline');
     const [buttonIcon] = useState('mars');
@@ -16,31 +18,30 @@ function EnchantedLane({ loading, load }) {
     return (
         <>
             <div className="project-title-div">
-                <h1>ENCHATNED LANE</h1>
+                <h1>BRENTWOOD STREET</h1>
             </div>
             <div className="project-div">
 
                 <div className="collage-div">
                     {
-                        loading === true ? 
+                        loading === true ?
                             <img className="project-images9" src={load}></img>
-                       
-                            : 
-                            <div>
-                                <p className="rendering-paragraph">RENDERING IN PROGRESS</p>
-                            <img className="project-images-p" src={green}></img>
-                            </div>
 
+                            : <div>
+                                <p className="rendering-paragraph">RENDERING IN PROGRESS</p>
+                                <img className="project-images-p" src={green}></img>
+                            </div>
                     }
                 </div>
 
-                <a href="https://www.google.com/maps/place/4908+Enchanted+Ln,+Austin,+TX+78745/@30.2477067,-97.8079698,12.16z/data=!4m5!3m4!1s0x865b4b4953dc55c7:0x2c085f210c61418e!8m2!3d30.2217544!4d-97.7910217" target="_blank">
+                <a href="https://www.google.com/maps/place/605+Brentwood+St,+Austin,+TX+78752/@30.3083648,-97.7862583,12.61z/data=!4m5!3m4!1s0x8644ca38639a0af3:0x80517f5dae84e133!8m2!3d30.3320253!4d-97.7190332" target="_blank">
                     <div className="bounce-div">
                         {
-                            loading === true ? 
+                            loading === true ?
                                 <img className="project-img4" src={load}></img>
-                            
-                                : <img src={enchantedMap} className="project-img3"></img>
+
+
+                                : <img src={brentwoodMap} className="project-img3"></img>
 
                         }
                     </div>
@@ -48,14 +49,26 @@ function EnchantedLane({ loading, load }) {
 
 
                 <div className="p-info-div">
-                    <h5>{<Icon name='home' size='large' />} SINGLE FAMILY HOME</h5>
-                    {/* <h5>{<Icon name='angle right' size='large' />}PLANS IN PROGRESS</h5> */}
+                    <h5>{<Icon name='home' size='large' />} UNIT A</h5>
+                    {/* <h5>{<Icon name='angle right' size='large' />}$ TBD</h5> */}
+
                     <div className="info-buttons-div">
                         <Button disabled variant="contained"
                              color="primary">
                             PLANS IN PROGRESS {<Icon name={buttonIcon} size='large' />}
                         </Button>
                     </div>
+
+                    <h5>{<Icon name='home' size='large' />} UNIT B</h5>
+                    {/* <h5>{<Icon name='angle right' size='large' />}$ TBD</h5> */}
+
+                    <div className="info-buttons-div">
+                        <Button disabled variant="contained"
+                             color="primary">
+                            PLANS IN PROGRESS {<Icon name={buttonIcon} size='large' />}
+                        </Button>
+                    </div>
+
                 </div>
             </div>
             <div className="progress-div">
@@ -67,4 +80,4 @@ function EnchantedLane({ loading, load }) {
     )
 }
 
-export default EnchantedLane;
+export default BrentwoodSt;
