@@ -306,6 +306,7 @@ a {
   .bounce-div {
     margin-left: 0px;
    max-height: 100px;
+   width: 100%;
   }
 
   .project-images9 {
@@ -344,9 +345,26 @@ a {
     object-fit: cover;
   }
 
+  .project-img4 {
+    /* max-width: 300px; */
+    /* margin-right: 25px; */
+    width: 100%;
+    max-width: 200px !important;
+    max-height: 100px !important;
+    /* object-fit: fit; */
+  }
+
 }
 
 .project-img3 {
+  margin-top: 10px;
+  max-width: 400px;
+  max-height: 300px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  border: solid;
+}
+
+.project-img4 {
   margin-top: 10px;
   max-width: 400px;
   max-height: 300px;

@@ -9,6 +9,8 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import E21Carousel from '../components/East21Carousel';
 import e21map from '../East21/e21map.png';
 
+import green from '../gifs/green.png';
+
 function East({setUnit, loading, load }) {
 
     const [progressIcon] = useState('calendar alternate outline');
@@ -35,7 +37,8 @@ function East({setUnit, loading, load }) {
                     <div className="bounce-div">
                         {
                             loading === true ? 
-                                <img className="project-img3" src={load}></img>
+                                <img className="project-img4" src={load}></img>
+                                
                             
                                 : <img src={e21map} className="project-img3"></img>
 

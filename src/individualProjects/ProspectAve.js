@@ -34,7 +34,8 @@ function ProspectAve({ setUnit, loading, load }) {
                     <div className="bounce-div">
                         {
                             loading === true ? 
-                                <img className="project-img3" src={load}></img>
+                                <img className="project-img4" src={load}></img>
+                                
                            
                                 : <img src={prospectMap} className="project-img3"></img>
 
