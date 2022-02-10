@@ -50,7 +50,7 @@ function Home({ toPage }) {
             <div className="head-div">
                 <>
                     <div className="paragraph-div2">
-
+                       
                         <Button onClick={() => window.scrollTo(0, 600)}
                             variant="contained" color="dark">
                             <h3>MORE {<Icon name='chevron down' size='small' />}</h3>
@@ -62,8 +62,7 @@ function Home({ toPage }) {
             </div>
 
             <div className='quote'>
-                <p>
-                    Creating beautiful and unique living spaces in the city of Austin since 2014.</p>
+
                 <div>
                     <video width="750" height="500" controls >
                         <source src="/Videos/bethuneVid.mp4" type="video/mp4" /></video>

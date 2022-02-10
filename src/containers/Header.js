@@ -23,6 +23,8 @@ function Header({ toggleTab }) {
 
     const [menu, setMenu] = useState("menu-hidden-start");
 
+
+
     const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => {
         const debouncedHandleResize = debounce(function handleResize() {
@@ -37,9 +39,9 @@ function Header({ toggleTab }) {
     })
 
     const handleMenu = () => {
-        if (menu === "mobile-menu-in") {
+        if (menu === "mobile-menu-in" || menu === "menu-hidden-start") {
             setMenu("mobile-menu-hidden")
-        } else if (menu === "mobile-menu-hidden" || menu === "menu-hidden-start") {
+        } else if (menu === "mobile-menu-hidden" ) {
             setMenu("mobile-menu-in")
         }
     }
@@ -47,6 +49,7 @@ function Header({ toggleTab }) {
     return (
         <>
             <div className="header">
+                {/* {timer()} */}
                 <div className="inside-header">
                     <Link to="/" style={{ color: 'white' }}>
                         <div className="logo-div"
@@ -55,14 +58,17 @@ function Header({ toggleTab }) {
                                 src={logoZoom}></img>
                         </div>
                     </Link>
+
+                    {width < 550 ? <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
+                        <Icon name='bars' size='large' />
+
+                    </div> : undefined}
+
                     <div className="tabs-container">
 
                         {
                             width < 550 ?
-                                <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
-                                    <Icon name='list' size='large' />
-
-                                </div> :
+                                undefined :
                                 <>
                                     <Link to="/gallery" style={{ color: "white" }}>
                                         <div className="tab-div">
@@ -130,7 +136,7 @@ function Header({ toggleTab }) {
                                 <p> {<Icon name='info circle' size='large' />}OUR TEAM</p>
                             </Link>
                             <Outlet />
-                            
+
                         </div>
                         <div className="option"
                             onClick={() => {
@@ -141,12 +147,12 @@ function Header({ toggleTab }) {
                                 <p> {<Icon name='envelope' size='large' />}CONTACT</p>
                             </Link>
                             <Outlet />
-                           
+
                         </div>
                         <div className="button"
                             onClick={handleMenu}>
                             <Button variant="contained" onClick={handleMenu}
-                            > <Icon name='trash alternate' size='large' /></Button>
+                            > <Icon name='chevron left' size='large' /></Button>
                         </div>
                     </div> : null
             }
