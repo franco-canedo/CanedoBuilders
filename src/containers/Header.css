@@ -1,6 +1,7 @@
 .header {
     column-count: 2;
-   
+    /* display: none; */
+    overflow-x: hidden;
     height: 100px;
     color: white;
     /* padding-top: 10px; */
@@ -203,7 +204,7 @@ background-color: rgb(102, 98, 98);
      
       padding-top: 12px;
       z-index: 1;
-      
+     
       left:0;
       border-left: solid ;
     border-right: solid;
@@ -266,6 +267,7 @@ font-size: small;
   column-count: 2;
   width: 60px;
  /* overflow: hidden; */
+ 
 }
 
 .header-email-icon {
