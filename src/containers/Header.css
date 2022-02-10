@@ -252,6 +252,7 @@ background-color: rgb(102, 98, 98);
   left: 0;
   margin-left: 140px; */
 font-size: small;
+/* overflow: hidden; */
 }
 
 .header-email-div {
@@ -264,7 +265,7 @@ font-size: small;
   margin-left: 80px;
   column-count: 2;
   width: 60px;
- 
+ /* overflow: hidden; */
 }
 
 .header-email-icon {
