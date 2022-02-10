@@ -8,9 +8,7 @@
     background-image: linear-gradient(to bottom, rgb(133, 122, 122),rgb(41, 37, 37));
 }
 
-/* .inside-header {
- column-count: 2;
-} */
+
 
 .logo-div {
   
@@ -38,6 +36,11 @@ background-color: rgb(102, 98, 98);
 } 
 
 @media only screen and (max-width: 600px) {
+
+  .inside-header {
+    overflow: hidden;
+    width: 0px;
+   }
   .header {
     height: 50px;
     /* position: fixed; */
@@ -49,10 +52,10 @@ background-color: rgb(102, 98, 98);
     visibility: hidden;
   }
 
-  .tabs-container {
+  /* .tabs-container {
     margin-right: 600px;
     left: 0;
-  }
+  } */
 
   /* .header {
     min-width: 700px;
@@ -118,7 +121,7 @@ background-color: rgb(102, 98, 98);
 
 .mobile-menu-hidden {
     animation: Slide_Out 1s ease-out 0s forwards;
-    position: absolute;
+    position: fixed;
     width: 235px;
     height: 300px;
     background-color: white;
@@ -138,7 +141,7 @@ background-color: rgb(102, 98, 98);
 
 .mobile-menu-in {
     animation: Slide_In 1s ease 0s forwards;
-    position: absolute;
+    position: fixed;
     width: 235px;
     height: 300px;
     background-color: white;
@@ -201,7 +204,7 @@ background-color: rgb(102, 98, 98);
       padding-top: 12px;
       z-index: 1;
       /* left: 80%; */
-      right: 0;
+      left:0;
       border-left: solid;
     
       padding-left: 5px;

@@ -62,13 +62,13 @@ function Header({ toggleTab }) {
                     {width < 550 ? <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
                         <Icon name='bars' size='large' />
 
-                    </div> : undefined}
+                    </div> : null}
 
                     <div className="tabs-container">
 
                         {
-                            width < 550 ?
-                                undefined :
+                            width < 550 ? null
+                                 :
                                 <>
                                     <Link to="/gallery" style={{ color: "white" }}>
                                         <div className="tab-div">
