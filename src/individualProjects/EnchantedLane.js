@@ -27,7 +27,7 @@ function EnchantedLane({ loading, load }) {
                        
                             : 
                             <div>
-                                <p className="rendering-paragraph">RENDERING IN PROGRESS</p>
+                                <p className="rendering-paragraph">RENDERING COMING SOON</p>
                             <img className="project-images-p" src={green}></img>
                             </div>
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { Progress } from 'semantic-ui-react';
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -31,7 +31,7 @@ function ProspectAve({ setUnit, loading, load }) {
                             <img className="project-images9" src={load}></img>
 
                             : <div>
-                                <p className="rendering-paragraph">RENDERING IN PROGRESS</p>
+                                <p className="rendering-paragraph">RENDERING COMING SOON</p>
                                 <img className="project-images-p" src={green}></img>
                             </div>
                     }
