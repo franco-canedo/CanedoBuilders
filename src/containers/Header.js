@@ -60,15 +60,12 @@ function Header({ toggleTab }) {
                                 src={logoZoom}></img>
                         </div>
                     </Link>
-                    {/* {width < 550 ? <Link to="/" style={{ color: "black" }}>
-                        <p> {<Icon name='home' size='large' />}HOME</p>
-                    </Link> : null
-                    } */}
+                   
 
                     {
                         width < 550 ? <div className="header-email-div">
                             <img style={{ height: '30px', }} src={green} className="header-email-icon"></img>
-                            <p className="header-email">INFO@CANEDOBUILDERS.COM</p>
+                            <p className="header-email">INFO@CANEDOBUILDERS</p>
                         </div> : null
                     }
 
