@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { Progress } from 'semantic-ui-react';
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -9,6 +9,9 @@ import prospect from '../prospect/demolition.jpg';
 import prospectMap from '../prospect/prospectMap.png';
 
 import green from '../gifs/green.png';
+
+import { Link, Outlet } from "react-router-dom";
+import { withStyles } from '@material-ui/core';
 
 function ProspectAve({ setUnit, loading, load }) {
 
@@ -28,7 +31,7 @@ function ProspectAve({ setUnit, loading, load }) {
                             <img className="project-images9" src={load}></img>
 
                             : <div>
-                                <p className="rendering-paragraph">RENDERING IN PROGRESS</p>
+                                <p className="rendering-paragraph">RENDERING COMING SOON</p>
                                 <img className="project-images-p" src={green}></img>
                             </div>
                     }
@@ -53,11 +56,12 @@ function ProspectAve({ setUnit, loading, load }) {
                     {/* <h5>{<Icon name='angle right' size='large' />}$ TBD</h5> */}
 
                     <div className="info-buttons-div">
-                        <Button variant="contained"
-                            onClick={() => setUnit("ProspectAve")} color="primary">
-                            MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
-                        </Button>
-
+                        <Link to="/prospect" style={{ color: 'white' }}>
+                            <Button variant="contained"
+                                onClick={() => setUnit("ProspectAve")} color="primary">
+                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                            </Button>
+                        </Link>
                     </div>
 
                 </div>

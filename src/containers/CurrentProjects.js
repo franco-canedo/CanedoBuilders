@@ -88,7 +88,7 @@ function CurrentProjects({ normal }) {
     }
 
     const handleUnitSelect = (unit) => {
-        setUnit(unit);
+        // setUnit(unit);
     }
 
 

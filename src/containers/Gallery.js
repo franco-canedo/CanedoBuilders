@@ -34,7 +34,7 @@ function Gallery({ toCurrent }) {
 
 
     useEffect(() => {
-        window.scrollTo(0, 400);
+        window.scrollTo(0, 300);
     }, [])
 
     return (

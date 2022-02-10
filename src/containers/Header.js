@@ -5,6 +5,10 @@ import logoZoom from '../photos/LogoZoom2.png';
 import Button from '@material-ui/core/Button';
 import { Icon } from 'semantic-ui-react';
 
+import { Outlet, Link } from "react-router-dom";
+
+import green from '../gifs/green.png';
+
 function debounce(fn, ms) {
     let timer
     return _ => {
@@ -20,6 +24,8 @@ function debounce(fn, ms) {
 function Header({ toggleTab }) {
 
     const [menu, setMenu] = useState("menu-hidden-start");
+
+
 
     const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => {
@@ -45,41 +51,59 @@ function Header({ toggleTab }) {
     return (
         <>
             <div className="header">
+                {/* {timer()} */}
                 <div className="inside-header">
-                    <div className="logo-div"
-                        onClick={() => toggleTab("home")}>
-                        <img className="logo-img"
-                            src={logoZoom}></img>
-                    </div>
+                    <Link to="/" style={{ color: 'white' }}>
+                        <div className="logo-div"
+                            onClick={() => toggleTab("home")}>
+                            <img className="logo-img"
+                                src={logoZoom}></img>
+                        </div>
+                    </Link>
+                   
+
+                    {
+                        width < 550 ? <div className="header-email-div">
+                            <img style={{ height: '30px', }} src={green} className="header-email-icon"></img>
+                            <p className="header-email">INFO@CANEDOBUILDERS.COM     .</p>
+                        </div> : null
+                    }
+
+                    {width < 550 ? <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
+                        <Icon name='bars' size='large' />
+
+                    </div> : null}
+
                     <div className="tabs-container">
 
                         {
-                            width < 550 ?
-                                <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
-                                    <Icon name='list' size='large' />
-
-                                </div> :
+                            width < 550 ? null
+                                :
                                 <>
-                                    <div className="tab-div"
-                                        onClick={() => {
-
-                                            toggleTab("gallery");
-
-                                        }}>
-                                        <h5>GALLERY</h5>
-                                    </div>
-                                    <div className="tab-div"
-                                        onClick={() => toggleTab("current projects")}>
-                                        <h5>LISTINGS</h5>
-                                    </div>
-                                    <div className="tab-div"
-                                        onClick={() => toggleTab("about")}>
-                                        <h5>OUR TEAM</h5>
-                                    </div>
-                                    <div className="tab-div"
-                                        onClick={() => toggleTab("contact")}>
-                                        <h5>CONTACT</h5>
-                                    </div>
+                                    <Link to="/gallery" style={{ color: "white" }}>
+                                        <div className="tab-div">
+                                            <h5>GALLERY</h5>
+                                            <Outlet />
+                                        </div>
+                                    </Link>
+                                    <Link to="/listings" style={{ color: "white" }}>
+                                        <div className="tab-div">
+                                            <h5>LISTINGS</h5>
+                                            <Outlet />
+                                        </div>
+                                    </Link>
+                                    <Link to="/about" style={{ color: "white" }}>
+                                        <div className="tab-div">
+                                            <h5>OUR TEAM</h5>
+                                            <Outlet />
+                                        </div>
+                                    </Link>
+                                    <Link to="/contact" style={{ color: "white" }}>
+                                        <div className="tab-div">
+                                            <h5>CONTACT</h5>
+                                            <Outlet />
+                                        </div>
+                                    </Link>
                                 </>
                         }
 
@@ -90,38 +114,55 @@ function Header({ toggleTab }) {
             {
                 width < 550 ?
                     <div className={menu} style={{ overflowX: "hidden" }}>
+
                         <div className="option"
                             onClick={() => {
                                 toggleTab("gallery");
                                 handleMenu();
                             }}>
-                            <p> {<Icon name='picture' size='large' />} GALLERY</p>
+                            <Link to="/gallery" style={{ color: "black" }}>
+                                <p> {<Icon name='picture' size='large' />} GALLERY</p>
+                            </Link>
+                            <Outlet />
                         </div>
+
                         <div className="option"
                             onClick={() => {
                                 toggleTab("current projects");
                                 handleMenu();
                             }}>
-                            <p> {<Icon name='building outline' size='large' />}LISTINGS</p>
+                            <Link to="/listings" style={{ color: "black" }}>
+                                <p> {<Icon name='building outline' size='large' />}LISTINGS</p>
+                            </Link>
+                            <Outlet />
+
                         </div>
                         <div className="option"
                             onClick={() => {
                                 toggleTab("about");
                                 handleMenu();
                             }}>
-                            <p> {<Icon name='info circle' size='large' />} OUR TEAM</p>
+                            <Link to="/about" style={{ color: "black" }}>
+                                <p> {<Icon name='info circle' size='large' />}OUR TEAM</p>
+                            </Link>
+                            <Outlet />
+
                         </div>
                         <div className="option"
                             onClick={() => {
                                 toggleTab("contact");
                                 handleMenu();
                             }}>
-                            <p> {<Icon name='envelope' size='large' />}CONTACT</p>
+                            <Link to="/contact" style={{ color: "black" }}>
+                                <p> {<Icon name='envelope' size='large' />}CONTACT</p>
+                            </Link>
+                            <Outlet />
+
                         </div>
                         <div className="button"
                             onClick={handleMenu}>
                             <Button variant="contained" onClick={handleMenu}
-                            > <Icon name='trash alternate' size='large' /></Button>
+                            > <Icon name='chevron left' size='large' /></Button>
                         </div>
                     </div> : null
             }

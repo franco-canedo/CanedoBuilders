@@ -5,14 +5,28 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css';
 
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
+
+import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import Home from './containers/Home';
+import Gallery from './containers/Gallery';
+import CurrentProjects from './containers/CurrentProjects';
+import About from './containers/About';
+import Contact from './containers/Contact';
+import Footer from './containers/Footer';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    
+    <BrowserRouter>
       <App />
-
+    </BrowserRouter>,
   </React.StrictMode>,
   document.getElementById('root')
 );

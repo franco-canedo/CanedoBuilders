@@ -9,7 +9,9 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import BuncheCarousel from '../components/BuncheCarousel';
 import buncheMap from '../bunche/buncheMap.png';
 
-function Bunche({setUnit, loading, load }) {
+import { Link } from 'react-router-dom'
+
+function Bunche({ setUnit, loading, load }) {
 
     const [progressIcon] = useState('calendar alternate outline');
     const [buttonIcon] = useState('mars');
@@ -23,9 +25,9 @@ function Bunche({setUnit, loading, load }) {
 
                 <div className="collage-div">
                     {
-                        loading === true ? 
+                        loading === true ?
                             <img className="project-images9" src={load}></img>
-                        
+
                             : <BuncheCarousel />
 
                     }
@@ -34,10 +36,10 @@ function Bunche({setUnit, loading, load }) {
                 <a href="https://www.google.com/maps/place/1729+Bunche+Rd,+Austin,+TX+78721/@30.2719212,-97.7625193,12z/data=!4m5!3m4!1s0x8644b63fe2ce4237:0x88ff16549124f698!8m2!3d30.2805335!4d-97.6764097" target="_blank">
                     <div className="bounce-div">
                         {
-                            loading === true ? 
+                            loading === true ?
                                 <img className="project-img4" src={load}></img>
-                               
-                            
+
+
                                 : <img src={buncheMap} className="project-img3"></img>
 
                         }
@@ -51,11 +53,12 @@ function Bunche({setUnit, loading, load }) {
 
 
                     <div className="info-buttons-div">
-                        <Button variant="contained"
-                            onClick={() => setUnit("BuncheA")} color="primary">
-                            MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
-                        </Button>
-
+                        <Link to="/buncheA" style={{ color: 'white' }}>
+                            <Button variant="contained"
+                                onClick={() => setUnit("BuncheA")} color="primary">
+                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                            </Button>
+                        </Link>
                     </div>
 
 
@@ -64,11 +67,12 @@ function Bunche({setUnit, loading, load }) {
 
 
                     <div className="info-buttons-div">
-                        <Button variant="contained"
-                            onClick={() => setUnit("BuncheB")} color="primary">
-                            MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
-                        </Button>
-
+                        <Link to="/buncheB" style={{ color: 'white' }}>
+                            <Button variant="contained"
+                                onClick={() => setUnit("BuncheB")} color="primary">
+                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>

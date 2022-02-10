@@ -16,7 +16,7 @@ function EnchantedLane({ loading, load }) {
     return (
         <>
             <div className="project-title-div">
-                <h1>ENCHATNED LANE</h1>
+                <h1>ENCHANTED LANE</h1>
             </div>
             <div className="project-div">
 
@@ -27,7 +27,7 @@ function EnchantedLane({ loading, load }) {
                        
                             : 
                             <div>
-                                <p className="rendering-paragraph">RENDERING IN PROGRESS</p>
+                                <p className="rendering-paragraph">RENDERING COMING SOON</p>
                             <img className="project-images-p" src={green}></img>
                             </div>
 

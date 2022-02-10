@@ -11,7 +11,9 @@ import e21map from '../East21/e21map.png';
 
 import green from '../gifs/green.png';
 
-function East({setUnit, loading, load }) {
+import { Link } from 'react-router-dom'
+
+function East({ setUnit, loading, load }) {
 
     const [progressIcon] = useState('calendar alternate outline');
     const [buttonIcon] = useState('mars');
@@ -25,9 +27,9 @@ function East({setUnit, loading, load }) {
 
                 <div className="collage-div">
                     {
-                        loading === true ? 
+                        loading === true ?
                             <img className="project-images9" src={load}></img>
-                        
+
                             : <E21Carousel />
 
                     }
@@ -36,10 +38,10 @@ function East({setUnit, loading, load }) {
                 <a href="https://www.google.com/maps/place/2102+E+21st+St,+Austin,+TX+78722/@30.2894096,-97.7606718,12.39z/data=!4m5!3m4!1s0x8644b5eb504feb99:0xcac99d27fe753df9!8m2!3d30.2823913!4d-97.7194151" target="_blank">
                     <div className="bounce-div">
                         {
-                            loading === true ? 
+                            loading === true ?
                                 <img className="project-img4" src={load}></img>
-                                
-                            
+
+
                                 : <img src={e21map} className="project-img3"></img>
 
                         }
@@ -53,10 +55,12 @@ function East({setUnit, loading, load }) {
 
 
                     <div className="info-buttons-div">
-                        <Button variant="contained"
-                            onClick={() => setUnit("E21UnitA")} color="primary">
-                            MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
-                        </Button>
+                        <Link to="/eastA" style={{ color: 'white' }}>
+                            <Button variant="contained"
+                                onClick={() => setUnit("E21UnitA")} color="primary">
+                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                            </Button>
+                        </Link>
 
                     </div>
 
@@ -66,11 +70,12 @@ function East({setUnit, loading, load }) {
 
 
                     <div className="info-buttons-div">
-                        <Button variant="contained"
-                            onClick={() => setUnit("E21UnitB")} color="primary">
-                            MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
-                        </Button>
-
+                        <Link to="/eastB" style={{ color: 'white' }}>
+                            <Button variant="contained"
+                                onClick={() => setUnit("E21UnitB")} color="primary">
+                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>

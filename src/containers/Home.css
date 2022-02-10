@@ -2,8 +2,9 @@
 
 
 .head-div > p {
-    position: absolute;
+    /* position: absolute; */
     color: white;
+    
 }
 
 .loader-div {
@@ -19,7 +20,8 @@
 }
 
 .head-imager {
-  margin-bottom: 50px;
+  /* opacity: 40%; */
+  margin-bottom: 0px;
     width: 100%;
     /* filter: blur(3px); */
     max-height: 800px;
@@ -51,30 +53,28 @@
 
 .paragraph-div {
     position: absolute;
-    background-color: white;
-    animation: paragraph_slide 5s ease;
+    background-color: white;  
     z-index: 1;
-    margin-top: 200px;
-    /* margin-left: 700px; */
-    left: 45%;
     cursor: pointer;
     font-size: 20px;
     background-image: linear-gradient(to bottom, rgb(158, 149, 149),rgb(134, 123, 123));
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
+.paragraph-transparent {
+  background-color: transparent;
+}
+
 .paragraph-div2 {
-  position: absolute;
-  background-color: white;
   animation: paragraph_slide 5s ease;
+  position: absolute;
+  background-color: transparent;
   z-index: 1;
-  margin-top: 200px;
-  /* margin-left: 700px; */
+  margin-top: 100px;
   left: 45%;
-  cursor: pointer;
-  font-size: 20px;
-  background-image: linear-gradient(to bottom, rgb(158, 149, 149),rgb(134, 123, 123));
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  font-size: 100px;
+  text-align: center;
+  margin-right: 30px;
 }
 
 
@@ -96,22 +96,35 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
     font-size: 25px;
-    margin: 50px;
+    margin: 0px;
     /* box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em; */
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .quote {
        font-size: 25px !important;
-       padding: 0px;
-       margin-top: 40px;
+       padding: 0px !important;
+       margin-top: 100px;
        margin: 5px;
-      
+      /* background-color: black; */
+    }
+
+    /* .gallery-master-container {
+      background-color: rgb(17, 16, 16);
+    } */
+
+    .motto {
+  
+      font-size: medium;
     }
 
     video {
-      width: 325px;
-      height: 300px;
+      margin-top: 30px;
+      width: 100%;
+      height: 200px;
+      border: solid;
     }
 
     .paragraph-div2 {
@@ -119,13 +132,18 @@
     }
 
     .head-imager {
-      min-height: 500px;
+      height: 300px;
+    }
+
+    .home-apps-container {
+      background-color: white;
     }
 
     .grid-item-home {
       /* padding: 10%; */
-      padding-bottom: 10px;
-      max-height: 150px !important;
+     
+      padding: 20px;
+      max-height: 100px !important;
     }
 
     .home-apps-container {
@@ -170,7 +188,7 @@
   /* padding: 40%; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   animation: item-slide 2s ease;
-  padding: 50px;
+  padding: 35px;
    /* max-width: 700px; */
    cursor: pointer;
    margin-bottom: 10px;
@@ -196,4 +214,17 @@ transform: translateX(-4px);
   padding: 40%;
   z-index: -1;
   opacity: 40%;
+}
+
+.home-carousel-div {
+  z-index: 0;
+}
+
+.motto-div {
+  margin-top: 25px;
+}
+
+.motto {
+  
+  font-size: medium;
 }
