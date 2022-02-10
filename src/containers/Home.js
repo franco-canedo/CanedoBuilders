@@ -17,7 +17,9 @@ import { Icon } from 'semantic-ui-react'
 import house1 from '../landingPage/e7.jpg';
 import house2 from '../landingPage/e7.jpg';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+import HomeCarousel from '../components/HeadCarousel';
 
 // import video from './public/Videos/bethuneVid.mp4';
 
@@ -58,11 +60,14 @@ function Home({ toPage }) {
 
                     </div>
                     <img className="head-imager" src={house}></img>
+                    {/* <HomeCarousel /> */}
                 </>
             </div>
 
             <div className='quote'>
-
+                <div className="motto-div">
+                    <p className="motto">Creating beatiful and unique living spcaces in the city of Austin since 2014.</p>
+                </div>
                 <div>
                     <video width="750" height="500" controls >
                         <source src="/Videos/bethuneVid.mp4" type="video/mp4" /></video>

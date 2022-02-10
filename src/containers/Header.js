@@ -7,6 +7,8 @@ import { Icon } from 'semantic-ui-react';
 
 import { Outlet, Link } from "react-router-dom";
 
+import green from '../gifs/green.png';
+
 function debounce(fn, ms) {
     let timer
     return _ => {
@@ -39,9 +41,9 @@ function Header({ toggleTab }) {
     })
 
     const handleMenu = () => {
-        if (menu === "mobile-menu-in" || menu === "menu-hidden-start") {
+        if (menu === "mobile-menu-in") {
             setMenu("mobile-menu-hidden")
-        } else if (menu === "mobile-menu-hidden" ) {
+        } else if (menu === "mobile-menu-hidden" || menu === "menu-hidden-start") {
             setMenu("mobile-menu-in")
         }
     }
@@ -58,6 +60,10 @@ function Header({ toggleTab }) {
                                 src={logoZoom}></img>
                         </div>
                     </Link>
+                    {width < 550 ? <Link to="/" style={{ color: "black" }}>
+                        <p> {<Icon name='home' size='large' />}HOME</p>
+                    </Link> : null
+                    }
 
                     {width < 550 ? <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
                         <Icon name='bars' size='large' />
@@ -67,8 +73,11 @@ function Header({ toggleTab }) {
                     <div className="tabs-container">
 
                         {
-                            width < 550 ? null
-                                 :
+                            width < 550 ? <div className="header-email-div">
+                                <img style={{ height: '30px', }} src={green} className="header-email-icon"></img>
+                                    <p className="header-email">INFO@CANEDOBUILDERS.COM</p>
+                            </div>
+                                :
                                 <>
                                     <Link to="/gallery" style={{ color: "white" }}>
                                         <div className="tab-div">
