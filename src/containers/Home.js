@@ -17,6 +17,8 @@ import { Icon } from 'semantic-ui-react'
 import house1 from '../landingPage/e7.jpg';
 import house2 from '../landingPage/e7.jpg';
 
+import { Link } from 'react-router-dom'
+
 // import video from './public/Videos/bethuneVid.mp4';
 
 const Image = styled.img`
@@ -41,7 +43,7 @@ function Home({ toPage }) {
         setInterval(() => setLoading(house), 4000);
     }
 
-   
+
 
     return (
         <div className="gallery-master-container">
@@ -62,24 +64,26 @@ function Home({ toPage }) {
             <div className='quote'>
                 <p>
                     Creating beautiful and unique living spaces in the city of Austin since 2014.</p>
-                    <div>
+                <div>
                     <video width="750" height="500" controls >
-                    <source src="/Videos/bethuneVid.mp4" type="video/mp4"/></video>
-                    </div>
+                        <source src="/Videos/bethuneVid.mp4" type="video/mp4" /></video>
+                </div>
                 <div className="home-apps-container">
-                   
-                    <div className="grid-item-home" onClick={() => toPage("gallery")}>
-                        <h2>{<Icon name='picture' size='large' />} GALLERY </h2>
-                    </div>
-                    <div className="grid-item-home" onClick={() => toPage("current projects")}>
-                        <h2>{<Icon name='building outline' size='large' />} PROJECTS </h2>
-                    </div>
-                    {/* <div className="grid-item-home" onClick={() => toPage("about")}>
-                        <h2>{<Icon name='info circle' size='large' />} ABOUT</h2>
-                    </div> */}
-                    <div className="grid-item-home" onClick={() => toPage("contact")}>
-                        <h2>{<Icon name='envelope' size='large' />} CONTACT</h2>
-                    </div>
+                    <Link to="/gallery" style={{ color: 'white' }}>
+                        <div className="grid-item-home" >
+                            <h2>{<Icon name='picture' size='large' />} GALLERY </h2>
+                        </div>
+                    </Link>
+                    <Link to="/listings" style={{ color: 'white' }}>
+                        <div className="grid-item-home" >
+                            <h2>{<Icon name='building outline' size='large' />} PROJECTS </h2>
+                        </div>
+                    </Link>
+                    <Link to="/contact" style={{ color: 'white' }}>
+                        <div className="grid-item-home" >
+                            <h2>{<Icon name='envelope' size='large' />} CONTACT</h2>
+                        </div>
+                    </Link>
                 </div>
 
             </div>

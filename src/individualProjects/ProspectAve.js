@@ -10,6 +10,9 @@ import prospectMap from '../prospect/prospectMap.png';
 
 import green from '../gifs/green.png';
 
+import { Link, Outlet } from "react-router-dom";
+import { withStyles } from '@material-ui/core';
+
 function ProspectAve({ setUnit, loading, load }) {
 
     const [progressIcon] = useState('calendar alternate outline');
@@ -53,11 +56,12 @@ function ProspectAve({ setUnit, loading, load }) {
                     {/* <h5>{<Icon name='angle right' size='large' />}$ TBD</h5> */}
 
                     <div className="info-buttons-div">
-                        <Button variant="contained"
-                            onClick={() => setUnit("ProspectAve")} color="primary">
-                            MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
-                        </Button>
-
+                        <Link to="/prospect" style={{ color: 'white' }}>
+                            <Button variant="contained"
+                                onClick={() => setUnit("ProspectAve")} color="primary">
+                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                            </Button>
+                        </Link>
                     </div>
 
                 </div>

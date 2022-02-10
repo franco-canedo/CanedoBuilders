@@ -185,6 +185,7 @@ background-color: rgb(102, 98, 98);
   } */
 
   .button-div {
+    cursor: pointer;
       min-width: 100px;
       height: 50px;
       margin-left: 200px;
