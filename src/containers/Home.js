@@ -35,6 +35,10 @@ const Image = styled.img`
 
 function Home({ toPage }) {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     const [loading, setLoading] = useState(house1);
 
     const timer1 = () => {
