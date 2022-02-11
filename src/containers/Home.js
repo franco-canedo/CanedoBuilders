@@ -66,7 +66,7 @@ function Home({ toPage }) {
 
             <div className='quote'>
                 <div className="motto-div">
-                    <p className="motto">Creating beatiful and unique living spcaces in the city of Austin since 2014.</p>
+                    <p className="motto">Creating beautiful and unique living spaces in the city of Austin since 2014.</p>
                 </div>
                 <div>
                     <video width="750" height="500" controls >
