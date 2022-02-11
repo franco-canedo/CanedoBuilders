@@ -248,7 +248,7 @@ z-index: 1;
   z-index: 1;
   color: white;
   left: 0;
-  margin-left: 80px;
+  margin-left: 70px;
   column-count: 2;
   width: 60px;
  
@@ -257,6 +257,7 @@ z-index: 1;
 
 .header-email-icon {
   animation: rotating 5s linear infinite;
+  margin-left: 165px;
   
 }
 
