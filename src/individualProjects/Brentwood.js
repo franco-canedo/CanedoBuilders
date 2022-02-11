@@ -27,7 +27,7 @@ function BrentwoodSt({ setUnit, loading, load }) {
                         loading === true ?
                             <img className="project-images9" src={load}></img>
 
-                            : <div>
+                            : <div className="coming-soon">
                                 <p className="rendering-paragraph">RENDERING COMING SOON</p>
                                 <img className="project-images-p" src={green}></img>
                             </div>
