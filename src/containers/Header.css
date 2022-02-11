@@ -128,8 +128,7 @@ background-color: rgb(102, 98, 98);
     padding-bottom: 25px;
     padding-top: 25px;
     z-index: 1;
-    border-left: solid;
-    border-right: solid;
+   border: solid;
 }
 
 .mobile-menu-in {
