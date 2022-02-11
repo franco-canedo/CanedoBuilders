@@ -403,6 +403,7 @@ a {
   height: 200px;
   /* min-height: 300px; */
   animation: rotating 20s linear infinite;
+  opacity: 20%;
   
 }
 
