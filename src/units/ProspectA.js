@@ -17,7 +17,7 @@ import { Icon } from 'semantic-ui-react'
 function ProspectA({ handleUnitSelect }) {
 
     useEffect(() => {
-        window.scrollTo(0, 100);
+        window.scrollTo(0, 0);
     }, [])
 
     return (
