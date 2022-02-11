@@ -70,7 +70,7 @@ function Header({ toggleTab }) {
                     }
 
                     {width < 550 ? <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
-                        <Icon name='bars' size='large' />
+                        <Icon name='home' size='large' style={{ color: "black" }}/>
 
                     </div> : null}
 
