@@ -60,18 +60,18 @@ function Header({ toggleTab }) {
                                 src={logoZoom}></img>
                         </div>
                     </Link>
-                   
+
 
                     {
                         width < 550 ? <div className="header-email-div">
                             <p className="header-email">INFO@CANEDOBUILDERS.COM     .</p>
                             <img style={{ height: '30px', }} src={green} className="header-email-icon"></img>
-                            
+
                         </div> : null
                     }
 
                     {width < 550 ? <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
-                        <Icon name='home' size='large' style={{ color: "black" }}/>
+                        <Icon name='bars' size='large' style={{ color: "black" }} />
 
                     </div> : null}
 
@@ -116,6 +116,16 @@ function Header({ toggleTab }) {
                 width < 550 ?
                     <div className={menu} style={{ overflowX: "hidden" }}>
 
+                        <div className="option"
+                            onClick={() => {
+                                toggleTab("gallery");
+                                handleMenu();
+                            }}>
+                            <Link to="/" style={{ color: "black" }}>
+                                <p> {<Icon name='home' size='large' />} HOME</p>
+                            </Link>
+                            <Outlet />
+                        </div>
                         <div className="option"
                             onClick={() => {
                                 toggleTab("gallery");

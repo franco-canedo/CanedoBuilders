@@ -115,7 +115,7 @@ background-color: rgb(102, 98, 98);
 .mobile-menu-hidden {
     animation: Slide_Out 1s ease-out 0s forwards;
     position: fixed;
-    width: 235px;
+    width: 200px;
     height: 300px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -129,12 +129,16 @@ background-color: rgb(102, 98, 98);
     padding-top: 25px;
     z-index: 1;
    border: solid;
+   border-bottom-right-radius: 3%;
+    border-top-right-radius: 3%;
+    text-align: left;
+    padding-left: 40px;
 }
 
 .mobile-menu-in {
     animation: Slide_In 1s ease 0s forwards;
     position: fixed;
-    width: 235px;
+    width: 200px;
     height: 300px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -151,6 +155,8 @@ background-color: rgb(102, 98, 98);
     border-bottom-right-radius: 3%;
     border-top-right-radius: 3%;
     background-color: whitesmoke;
+    text-align: left;
+    padding-left: 40px;
 }
 
 @keyframes Slide_In {
@@ -230,9 +236,10 @@ background-color: rgb(102, 98, 98);
   }
 
   .button {
-    margin-top: 10px;
+    margin-top: 5px;
     padding-top: 25px;
     width: 200px;
+    margin-left: 60px;
 }
 
 .header-email {
