@@ -56,7 +56,7 @@ function Home({ toPage }) {
             <div className="head-div">
                 <>
                     <div className="paragraph-div2">
-                       
+
                         <Button onClick={() => window.scrollTo(0, 600)}
                             variant="contained" color="dark">
                             <h3>MORE {<Icon name='chevron down' size='small' />}</h3>
@@ -75,6 +75,25 @@ function Home({ toPage }) {
                 <div>
                     <video width="750" height="500" controls >
                         <source src="/Videos/bethuneVid.mp4" type="video/mp4" /></video>
+                </div>
+                <div className="motto-div">
+                    <div className="image-points">
+                        <h1>Clean & asthetic design</h1>
+                    </div>
+
+                    <img className="head-imager" src={house}></img>
+                </div>
+                <div className="motto-div">
+                    <div className="image-points">
+
+
+                        <h1>Warranty</h1>
+                        <p className="motto">We stand by the quality of our homes.</p>
+                        <p className="motto">One year workmanship</p>
+                        <p className="motto">Two years systems</p>
+                        <p className="motto">Ten years major structural defects</p>
+                    </div>
+                    <img className="head-imager" src={house}></img>
                 </div>
                 <div className="home-apps-container">
                     <Link to="/gallery" style={{ color: 'white' }}>

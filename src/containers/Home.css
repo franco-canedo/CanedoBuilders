@@ -228,3 +228,10 @@ transform: translateX(-4px);
   
   font-size: medium;
 }
+
+.image-points {
+  position: absolute;
+  z-index: 1;
+  text-align: left;
+  color:white;
+}
