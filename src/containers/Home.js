@@ -86,7 +86,7 @@ function Home({ toPage }) {
                 </div>
                 <div className="motto-div">
                     <div className="image-points">
-                        <h4>Clean & Asthetic Design</h4>
+                        <h4>Clean & Aesthetic Design</h4>
                     </div>
 
                     <img className="promise-img" src={clean1}></img>
