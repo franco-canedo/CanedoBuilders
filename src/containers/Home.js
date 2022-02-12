@@ -21,6 +21,14 @@ import { Link } from 'react-router-dom';
 
 import HomeCarousel from '../components/HeadCarousel';
 
+// import bath1 from '../bathrooms/ba5.jpg';
+import clean1 from '../givens/clean1.jpg';
+import clean2 from '../kitchen/k10.jpg';
+import logoZoom from '../photos/LogoZoom2.png';
+import green from '../gifs/green.png';
+
+
+
 // import video from './public/Videos/bethuneVid.mp4';
 
 const Image = styled.img`
@@ -78,22 +86,31 @@ function Home({ toPage }) {
                 </div>
                 <div className="motto-div">
                     <div className="image-points">
-                        <h1>Clean & asthetic design</h1>
+                        <h4>Clean & Asthetic Design</h4>
                     </div>
 
-                    <img className="head-imager" src={house}></img>
+                    <img className="promise-img" src={clean1}></img>
                 </div>
                 <div className="motto-div">
-                    <div className="image-points">
+
+                    <div className="warranty">
+                        <h4>Warranty</h4>
+
+                        <p className="motto">
+                            {"We stand by the quality of our homes with a 1-2-10 Warranty."}
+                        </p>
+                       
+                        <Button variant="contained"
+                               color="primary">
+                                Learn more
+                            </Button>
 
 
-                        <h1>Warranty</h1>
-                        <p className="motto">We stand by the quality of our homes.</p>
-                        <p className="motto">One year workmanship</p>
-                        <p className="motto">Two years systems</p>
-                        <p className="motto">Ten years major structural defects</p>
+
+                        <img className="promise-img2" src={logoZoom}></img>
                     </div>
-                    <img className="head-imager" src={house}></img>
+
+
                 </div>
                 <div className="home-apps-container">
                     <Link to="/gallery" style={{ color: 'white' }}>
