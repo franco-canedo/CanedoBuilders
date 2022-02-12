@@ -94,7 +94,7 @@ function Home({ toPage }) {
                 <div className="motto-div">
 
                     <div className="warranty">
-                        <h4>Warranty</h4>
+                        <h1>Warranty</h1>
 
                         <p className="motto">
                             {"We stand by the quality of our homes with a 1-2-10 Warranty."}
@@ -111,6 +111,12 @@ function Home({ toPage }) {
                     </div>
 
 
+                </div>
+                <div className="find-home">
+                    <h1>Find Your Home.</h1>
+                </div>
+                <div className="arrow">
+                {<Icon name='caret square down' size='large' />}
                 </div>
                 <div className="home-apps-container">
                     <Link to="/gallery" style={{ color: 'white' }}>
