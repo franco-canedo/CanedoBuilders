@@ -126,7 +126,7 @@ function Home({ toPage }) {
                     </Link>
                     <Link to="/listings" style={{ color: 'white' }}>
                         <div className="grid-item-home" >
-                            <h2>{<Icon name='building outline' size='large' />} PROJECTS </h2>
+                            <h2>{<Icon name='building outline' size='large' />}LISTINGS</h2>
                         </div>
                     </Link>
                     <Link to="/contact" style={{ color: 'white' }}>
