@@ -27,6 +27,9 @@ import clean2 from '../kitchen/k10.jpg';
 import logoZoom from '../photos/LogoZoom2.png';
 import green from '../gifs/green.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 // import video from './public/Videos/bethuneVid.mp4';
@@ -45,6 +48,7 @@ function Home({ toPage }) {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        AOS.init({duration: 1000});
     }, [])
 
     const [loading, setLoading] = useState(house1);
@@ -79,52 +83,47 @@ function Home({ toPage }) {
             <div className='quote'>
                 <div className="motto-div">
                     <p className="motto">Creating beautiful and unique living spaces in the city of Austin since 2014.
-                     </p>
+                    </p>
                 </div>
-                
-               
+
+
                 <div>
-                <div className="see-work">
-                    <h5>SEE OUR WORK </h5>
-                </div>
+                    <div className="see-work">
+                        <h5>SEE OUR WORK </h5>
+                    </div>
                     <video width="750" height="500" controls >
                         <source src="/Videos/bethuneVid.mp4" type="video/mp4" /></video>
                 </div>
-                <div className="motto-div">
+                <div className="motto-div" data-aos="fade-right">
                     <div className="image-points">
                         <h4>Clean & Aesthetic Design</h4>
                     </div>
 
                     <img className="promise-img" src={clean1}></img>
                 </div>
-                <div className="motto-div">
-
+                <div className="motto-div" data-aos="fade-right">
                     <div className="warranty">
                         <h1>Warranty</h1>
 
                         <p className="motto">
                             {"We stand by the quality of our homes with a 1-2-10 Warranty."}
                         </p>
-                       
-                        <Button variant="contained"
-                               color="primary">
+                        <a href="https://www.strucsure.com/builder-home/our-builder-warranties/1-2-10-warranty-overview/" target="_blank">
+                            <Button variant="contained"
+                                color="primary">
                                 Learn more
                             </Button>
-
-
-
+                        </a>
                         <img className="promise-img2" src={logoZoom}></img>
                     </div>
-
-
                 </div>
-                <div className="find-home">
+                <div className="find-home" data-aos="fade-right">
                     <h1>Find Your Home.</h1>
                 </div>
                 <div className="arrow">
-                {<Icon name='caret square down' size='large' />}
+                    {<Icon name='caret square down' size='large' />}
                 </div>
-                <div className="home-apps-container">
+                <div className="home-apps-container" data-aos="fade-right">
                     <Link to="/gallery" style={{ color: 'white' }}>
                         <div className="grid-item-home" >
                             <h2>{<Icon name='picture' size='large' />} GALLERY </h2>

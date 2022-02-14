@@ -31,6 +31,9 @@ import { Icon } from 'semantic-ui-react'
 import { Progress } from 'semantic-ui-react';
 import "react-image-gallery/styles/css/image-gallery.css";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 function debounce(fn, ms) {
@@ -70,6 +73,7 @@ function CurrentProjects({ normal }) {
     useEffect(() => {
         setUnit("normal");
         window.scrollTo(0, 0);
+        AOS.init({ duration: 1000 });
         const debouncedHandleResize = debounce(function handleResize() {
             setWidth(window.innerWidth)
         }, 1000)
@@ -99,23 +103,29 @@ function CurrentProjects({ normal }) {
                     unit === "E21UnitB" ? <E21UnitB handleUnitSelect={handleUnitSelect} /> :
                         unit === "BuncheA" ? <BuncheA handleUnitSelect={handleUnitSelect} /> :
                             unit === "BuncheB" ? <BuncheB handleUnitSelect={handleUnitSelect} /> :
-                                unit === "ProspectAve" ? <ProspectA handleUnitSelect={handleUnitSelect}/> :
+                                unit === "ProspectAve" ? <ProspectA handleUnitSelect={handleUnitSelect} /> :
 
-                                <div
-                                    className="gallery-master-container">
-                                    <div className="projects-container">
+                                    <div
+                                        className="gallery-master-container">
+                                        <div className="projects-container">
 
-                                        {timer()}
+                                            {timer()}
 
-                                        <East setUnit={setUnit}
-                                            loading={loading} load={load} />
-                                        <Bunche setUnit={setUnit}
-                                            loading={loading} load={load} />
-                                        <ProspectAve setUnit={setUnit} loading={loading} load={load} />
-                                        <EnchantedLane loading={loading} load={load} />
-                                        <BrentwoodSt loading={loading} load={load}/>
+                                            <East setUnit={setUnit} loading={loading} load={load} />
+                                            <div data-aos="fade-right">
+                                                <Bunche setUnit={setUnit} loading={loading} load={load} />
+                                            </div>
+                                            <div data-aos="fade-right">
+                                                <ProspectAve setUnit={setUnit} loading={loading} load={load} />
+                                            </div>
+                                            <div data-aos="fade-right">
+                                                <EnchantedLane loading={loading} load={load} />
+                                            </div>
+                                            <div data-aos="fade-right">
+                                                <BrentwoodSt loading={loading} load={load} />
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
             }
         </>
     );
