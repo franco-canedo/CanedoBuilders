@@ -94,14 +94,14 @@ function Home({ toPage }) {
                     <video width="750" height="500" controls >
                         <source src="/Videos/bethuneVid.mp4" type="video/mp4" /></video>
                 </div>
-                <div className="motto-div" data-aos="fade-right">
+                <div className="motto-div" data-aos="fade-right" data-aos-once="true">
                     <div className="image-points">
                         <h4>Clean & Aesthetic Design</h4>
                     </div>
 
                     <img className="promise-img" src={clean1}></img>
                 </div>
-                <div className="motto-div" data-aos="fade-right">
+                <div className="motto-div" data-aos="fade-right" data-aos-once="true">
                     <div className="warranty">
                         <h1>Warranty</h1>
 
@@ -117,13 +117,13 @@ function Home({ toPage }) {
                         <img className="promise-img2" src={logoZoom}></img>
                     </div>
                 </div>
-                <div className="find-home" data-aos="fade-right">
+                <div className="find-home" data-aos="fade-right" data-aos-once="true">
                     <h1>Find Your Home.</h1>
                 </div>
                 <div className="arrow">
                     {<Icon name='caret square down' size='large' />}
                 </div>
-                <div className="home-apps-container" data-aos="fade-right">
+                <div className="home-apps-container" data-aos="fade-right" data-aos-once="true">
                     <Link to="/gallery" style={{ color: 'white' }}>
                         <div className="grid-item-home" >
                             <h2>{<Icon name='picture' size='large' />} GALLERY </h2>
