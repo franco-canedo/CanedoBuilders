@@ -48,7 +48,7 @@ function Home({ toPage }) {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        AOS.init({duration: 1000});
+        AOS.init({ duration: 1000 });
     }, [])
 
     const [loading, setLoading] = useState(house1);
@@ -94,7 +94,7 @@ function Home({ toPage }) {
                     <video width="750" height="500" controls >
                         <source src="/Videos/bethuneVid.mp4" type="video/mp4" /></video>
                 </div>
-                <div className="motto-div" data-aos="fade-right" data-aos-once="true">
+                <div className="motto-div" data-aos="zoom-out" data-aos-once="true">
                     <div className="image-points">
                         <h4>Clean & Aesthetic Design</h4>
                     </div>
@@ -117,25 +117,27 @@ function Home({ toPage }) {
                         <img className="promise-img2" src={logoZoom}></img>
                     </div>
                 </div>
-                <div className="find-home" data-aos="fade-right" data-aos-once="true">
-                    <h1>Find Your Home.</h1>
+                <div data-aos="flip-down" data-aos-once="true">
+                    <div className="find-home" >
+                        <h1>Find Your Home.</h1>
+                    </div>
+                    <div className="arrow" >
+                        {<Icon name='caret square down' size='large' />}
+                    </div>
                 </div>
-                <div className="arrow">
-                    {<Icon name='caret square down' size='large' />}
-                </div>
-                <div className="home-apps-container" data-aos="fade-right" data-aos-once="true">
+                <div className="home-apps-container" data-aos="flip-down" data-aos-once="true">
                     <Link to="/gallery" style={{ color: 'white' }}>
                         <div className="grid-item-home" >
                             <h2>{<Icon name='picture' size='large' />} GALLERY </h2>
                         </div>
                     </Link>
                     <Link to="/listings" style={{ color: 'white' }}>
-                        <div className="grid-item-home" >
+                        <div className="grid-item-home"  >
                             <h2>{<Icon name='building outline' size='large' />}LISTINGS</h2>
                         </div>
                     </Link>
                     <Link to="/contact" style={{ color: 'white' }}>
-                        <div className="grid-item-home" >
+                        <div className="grid-item-home"  >
                             <h2>{<Icon name='envelope' size='large' />} CONTACT</h2>
                         </div>
                     </Link>
