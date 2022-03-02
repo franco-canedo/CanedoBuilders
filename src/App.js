@@ -13,6 +13,8 @@ import BuncheA from './units/BuncheA';
 import BuncheB from './units/BuncheB';
 import EastA from './units/2102A';
 import EastB from './units/2102B';
+import BrentA from './units/BrentwoodA';
+import BrentB from './units/BrentwoodB';
 
 import { render } from "react-dom";
 import {
@@ -70,6 +72,8 @@ function App() {
         <Route path="/buncheB" element={<BuncheB />} />
         <Route path="/eastA" element={<EastA />} />
         <Route path="/eastB" element={<EastB />} />
+        <Route path="/brentA" element={<BrentA />} />
+        <Route path="/brentB" element={<BrentB />} />
       </Routes>
       <Footer />
     </div >

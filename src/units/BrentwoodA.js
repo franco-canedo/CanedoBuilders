@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react';
 
 import Button from '@material-ui/core/Button';
 
-import unitA from '../prospect/demolition.jpg';
-import floor1 from '../prospect/floor1.png';
-import floor2 from '../prospect/floor2.png';
-import floor3 from '../prospect/floor3.png';
-import layout from '../prospect/lot.png';
+
+import floor1 from '../brentwood/unitAone.png';
+import floor2 from '../brentwood/unitA2.png';
+import floor3 from '../brentwood/unitA3.png';
+import layout from '../brentwood/BrentLayout.png';
+
 
 import prospectRender from '../prospect/prospectRender.jpg';
 
@@ -16,7 +17,7 @@ import prospectRender from '../prospect/prospectRender.jpg';
 import { Icon } from 'semantic-ui-react'
 
 
-function ProspectA({ handleUnitSelect }) {
+function BrentwoodA({ handleUnitSelect }) {
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -26,7 +27,7 @@ function ProspectA({ handleUnitSelect }) {
         <>
            
                 
-                <h1>PROSPECT AVE</h1>
+                <h1>605 BRENTWOOD UNIT A</h1>
                 
                {/* <div className="back-button">
 
@@ -39,21 +40,19 @@ function ProspectA({ handleUnitSelect }) {
 
             <div>
                 <div className="head-div">
-                    <img className="head-imager-unit-out" src={prospectRender}></img>
+                    <img className="head-imager-unit-out" src={layout}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
-                        <h2>2248<Icon name='arrows alternate horizontal' size='large' /></h2>
+                        <h2>2497<Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
-                        <h2>3 {<Icon name='bed' size='large' />}</h2>
+                        <h2>4 {<Icon name='bed' size='large' />}</h2>
                     </div>
                     <div className="info-item">
-                        <h2>3 {'     '} {<Icon name='bath' size='large' />}</h2>
+                        <h2>4 {'     '} {<Icon name='bath' size='large' />}</h2>
                     </div>
-                    <div className="info-item">
-                        <h2>POOL {'     '} {<Icon name='thumbtack' size='large' />}</h2>
-                    </div>
+                  
                     
                 </div>
                 <div className="floorplans-div">
@@ -84,4 +83,4 @@ function ProspectA({ handleUnitSelect }) {
 
 }
 
-export default ProspectA;
+export default BrentwoodA;
