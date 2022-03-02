@@ -4,6 +4,7 @@ import { Progress } from 'semantic-ui-react';
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Icon } from 'semantic-ui-react'
 import Button from '@material-ui/core/Button';
+import { Link, Outlet } from "react-router-dom";
 
 
 import brentwoodMap from '../brentwood/brentwoodMap.png';
@@ -27,7 +28,7 @@ function BrentwoodSt({ setUnit, loading, load }) {
                         loading === true ?
                             <img className="project-images9" src={load}></img>
 
-                            : <div>
+                            : <div className="coming-soon">
                                 <p className="rendering-paragraph">RENDERING COMING SOON</p>
                                 <img className="project-images-p" src={green}></img>
                             </div>
@@ -53,20 +54,24 @@ function BrentwoodSt({ setUnit, loading, load }) {
                     {/* <h5>{<Icon name='angle right' size='large' />}$ TBD</h5> */}
 
                     <div className="info-buttons-div">
-                        <Button disabled variant="contained"
-                             color="primary">
-                            PLANS IN PROGRESS {<Icon name={buttonIcon} size='large' />}
-                        </Button>
+                        <Link to="/brentA" style={{ color: 'white' }}>
+                            <Button variant="contained"
+                                color="primary">
+                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                            </Button>
+                        </Link>
                     </div>
 
                     <h5>{<Icon name='home' size='large' />} UNIT B</h5>
                     {/* <h5>{<Icon name='angle right' size='large' />}$ TBD</h5> */}
 
                     <div className="info-buttons-div">
-                        <Button disabled variant="contained"
-                             color="primary">
-                            PLANS IN PROGRESS {<Icon name={buttonIcon} size='large' />}
-                        </Button>
+                        <Link to="/brentB" style={{ color: 'white' }}>
+                            <Button variant="contained"
+                                color="primary">
+                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                            </Button>
+                        </Link>
                     </div>
 
                 </div>

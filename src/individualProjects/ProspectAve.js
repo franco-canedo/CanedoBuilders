@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 
 import prospect from '../prospect/demolition.jpg';
 import prospectMap from '../prospect/prospectMap.png';
+import prospectRender from '../prospect/prospectRender.jpg';
 
 import green from '../gifs/green.png';
 
@@ -31,8 +32,8 @@ function ProspectAve({ setUnit, loading, load }) {
                             <img className="project-images9" src={load}></img>
 
                             : <div>
-                                <p className="rendering-paragraph">RENDERING COMING SOON</p>
-                                <img className="project-images-p" src={green}></img>
+                                {/* <p className="rendering-paragraph">RENDERING COMING SOON</p> */}
+                                <img className="project-images" src={prospectRender}></img>
                             </div>
                     }
                 </div>

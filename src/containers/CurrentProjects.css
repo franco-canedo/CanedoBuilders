@@ -118,6 +118,7 @@
     }
 
     .p-info-div {
+      
         margin-top: 0px;
         text-align: left;
         min-width: 400px;
@@ -300,6 +301,11 @@ a {
   max-width: 400px;
   max-height: 300px;
   min-height: 300px;
+  
+}
+
+.coming-soon {
+  background-color: rgb(56, 53, 53);
 }
 
 @media only screen and (max-width: 600px) {
@@ -397,6 +403,7 @@ a {
   height: 200px;
   /* min-height: 300px; */
   animation: rotating 20s linear infinite;
+  opacity: 20%;
   
 }
 

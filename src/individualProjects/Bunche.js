@@ -9,7 +9,9 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import BuncheCarousel from '../components/BuncheCarousel';
 import buncheMap from '../bunche/buncheMap.png';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+
 
 function Bunche({ setUnit, loading, load }) {
 

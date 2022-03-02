@@ -21,6 +21,17 @@ import { Link } from 'react-router-dom';
 
 import HomeCarousel from '../components/HeadCarousel';
 
+// import bath1 from '../bathrooms/ba5.jpg';
+import clean1 from '../givens/clean1.jpg';
+import clean2 from '../kitchen/k10.jpg';
+import logoZoom from '../photos/LogoZoom2.png';
+import green from '../gifs/green.png';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 // import video from './public/Videos/bethuneVid.mp4';
 
 const Image = styled.img`
@@ -34,6 +45,11 @@ const Image = styled.img`
 `;
 
 function Home({ toPage }) {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        AOS.init({ duration: 1000 });
+    }, [])
 
     const [loading, setLoading] = useState(house1);
 
@@ -52,7 +68,7 @@ function Home({ toPage }) {
             <div className="head-div">
                 <>
                     <div className="paragraph-div2">
-                       
+
                         <Button onClick={() => window.scrollTo(0, 600)}
                             variant="contained" color="dark">
                             <h3>MORE {<Icon name='chevron down' size='small' />}</h3>
@@ -66,25 +82,62 @@ function Home({ toPage }) {
 
             <div className='quote'>
                 <div className="motto-div">
-                    <p className="motto">Creating beautiful and unique living spaces in the city of Austin since 2014.</p>
+                    <p className="motto">Creating beautiful and unique living spaces in the city of Austin since 2014.
+                    </p>
                 </div>
+
+
                 <div>
+                    <div className="see-work">
+                        <h5>SEE OUR WORK </h5>
+                    </div>
                     <video width="750" height="500" controls >
                         <source src="/Videos/bethuneVid.mp4" type="video/mp4" /></video>
                 </div>
-                <div className="home-apps-container">
+                <div className="motto-div" data-aos="zoom-out" data-aos-once="true">
+                    <div className="image-points">
+                        <h4>Clean & Aesthetic Design</h4>
+                    </div>
+
+                    <img className="promise-img" src={clean1}></img>
+                </div>
+                <div className="motto-div" data-aos="fade-right" data-aos-once="true">
+                    <div className="warranty">
+                        <h1>Warranty</h1>
+
+                        <p className="motto">
+                            {"We stand by the quality of our homes with a 1-2-10 Warranty."}
+                        </p>
+                        <a href="https://www.strucsure.com/builder-home/our-builder-warranties/1-2-10-warranty-overview/" target="_blank">
+                            <Button variant="contained"
+                                color="primary">
+                                Learn more
+                            </Button>
+                        </a>
+                        <img className="promise-img2" src={logoZoom}></img>
+                    </div>
+                </div>
+                <div data-aos="flip-down" data-aos-once="true">
+                    <div className="find-home" >
+                        <h1>Find Your Home.</h1>
+                    </div>
+                    <div className="arrow" >
+                        {<Icon name='caret square down' size='large' />}
+                    </div>
+                </div>
+                <div className="home-apps-container" data-aos="flip-down" data-aos-once="true">
                     <Link to="/gallery" style={{ color: 'white' }}>
                         <div className="grid-item-home" >
                             <h2>{<Icon name='picture' size='large' />} GALLERY </h2>
                         </div>
                     </Link>
                     <Link to="/listings" style={{ color: 'white' }}>
-                        <div className="grid-item-home" >
-                            <h2>{<Icon name='building outline' size='large' />} PROJECTS </h2>
+                        <div className="grid-item-home"  >
+                            <h2>{<Icon name='building outline' size='large' />}LISTINGS</h2>
                         </div>
                     </Link>
                     <Link to="/contact" style={{ color: 'white' }}>
-                        <div className="grid-item-home" >
+                        <div className="grid-item-home"  >
                             <h2>{<Icon name='envelope' size='large' />} CONTACT</h2>
                         </div>
                     </Link>

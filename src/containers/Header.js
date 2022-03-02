@@ -9,10 +9,14 @@ import { Outlet, Link } from "react-router-dom";
 
 import green from '../gifs/green.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function debounce(fn, ms) {
     let timer
     return _ => {
-        clearTimeout(timer)
+        AOS.init({duration: 1000});
+        clearTimeout(timer);
         timer = setTimeout(_ => {
             timer = null
             fn.apply(this, arguments)
@@ -60,17 +64,18 @@ function Header({ toggleTab }) {
                                 src={logoZoom}></img>
                         </div>
                     </Link>
-                   
+
 
                     {
                         width < 550 ? <div className="header-email-div">
-                            <img style={{ height: '30px', }} src={green} className="header-email-icon"></img>
                             <p className="header-email">INFO@CANEDOBUILDERS.COM     .</p>
+                            <img style={{ height: '30px', }} src={green} className="header-email-icon"></img>
+
                         </div> : null
                     }
 
                     {width < 550 ? <div className="button-div" onClick={handleMenu} style={{ overflowX: "hidden" }}>
-                        <Icon name='bars' size='large' />
+                        <Icon name='bars' size='large' style={{ color: "black" }} />
 
                     </div> : null}
 
@@ -115,9 +120,19 @@ function Header({ toggleTab }) {
                 width < 550 ?
                     <div className={menu} style={{ overflowX: "hidden" }}>
 
+                        <div className="option" 
+                            onClick={() => {
+                                
+                                handleMenu();
+                            }}>
+                            <Link to="/" style={{ color: "black" }}>
+                                <p> {<Icon name='home' size='large' />} HOME</p>
+                            </Link>
+                            <Outlet />
+                        </div>
                         <div className="option"
                             onClick={() => {
-                                toggleTab("gallery");
+                                
                                 handleMenu();
                             }}>
                             <Link to="/gallery" style={{ color: "black" }}>
@@ -128,7 +143,7 @@ function Header({ toggleTab }) {
 
                         <div className="option"
                             onClick={() => {
-                                toggleTab("current projects");
+                                
                                 handleMenu();
                             }}>
                             <Link to="/listings" style={{ color: "black" }}>
@@ -139,7 +154,7 @@ function Header({ toggleTab }) {
                         </div>
                         <div className="option"
                             onClick={() => {
-                                toggleTab("about");
+                                
                                 handleMenu();
                             }}>
                             <Link to="/about" style={{ color: "black" }}>
@@ -150,7 +165,7 @@ function Header({ toggleTab }) {
                         </div>
                         <div className="option"
                             onClick={() => {
-                                toggleTab("contact");
+                                
                                 handleMenu();
                             }}>
                             <Link to="/contact" style={{ color: "black" }}>

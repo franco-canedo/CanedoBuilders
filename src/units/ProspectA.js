@@ -9,6 +9,8 @@ import floor2 from '../prospect/floor2.png';
 import floor3 from '../prospect/floor3.png';
 import layout from '../prospect/lot.png';
 
+import prospectRender from '../prospect/prospectRender.jpg';
+
 
 
 import { Icon } from 'semantic-ui-react'
@@ -17,7 +19,7 @@ import { Icon } from 'semantic-ui-react'
 function ProspectA({ handleUnitSelect }) {
 
     useEffect(() => {
-        window.scrollTo(0, 100);
+        window.scrollTo(0, 0);
     }, [])
 
     return (
@@ -37,7 +39,7 @@ function ProspectA({ handleUnitSelect }) {
 
             <div>
                 <div className="head-div">
-                    <img className="head-imager-unit" src={unitA}></img>
+                    <img className="head-imager-unit-out" src={prospectRender}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
