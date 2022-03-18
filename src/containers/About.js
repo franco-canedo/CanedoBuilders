@@ -3,6 +3,7 @@ import './About.css';
 import papa from '../photos/papaR.png';
 import guido from '../photos/guidoR.png';
 import franco from '../photos/francoR.png';
+import green from '../gifs/green.png';
 
 
 function About() {
@@ -37,7 +38,7 @@ function About() {
                 </div>
                 <div className="profile-pic-div">
                     <div className="p-pic-div">
-                        <img className="profile-pic3" src={franco}></img>
+                        <img className="profile-pic3" src={green}></img>
                     </div>
                     <div className="p-div">
                         <b>Franco Canedo Flores</b>
