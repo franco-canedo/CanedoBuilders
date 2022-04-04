@@ -58,7 +58,7 @@ function BrentwoodSt({ setUnit, loading, load }) {
                         <Link to="/brentA" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                                CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
                     </div>
@@ -70,7 +70,7 @@ function BrentwoodSt({ setUnit, loading, load }) {
                         <Link to="/brentB" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                                CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
                     </div>

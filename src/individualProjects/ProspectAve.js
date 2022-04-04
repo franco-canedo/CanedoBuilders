@@ -60,7 +60,7 @@ function ProspectAve({ setUnit, loading, load }) {
                         <Link to="/prospect" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 onClick={() => setUnit("ProspectAve")} color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                                CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
                     </div>
