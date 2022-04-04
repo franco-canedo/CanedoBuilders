@@ -16,7 +16,7 @@ function EnchantedLane({ loading, load }) {
     return (
         <>
             <div className="project-title-div">
-                <h1>ENCHANTED LANE</h1>
+                <h1>4908 ENCHANTED LANE</h1>
             </div>
             <div className="project-div">
 
@@ -59,8 +59,8 @@ function EnchantedLane({ loading, load }) {
                 </div>
             </div>
             <div className="progress-div">
-                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: AUGUST 2022</h5>
-                <Progress percent="5" indicating />
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: SEPTEMBER 2022</h5>
+                <Progress percent="10" indicating />
             </div>
 
         </>

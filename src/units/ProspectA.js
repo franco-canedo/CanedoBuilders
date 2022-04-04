@@ -7,7 +7,7 @@ import unitA from '../prospect/demolition.jpg';
 import floor1 from '../prospect/floor1.png';
 import floor2 from '../prospect/floor2.png';
 import floor3 from '../prospect/floor3.png';
-import layout from '../prospect/lot.png';
+import layout from '../prospect/sitePlan.png';
 
 import prospectRender from '../prospect/prospectRender.jpg';
 

@@ -119,11 +119,12 @@ function CurrentProjects({ normal }) {
                                                 <ProspectAve setUnit={setUnit} loading={loading} load={load} />
                                             </div>
                                             <div data-aos="fade-right" data-aos-once="true">
-                                                <EnchantedLane loading={loading} load={load} />
-                                            </div>
-                                            <div data-aos="fade-right" data-aos-once="true">
                                                 <BrentwoodSt loading={loading} load={load} />
                                             </div>
+                                            <div data-aos="fade-right" data-aos-once="true">
+                                                <EnchantedLane loading={loading} load={load} />
+                                            </div>
+                                            
                                         </div>
                                     </div>
             }
