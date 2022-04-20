@@ -92,7 +92,8 @@ function Home({ toPage }) {
                         <h5>SEE OUR WORK </h5>
                     </div>
                     <video width="750" height="500" controls >
-                        <source src="/Videos/CANEDO BUILD_2.MOV" type="video/MOV" /></video>
+                        <source src="/Videos/2102Vid.mp4" type="video/mp4" />
+                    </video>
                 </div>
                 <div className="motto-div" data-aos="zoom-out" data-aos-once="true">
                     <div className="image-points">
