@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 
 import green from '../gifs/green.png';
 import enchantedMap from '../enchanted/enchantedMap.png';
+import enchantedRendering from '../enchanted/enchantedRendering.jpg';
 
 import { Link, Outlet } from "react-router-dom";
 
@@ -31,8 +32,8 @@ function EnchantedLane({ loading, load }) {
 
                             :
                             <div className="coming-soon">
-                                <p className="rendering-paragraph">RENDERING COMING SOON</p>
-                                <img className="project-images-p" src={green}></img>
+                                {/* <p className="rendering-paragraph">RENDERING COMING SOON</p> */}
+                                <img className="project-images" src={enchantedRendering}></img>
                             </div>
 
                     }

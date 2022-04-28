@@ -110,11 +110,6 @@ function CurrentProjects({ normal }) {
                                         <div className="projects-container">
 
                                             {timer()}
-
-                                            <East setUnit={setUnit} loading={loading} load={load} />
-                                            <div data-aos="fade-right" data-aos-once="true">
-                                                <Bunche setUnit={setUnit} loading={loading} load={load} />
-                                            </div>
                                             <div data-aos="fade-right" data-aos-once="true">
                                                 <ProspectAve setUnit={setUnit} loading={loading} load={load} />
                                             </div>

@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import floor1 from '../enchanted/firstFloor.png';
 import floor2 from '../enchanted/secondFloor.png';
 import layout from '../enchanted/sitePlan.png';
+import enchantedRendering from '../enchanted/enchantedRendering.jpg';
 
 import green from '../gifs/green.png';
 
@@ -41,7 +42,7 @@ function EnchantedLaneA({ handleUnitSelect }) {
 
             <div>
                 <div className="head-div">
-                    <img className="head-imager-unit-out" src={green}></img>
+                    <img className="head-imager-unit-out" src={enchantedRendering}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
