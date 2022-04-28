@@ -58,7 +58,7 @@ function Bunche({ setUnit, loading, load }) {
                         <Link to="/buncheA" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 onClick={() => setUnit("BuncheA")} color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                                CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
                     </div>
@@ -72,7 +72,7 @@ function Bunche({ setUnit, loading, load }) {
                         <Link to="/buncheB" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 onClick={() => setUnit("BuncheB")} color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                                CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
                     </div>

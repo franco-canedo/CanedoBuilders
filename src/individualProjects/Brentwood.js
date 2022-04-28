@@ -7,6 +7,10 @@ import Button from '@material-ui/core/Button';
 import { Link, Outlet } from "react-router-dom";
 
 
+
+import BrentCarousel from '../components/BrentCarousel'
+
+
 import brentwoodMap from '../brentwood/brentwoodMap.png';
 
 import green from '../gifs/green.png';
@@ -19,7 +23,7 @@ function BrentwoodSt({ setUnit, loading, load }) {
     return (
         <>
             <div className="project-title-div">
-                <h1>BRENTWOOD STREET</h1>
+                <h1>605 BRENTWOOD STREET</h1>
             </div>
             <div className="project-div">
 
@@ -28,10 +32,7 @@ function BrentwoodSt({ setUnit, loading, load }) {
                         loading === true ?
                             <img className="project-images9" src={load}></img>
 
-                            : <div className="coming-soon">
-                                <p className="rendering-paragraph">RENDERING COMING SOON</p>
-                                <img className="project-images-p" src={green}></img>
-                            </div>
+                            : <BrentCarousel />
                     }
                 </div>
 
@@ -57,7 +58,7 @@ function BrentwoodSt({ setUnit, loading, load }) {
                         <Link to="/brentA" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                                CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
                     </div>
@@ -69,7 +70,7 @@ function BrentwoodSt({ setUnit, loading, load }) {
                         <Link to="/brentB" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                                CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
                     </div>
@@ -77,8 +78,8 @@ function BrentwoodSt({ setUnit, loading, load }) {
                 </div>
             </div>
             <div className="progress-div">
-                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: AUGUST 2022</h5>
-                <Progress percent="5" indicating />
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: SEPTEMBER 2022</h5>
+                <Progress percent="10" indicating />
             </div>
 
         </>

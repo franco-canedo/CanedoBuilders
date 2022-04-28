@@ -58,7 +58,7 @@ function East({ setUnit, loading, load }) {
                         <Link to="/eastA" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 onClick={() => setUnit("E21UnitA")} color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                                CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
 
@@ -73,7 +73,7 @@ function East({ setUnit, loading, load }) {
                         <Link to="/eastB" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 onClick={() => setUnit("E21UnitB")} color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                               CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
                     </div>

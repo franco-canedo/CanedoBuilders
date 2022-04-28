@@ -22,7 +22,7 @@ function ProspectAve({ setUnit, loading, load }) {
     return (
         <>
             <div className="project-title-div">
-                <h1>PROSPECT AVE</h1>
+                <h1>1117 PROSPECT AVE</h1>
             </div>
             <div className="project-div">
 
@@ -60,7 +60,7 @@ function ProspectAve({ setUnit, loading, load }) {
                         <Link to="/prospect" style={{ color: 'white' }}>
                             <Button variant="contained"
                                 onClick={() => setUnit("ProspectAve")} color="primary">
-                                MORE INFO & FLOOR PLANS {<Icon name={buttonIcon} size='large' />}
+                                CLICK FOR DETAILS {<Icon name={buttonIcon} size='large' />}
                             </Button>
                         </Link>
                     </div>
@@ -68,8 +68,8 @@ function ProspectAve({ setUnit, loading, load }) {
                 </div>
             </div>
             <div className="progress-div">
-                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: SEPTEMBER 2022</h5>
-                <Progress percent="10" indicating />
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: AUGUST 2022</h5>
+                <Progress percent="20" indicating />
             </div>
 
         </>

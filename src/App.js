@@ -15,6 +15,8 @@ import EastA from './units/2102A';
 import EastB from './units/2102B';
 import BrentA from './units/BrentwoodA';
 import BrentB from './units/BrentwoodB';
+import EnchantedLaneA from './units/EnchantedLaneA';
+
 
 import { render } from "react-dom";
 import {
@@ -74,6 +76,7 @@ function App() {
         <Route path="/eastB" element={<EastB />} />
         <Route path="/brentA" element={<BrentA />} />
         <Route path="/brentB" element={<BrentB />} />
+        <Route path="/enchantedA" element={<EnchantedLaneA />} />
       </Routes>
       <Footer />
     </div >

@@ -7,6 +7,8 @@ import floor1 from '../brentwood/unitBone.png';
 import floor2 from '../brentwood/unitB2.png';
 import layout from '../brentwood/BrentLayout.png';
 
+import unitB from '../brentwood/brentRenderings/BrentB.jpg';
+
 import prospectRender from '../prospect/prospectRender.jpg';
 
 
@@ -37,7 +39,7 @@ function BrentwoodB({ handleUnitSelect }) {
 
             <div>
                 <div className="head-div">
-                    <img className="head-imager-unit-out" src={layout}></img>
+                    <img className="head-imager-unit-out" src={unitB}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
