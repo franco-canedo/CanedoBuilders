@@ -1,5 +1,8 @@
 
-
+.iframeVid {
+  width: 750;
+  height: 500;
+}
 
 .head-div > p {
     /* position: absolute; */
