@@ -61,6 +61,7 @@ function Home({ toPage }) {
         setInterval(() => setLoading(house), 4000);
     }
 
+  
 
 
     return (
@@ -93,7 +94,18 @@ function Home({ toPage }) {
                     </div>
                     <video width="750" height="500" controls >
                         <source src="/Videos/2102Vid.mp4" type="video/mp4" />
+                        {/* <source src="/Videos/bethuneVid.mp4" type="video/mp4" /> */}
                     </video>
+                    {/* <iframe
+                        width="75%"
+                        height="500"
+                        src="https://www.youtube.com/embed/t5fn09Im-ws"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+
+                    </iframe> */}
                 </div>
                 <div className="motto-div" data-aos="zoom-out" data-aos-once="true">
                     <div className="image-points">
