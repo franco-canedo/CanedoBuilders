@@ -7,7 +7,6 @@ import ba5 from '../bathroom/ba5.jpg';
 import ba6 from '../bathroom/ba6.jpg';
 import ba7 from '../bathroom/ba7.jpg';
 import ba8 from '../bathroom/ba8.jpg';
-import ba9 from '../givens/givens8.jpg';
 import ba10 from '../bathroom/ba10.jpg';
 import ba11 from '../bathroom/ba11.jpg';
 import ba12 from '../bathroom/ba12.jpg';
@@ -92,13 +91,6 @@ function BathroomCarousel() {
                 <img
                     className="d-block w-100"
                     src={ba10}
-                    alt="First slide"
-                />
-            </Carousel.Item>
-              <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={ba9}
                     alt="First slide"
                 />
             </Carousel.Item>

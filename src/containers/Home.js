@@ -22,7 +22,6 @@ import { Link } from 'react-router-dom';
 import HomeCarousel from '../components/HeadCarousel';
 
 // import bath1 from '../bathrooms/ba5.jpg';
-import clean1 from '../givens/clean1.jpg';
 import clean2 from '../prospect/cleanD.jpg';
 import logoZoom from '../photos/LogoZoom2.png';
 import green from '../gifs/green.png';

@@ -7,8 +7,7 @@ import l5 from '../living/l5.jpg';
 import l6 from '../living/l6.jpg';
 import l7 from '../living/l7.jpg';
 import l8 from '../living/l8.jpg';
-import l9 from '../givens/givens2.jpg';
-import be3 from '../bethune/be3.jpg';
+
 import l10 from '../living/l10.jpg';
 import l11 from '../living/l11.jpg';
 import l12 from '../living/l12.jpg';
@@ -62,22 +61,8 @@ function LivingCarousel() {
                 />
              
             </Carousel.Item>
-             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={be3}
-                    alt="First slide"
-                />
-             
-            </Carousel.Item>
-             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={l9}
-                    alt="First slide"
-                />
-             
-            </Carousel.Item>
+          
+         
             <Carousel.Item>
                 <img
                     className="d-block w-100"

@@ -3,22 +3,15 @@ import './CurrentProjects.css';
 
 
 //////// components
-import Bunche from '../individualProjects/Bunche';
-import East from '../individualProjects/2102E';
 import EnchantedLane from '../individualProjects/EnchantedLane';
 import ProspectAve from '../individualProjects/ProspectAve';
 import W51 from '../individualProjects/W51';
-import BrentwoodSt from '../individualProjects/Brentwood';
 
-////// Bunche 
-import BuncheCarousel from '../components/BuncheCarousel';
-import buncheMap from '../bunche/buncheMap.png';
+
+
 
 //////// Unit Page
-import E21UnitA from '../units/2102A';
-import E21UnitB from '../units/2102B';
-import BuncheA from '../units/BuncheA';
-import BuncheB from '../units/BuncheB';
+
 import ProspectA from '../units/ProspectA';
 
 
@@ -100,11 +93,6 @@ function CurrentProjects({ normal }) {
     return (
         <>
             {
-                unit === "E21UnitA" ? <E21UnitA handleUnitSelect={handleUnitSelect} /> :
-                    unit === "E21UnitB" ? <E21UnitB handleUnitSelect={handleUnitSelect} /> :
-                        unit === "BuncheA" ? <BuncheA handleUnitSelect={handleUnitSelect} /> :
-                            unit === "BuncheB" ? <BuncheB handleUnitSelect={handleUnitSelect} /> :
-                                unit === "ProspectAve" ? <ProspectA handleUnitSelect={handleUnitSelect} /> :
 
                                     <div
                                         className="gallery-master-container">
