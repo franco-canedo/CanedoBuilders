@@ -68,8 +68,8 @@ function Header({ toggleTab }) {
 
                     {
                         width < 550 ? <div className="header-email-div">
-                            <p className="header-email">INFO@CANEDOBUILDERS.COM     .</p>
-                            <img style={{ height: '30px', }} src={green} className="header-email-icon"></img>
+                            <p className="header-email">INFO@CANEDOBUILDERS.COM</p>
+                            {/* <img style={{ height: '30px', }} src={green} className="header-email-icon"></img> */}
 
                         </div> : null
                     }
