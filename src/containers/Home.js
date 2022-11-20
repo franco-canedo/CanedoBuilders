@@ -23,7 +23,7 @@ import HomeCarousel from '../components/HeadCarousel';
 
 // import bath1 from '../bathrooms/ba5.jpg';
 import clean1 from '../givens/clean1.jpg';
-import clean2 from '../kitchen/k10.jpg';
+import clean2 from '../prospect/cleanD.jpg';
 import logoZoom from '../photos/LogoZoom2.png';
 import green from '../gifs/green.png';
 
@@ -112,7 +112,7 @@ function Home({ toPage }) {
                         <h4>Clean & Aesthetic Design</h4>
                     </div>
 
-                    <img className="promise-img" src={clean1}></img>
+                    <img className="promise-img" src={clean2}></img>
                 </div>
                 <div className="motto-div" data-aos="fade-right" data-aos-once="true">
                     <div className="warranty">

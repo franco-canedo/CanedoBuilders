@@ -16,6 +16,8 @@ import EastB from './units/2102B';
 import BrentA from './units/BrentwoodA';
 import BrentB from './units/BrentwoodB';
 import EnchantedLaneA from './units/EnchantedLaneA';
+import W51unitA from './units/W51unitA';
+import W51unitB from './units/W51unitB';
 
 
 import { render } from "react-dom";
@@ -77,6 +79,8 @@ function App() {
         <Route path="/brentA" element={<BrentA />} />
         <Route path="/brentB" element={<BrentB />} />
         <Route path="/enchantedA" element={<EnchantedLaneA />} />
+        <Route path="/W51unitA" element={<W51unitA />} />
+        <Route path="/W51unitB" element={<W51unitB />} />
       </Routes>
       <Footer />
     </div >
