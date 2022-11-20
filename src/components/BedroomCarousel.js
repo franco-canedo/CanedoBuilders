@@ -7,10 +7,10 @@ import b5 from '../bedroom/b5.jpg';
 import b6 from '../bedroom/b6.jpg';
 import b7 from '../bedroom/b7.jpg';
 import b8 from '../bedroom/b8.jpg';
-import b9 from '../givens/givens7.jpg';
 import b10 from '../bedroom/b10.jpg';
 import b11 from '../bedroom/b11.jpg';
 import b12 from '../bedroom/b12.jpg';
+import b13 from '../bedroom/b13.jpg';
 
 
 
@@ -27,6 +27,14 @@ function BedroomCarousel() {
                 />
               
             </Carousel.Item> */}
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={b13}
+                    alt="First slide"
+                />
+              
+            </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -47,22 +55,6 @@ function BedroomCarousel() {
                 <img
                     className="d-block w-100"
                     src={b12}
-                    alt="First slide"
-                />
-              
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={b9}
-                    alt="First slide"
-                />
-              
-            </Carousel.Item>
-             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={b9}
                     alt="First slide"
                 />
               

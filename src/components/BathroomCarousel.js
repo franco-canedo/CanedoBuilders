@@ -7,19 +7,51 @@ import ba5 from '../bathroom/ba5.jpg';
 import ba6 from '../bathroom/ba6.jpg';
 import ba7 from '../bathroom/ba7.jpg';
 import ba8 from '../bathroom/ba8.jpg';
-import ba9 from '../givens/givens8.jpg';
 import ba10 from '../bathroom/ba10.jpg';
 import ba11 from '../bathroom/ba11.jpg';
 import ba12 from '../bathroom/ba12.jpg';
 import ba13 from '../bathroom/ba13.jpg';
 import ba14 from '../bathroom/ba14.jpg';
 import ba15 from '../bathroom/ba15.jpg';
+import ba16 from '../bathroom/ba16.jpg';
+import ba17 from '../bathroom/ba17.jpg';
+import ba22 from '../bathroom/ba22.jpg';
+import ba19 from '../bathroom/ba19.jpg';
+import ba20 from '../bathroom/ba20.jpg';
 
 
 
 function BathroomCarousel() {
     return (
         <Carousel fade>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={ba16}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={ba17}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={ba22}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={ba19}
+                    alt="First slide"
+                />
+            </Carousel.Item>
              <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -59,13 +91,6 @@ function BathroomCarousel() {
                 <img
                     className="d-block w-100"
                     src={ba10}
-                    alt="First slide"
-                />
-            </Carousel.Item>
-              <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={ba9}
                     alt="First slide"
                 />
             </Carousel.Item>
