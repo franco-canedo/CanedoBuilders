@@ -68,8 +68,8 @@ function ProspectAve({ setUnit, loading, load }) {
                 </div>
             </div>
             <div className="progress-div">
-                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: AUGUST 2022</h5>
-                <Progress percent="20" indicating />
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETED: UNDER CONTRACT</h5>
+                <Progress percent="100" indicating />
             </div>
 
         </>

@@ -11,6 +11,11 @@ import e9 from '../givens/givens1.jpg';
 import be1 from '../bethune/be1.jpg';
 import e10 from '../exterior/e10.jpg';
 import e11 from '../exterior/e11.jpg';
+import e12 from '../exterior/e12.jpg';
+import e13 from '../exterior/e13.jpg';
+import e14 from '../exterior/e14.jpg';
+import e15 from '../exterior/e15.jpg';
+import e16 from '../exterior/e16.jpg';
 
 
 
@@ -18,6 +23,13 @@ import e11 from '../exterior/e11.jpg';
 function ExteriorCarousel() {
     return (
         <Carousel fade>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={e12}
+                    alt="First slide"
+                />
+            </Carousel.Item>
              <Carousel.Item>
                 <img
                     className="d-block w-100"

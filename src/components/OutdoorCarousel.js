@@ -11,6 +11,9 @@ import o9 from '../givens/givens9.jpg';
 import o10 from '../outdoor/o10.jpg';
 import o11 from '../outdoor/o11.jpg';
 import o12 from '../outdoor/o12.jpg';
+import o13 from '../outdoor/o13.jpg';
+import o14 from '../outdoor/o14.jpg';
+import o15 from '../outdoor/o15.jpg';
 
 
 
@@ -18,6 +21,30 @@ import o12 from '../outdoor/o12.jpg';
 function OutdoorCarousel() {
     return (
         <Carousel fade>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={o13}
+                    alt="First slide"
+                />
+             
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={o14}
+                    alt="First slide"
+                />
+             
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={o15}
+                    alt="First slide"
+                />
+             
+            </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"

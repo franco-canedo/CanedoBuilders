@@ -93,7 +93,7 @@ function Home({ toPage }) {
                         <h5>SEE OUR WORK </h5>
                     </div>
                     <video width="750" height="500" controls >
-                        <source src="/Videos/2102Vid.mp4" type="video/mp4" />
+                        <source src="/Videos/Vid.mp4" type="video/mp4" />
                         {/* <source src="/Videos/bethuneVid.mp4" type="video/mp4" /> */}
                     </video>
                     {/* <iframe
