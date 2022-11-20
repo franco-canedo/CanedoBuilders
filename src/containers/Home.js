@@ -91,7 +91,8 @@ function Home({ toPage }) {
                     <div className="see-work">
                         <h5>SEE OUR WORK </h5>
                     </div>
-                    <video width="750" height="500" controls >
+                    <video width="750" height="500" controls autoPlay
+          playsInline>
                         <source src="/Videos/Vid.mp4" type="video/mp4" />
                         {/* <source src="/Videos/bethuneVid.mp4" type="video/mp4" /> */}
                     </video>
