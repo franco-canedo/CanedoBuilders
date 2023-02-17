@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import './About.css';
-import papa from '../photos/papaR.png';
-import guido from '../photos/guidoR.png';
-import franco from '../photos/francoR.png';
+import papa from '../BFS/papa.Jpg';
+import guido from '../BFS/guido.Jpg';
+import franco from '../BFS/franco.Jpg';
 import green from '../gifs/green.png';
 
 
@@ -38,7 +38,7 @@ function About() {
                 </div>
                 <div className="profile-pic-div">
                     <div className="p-pic-div">
-                        <img className="profile-pic3" src={green}></img>
+                        <img className="profile-pic3" src={franco}></img>
                     </div>
                     <div className="p-div">
                         <b>Franco Canedo Flores</b>

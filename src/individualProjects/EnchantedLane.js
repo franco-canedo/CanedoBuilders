@@ -66,8 +66,8 @@ function EnchantedLane({ loading, load }) {
                 </div>
             </div>
             <div className="progress-div">
-                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: DECEMBER 2022</h5>
-                <Progress percent="90" indicating />
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETED</h5>
+                <Progress percent="100" indicating />
             </div>
 
         </>

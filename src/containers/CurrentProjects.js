@@ -105,9 +105,7 @@ function CurrentProjects({ normal }) {
                                             <div data-aos="fade-right" data-aos-once="true">
                                                 <EnchantedLane loading={loading} load={load} />
                                             </div>
-                                            <div data-aos="fade-right" data-aos-once="true">
-                                                <ProspectAve setUnit={setUnit} loading={loading} load={load} />
-                                            </div>
+                                           
                                         
                                             
                                             

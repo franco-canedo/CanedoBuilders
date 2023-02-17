@@ -77,7 +77,7 @@ function W51({ loading, load }) {
             </div>
             <div className="progress-div">
                 <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: APRIL 2023</h5>
-                <Progress percent="20" indicating />
+                <Progress percent="70" indicating />
             </div>
 
         </>

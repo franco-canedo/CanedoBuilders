@@ -15,6 +15,7 @@ import k14 from '../kitchen/k14.jpg';
 import k15 from '../kitchen/k15.jpg';
 import k16 from '../kitchen/k16.jpg';
 import k17 from '../kitchen/k17.jpg';
+import k18 from '../kitchen/k18.jpg';
 
 
 
@@ -23,6 +24,30 @@ import k17 from '../kitchen/k17.jpg';
 function KitchenCarousel() {
     return (
         <Carousel fade>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={k18}
+                    alt="First slide"
+                />
+                
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={k16}
+                    alt="First slide"
+                />
+                
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={k17}
+                    alt="First slide"
+                />
+                
+            </Carousel.Item>
              <Carousel.Item>
                 <img
                     className="d-block w-100"
