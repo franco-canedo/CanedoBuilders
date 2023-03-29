@@ -46,7 +46,7 @@ function EnchantedLaneA({ handleUnitSelect }) {
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
-                        <h2>2665 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
+                        <h2>2160 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
                         <h2>3 {<Icon name='bed' size='large' />}</h2>
