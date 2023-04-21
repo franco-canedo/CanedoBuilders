@@ -29,7 +29,7 @@ function EnchantedLaneA({ handleUnitSelect }) {
         <>
            
                 
-                <h1>203 N CANNYONWOOD DR</h1>
+                <h1>203 N CANYONWOOD DR</h1>
                 
                {/* <div className="back-button">
 

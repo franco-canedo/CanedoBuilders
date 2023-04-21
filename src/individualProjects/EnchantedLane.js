@@ -21,7 +21,7 @@ function EnchantedLane({ loading, load }) {
     return (
         <>
             <div className="project-title-div">
-                <h1>203 N CANNYONWOOD DR</h1>
+                <h1>203 N CANYONWOOD DR</h1>
             </div>
             <div className="project-div">
 
