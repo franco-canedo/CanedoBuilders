@@ -8,8 +8,8 @@ import { Icon } from 'semantic-ui-react';
 import Button from '@material-ui/core/Button';
 
 import green from '../gifs/green.png';
-import enchantedMap from '../enchanted/enchantedMap.png';
-import enchantedRendering from '../enchanted/enchantedRendering.jpg';
+import enchantedMap from '../enchanted/cannyonwood_map.png';
+import enchantedRendering from '../enchanted/cannyonwood_render.png';
 
 import { Link, Outlet } from "react-router-dom";
 
@@ -21,7 +21,7 @@ function EnchantedLane({ loading, load }) {
     return (
         <>
             <div className="project-title-div">
-                <h1>4908 ENCHANTED LANE</h1>
+                <h1>203 N CANYONWOOD DR</h1>
             </div>
             <div className="project-div">
 
@@ -39,7 +39,7 @@ function EnchantedLane({ loading, load }) {
                     }
                 </div>
 
-                <a href="https://www.google.com/maps/place/4908+Enchanted+Ln,+Austin,+TX+78745/@30.2477067,-97.8079698,12.16z/data=!4m5!3m4!1s0x865b4b4953dc55c7:0x2c085f210c61418e!8m2!3d30.2217544!4d-97.7910217" target="_blank">
+                <a href="https://www.google.com/maps/place/203+Canyonwood+Dr,+Dripping+Springs,+TX+78620/@30.2401182,-98.1274129,10.55z/data=!4m6!3m5!1s0x865b46a4f1824e39:0xa0f24ff467461d32!8m2!3d30.1988099!4d-98.0318878!16s%2Fg%2F11ftkmlz67" target="_blank">
                     <div className="bounce-div">
                         {
                             loading === true ?
@@ -66,8 +66,8 @@ function EnchantedLane({ loading, load }) {
                 </div>
             </div>
             <div className="progress-div">
-                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: DECEMBER 2022</h5>
-                <Progress percent="90" indicating />
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION DATE: JUNE 2023</h5>
+                <Progress percent="80" indicating />
             </div>
 
         </>

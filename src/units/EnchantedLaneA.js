@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 
 import Button from '@material-ui/core/Button';
 
-import floor1 from '../enchanted/firstFloor.png';
+import floor1 from '../enchanted/cannyonwood_backyard.png';
 import floor2 from '../enchanted/secondFloor.png';
-import layout from '../enchanted/sitePlan.png';
-import enchantedRendering from '../enchanted/enchantedRendering.jpg';
+import layout from '../enchanted/cannyonwood_porch.png';
+import enchantedRendering from '../enchanted/cannyonwood_render.png';
 
 import green from '../gifs/green.png';
 
@@ -29,7 +29,7 @@ function EnchantedLaneA({ handleUnitSelect }) {
         <>
            
                 
-                <h1>4908 ENCHANTED LN</h1>
+                <h1>203 N CANYONWOOD DR</h1>
                 
                {/* <div className="back-button">
 
@@ -46,10 +46,10 @@ function EnchantedLaneA({ handleUnitSelect }) {
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
-                        <h2>2665 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
+                        <h2>2160 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
-                        <h2>4 {<Icon name='bed' size='large' />}</h2>
+                        <h2>3 {<Icon name='bed' size='large' />}</h2>
                     </div>
                     <div className="info-item">
                         <h2>3 {'     '} {<Icon name='bath' size='large' />}</h2>
@@ -58,17 +58,12 @@ function EnchantedLaneA({ handleUnitSelect }) {
                 </div>
                 <div className="floorplans-div">
                     <div className="floorplan-item">
-                        <h2 className="floorplan-titles">1ST FLOOR</h2>
+                        <h2 className="floorplan-titles"></h2>
                         <img className="floorPlan-image" src={floor1}></img>
-                    </div>
-                    
-                    <div className="floorplan-item">
-                        <h2 className="floorplan-titles">2ND FLOOR</h2>
-                        <img className="floorPlan-image" src={floor2}></img>
                     </div>
 
                     <div className="floorplan-item">
-                        <h2 className="floorplan-titles">LAYOUT</h2>
+                        <h2 className="floorplan-titles"></h2>
                         <img className="floorPlan-image" src={layout}></img>
                     </div>
                 </div>

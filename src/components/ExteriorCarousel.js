@@ -13,7 +13,8 @@ import e12 from '../exterior/e12.jpg';
 import e13 from '../exterior/e13.jpg';
 import e14 from '../exterior/e14.jpg';
 import e15 from '../exterior/e15.jpg';
-import e16 from '../exterior/e16.jpg';
+import e17 from '../exterior/e17.jpg';
+import e18 from '../exterior/e18.jpg';
 
 
 
@@ -24,7 +25,14 @@ function ExteriorCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={e12}
+                    src={e17}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={e18}
                     alt="First slide"
                 />
             </Carousel.Item>
