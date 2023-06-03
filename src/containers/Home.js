@@ -93,7 +93,7 @@ function Home({ toPage }) {
                     </div>
                     <video width="750" height="500" controls autoPlay
           playsInline>
-                        <source src="/Videos/Vid.mp4" type="video/mp4" />
+                        <source src="/Videos/W51Avid.mp4" type="video/mp4" />
                         {/* <source src="/Videos/bethuneVid.mp4" type="video/mp4" /> */}
                     </video>
                     {/* <iframe
