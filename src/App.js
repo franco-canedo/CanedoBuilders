@@ -12,6 +12,10 @@ import ProspectA from './units/ProspectA';
 import EnchantedLaneA from './units/EnchantedLaneA';
 import W51unitA from './units/W51unitA';
 import W51unitB from './units/W51unitB';
+import RuthA from './units/RuthA';
+import RuthB from './units/RuthB';
+import E9B from './units/E9B';
+
 
 
 import { render } from "react-dom";
@@ -20,6 +24,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+
 
 
 
@@ -69,6 +74,9 @@ function App() {
         <Route path="/enchantedA" element={<EnchantedLaneA />} />
         <Route path="/W51unitA" element={<W51unitA />} />
         <Route path="/W51unitB" element={<W51unitB />} />
+        <Route path="/RuthA" element={<RuthA />} />
+        <Route path="/RuthB" element={<RuthB />} />
+        <Route path="/E9B" element={<E9B />} />
       </Routes>
       <Footer />
     </div >

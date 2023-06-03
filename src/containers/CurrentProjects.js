@@ -6,6 +6,8 @@ import './CurrentProjects.css';
 import EnchantedLane from '../individualProjects/EnchantedLane';
 import ProspectAve from '../individualProjects/ProspectAve';
 import W51 from '../individualProjects/W51';
+import Ruth from '../individualProjects/Ruth';
+import E9 from '../individualProjects/E9';
 
 
 
@@ -104,6 +106,12 @@ function CurrentProjects({ normal }) {
                                             </div>
                                             <div data-aos="fade-right" data-aos-once="true">
                                                 <EnchantedLane loading={loading} load={load} />
+                                            </div>
+                                            <div data-aos="fade-right" data-aos-once="true">
+                                                <Ruth loading={loading} load={load} />
+                                            </div>
+                                            <div data-aos="fade-right" data-aos-once="true">
+                                                <E9 loading={loading} load={load} />
                                             </div>
                                            
                                         
