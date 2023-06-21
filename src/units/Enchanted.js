@@ -8,6 +8,14 @@ import floor1 from '../brentwood/unitAone.png';
 import floor2 from '../brentwood/unitA2.png';
 import floor3 from '../brentwood/unitA3.png';
 import layout from '../brentwood/BrentLayout.png';
+import im1 from '../canyon/IMG_8636.JPG';
+import im2 from '../canyon/IMG_8637.JPG';
+import im3 from '../canyon/IMG_8638.JPG';
+import im4 from '../canyon/IMG_8639.JPG';
+import im5 from '../canyon/IMG_8640.JPG';
+import im6 from '../canyon/IMG_8641.JPG';
+import im7 from '../canyon/IMG_8642.JPG';
+import im8 from '../canyon/IMG_8643.JPG';
 
 
 import prospectRender from '../prospect/prospectRender.jpg';
