@@ -8,7 +8,7 @@ import { Icon } from 'semantic-ui-react';
 import Button from '@material-ui/core/Button';
 
 import green from '../gifs/green.png';
-import W51Map from '../W51/W51map.png';
+import RuthMap from '../Ruth/RuthMap.png';
 import RuthRendering from '../Ruth/RuthRendering.jpg';
 
 import { Link, Outlet } from "react-router-dom";
@@ -39,13 +39,13 @@ function Ruth({ loading, load }) {
                     }
                 </div>
 
-                <a href="https://www.google.com/maps/place/1412+W+51st+St,+Austin,+TX+78756/@30.2936077,-97.8239742,11.86z/data=!4m5!3m4!1s0x8644ca5e28a32fc1:0x1c5a5062bd425292!8m2!3d30.3222878!4d-97.738339" target="_blank">
+                <a href="https://www.google.com/maps/place/1001+Ruth+Ave,+Austin,+TX+78757/@30.3057252,-97.8006983,12.3z/data=!4m6!3m5!1s0x8644ca488d316f37:0x1182f1ff2b971732!8m2!3d30.3357613!4d-97.7232334!16s%2Fg%2F11c2hwjp4l?entry=ttu" target="_blank">
                     <div className="bounce-div">
                         {
                             loading === true ?
                                 <img className="project-img4" src={load}></img>
 
-                                : <img src={W51Map} className="project-img3"></img>
+                                : <img src={RuthMap} className="project-img3"></img>
 
                         }
                     </div>

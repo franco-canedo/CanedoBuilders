@@ -8,7 +8,7 @@ import { Icon } from 'semantic-ui-react';
 import Button from '@material-ui/core/Button';
 
 import green from '../gifs/green.png';
-import W51Map from '../W51/W51map.png';
+import E9Map from '../Ruth/E9Map.png';
 import RuthRendering from '../Ruth/RuthRendering.jpg';
 
 import { Link, Outlet } from "react-router-dom";
@@ -39,13 +39,13 @@ function E9({ loading, load }) {
                     }
                 </div>
 
-                <a href="https://www.google.com/maps/place/1412+W+51st+St,+Austin,+TX+78756/@30.2936077,-97.8239742,11.86z/data=!4m5!3m4!1s0x8644ca5e28a32fc1:0x1c5a5062bd425292!8m2!3d30.3222878!4d-97.738339" target="_blank">
+                <a href="https://www.google.com/maps/place/2508+E+9th+St,+Austin,+TX+78702/@30.2742407,-97.8365218,12.27z/data=!4m6!3m5!1s0x8644b5cf4ef57d1d:0x5f3e58a041583a54!8m2!3d30.2652371!4d-97.7141122!16s%2Fg%2F11c14fdgcr?entry=ttu`" target="_blank">
                     <div className="bounce-div">
                         {
                             loading === true ?
                                 <img className="project-img4" src={load}></img>
 
-                                : <img src={W51Map} className="project-img3"></img>
+                                : <img src={E9Map} className="project-img3"></img>
 
                         }
                     </div>
