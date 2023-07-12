@@ -52,7 +52,7 @@ function EnchantedA({ handleUnitSelect }) {
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
-                        <h2>2712<Icon name='arrows alternate horizontal' size='large' /></h2>
+                        <h2>2480<Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
                         <h2>4 {<Icon name='bed' size='large' />}</h2>

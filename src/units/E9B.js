@@ -47,7 +47,7 @@ function E9B({ handleUnitSelect }) {
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
-                        <h2>1040 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
+                        <h2>873 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
                         <h2>2 {<Icon name='bed' size='large' />}</h2>
