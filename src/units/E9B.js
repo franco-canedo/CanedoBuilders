@@ -8,6 +8,7 @@ import floor2 from '../W51/unitAtwo.png';
 import floor3 from '../W51/unitAthree.png';
 import layout from '../W51/layout.png';
 import RuthRendering from '../Ruth/RuthRendering.jpg';
+import Brendering from '../2509E9/E9Brendering.jpeg';
 
 import green from '../gifs/green.png';
 
@@ -30,7 +31,7 @@ function E9B({ handleUnitSelect }) {
         <>
            
                 
-                <h1>2508 E 9TH ST</h1>
+                <h1>2509 E 9TH ST Unit B</h1>
                 
                {/* <div className="back-button">
 
@@ -43,17 +44,17 @@ function E9B({ handleUnitSelect }) {
 
             <div>
                 <div className="head-div">
-                    <img className="head-imager-unit-out" src={green}></img>
+                    <img className="head-imager-unit-out" src={Brendering}></img>
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
-                        <h2>873 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
+                        <h2>871 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
                         <h2>2 {<Icon name='bed' size='large' />}</h2>
                     </div>
                     <div className="info-item">
-                        <h2>2 {'     '} {<Icon name='bath' size='large' />}</h2>
+                        <h2>3 {'     '} {<Icon name='bath' size='large' />}</h2>
                     </div>
                     
                 </div>

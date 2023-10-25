@@ -101,9 +101,7 @@ function CurrentProjects({ normal }) {
                                         <div className="projects-container">
 
                                             {timer()}
-                                            <div data-aos="fade-right" data-aos-once="true">
-                                                <W51 setUnit={setUnit} loading={loading} load={load} />
-                                            </div>
+                                           
                                             <div data-aos="fade-right" data-aos-once="true">
                                                 <EnchantedLane loading={loading} load={load} />
                                             </div>

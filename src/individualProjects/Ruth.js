@@ -76,8 +76,8 @@ function Ruth({ loading, load }) {
                 </div>
             </div>
             <div className="progress-div">
-                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: DECEMBER 2023</h5>
-                <Progress percent="10" indicating />
+                <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: JANUARY 2024</h5>
+                <Progress percent="50" indicating />
             </div>
 
         </>

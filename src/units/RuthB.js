@@ -47,7 +47,7 @@ function RuthB({ handleUnitSelect }) {
                 </div>
                 <div className="unit-info-div-cont">
                     <div className="info-item">
-                        <h2>2113 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
+                        <h2>1400 SF<Icon name='arrows alternate horizontal' size='large' /></h2>
                     </div>
                     <div className="info-item">
                         <h2>3 {<Icon name='bed' size='large' />}</h2>

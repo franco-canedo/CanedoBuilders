@@ -15,6 +15,7 @@ import W51unitB from './units/W51unitB';
 import RuthA from './units/RuthA';
 import RuthB from './units/RuthB';
 import E9B from './units/E9B';
+import E9A from './units/E9A';
 
 
 
@@ -77,6 +78,7 @@ function App() {
         <Route path="/RuthA" element={<RuthA />} />
         <Route path="/RuthB" element={<RuthB />} />
         <Route path="/E9B" element={<E9B />} />
+        <Route path="/E9A" element={<E9A />} />
       </Routes>
       <Footer />
     </div >
