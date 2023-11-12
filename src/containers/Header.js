@@ -15,7 +15,7 @@ import 'aos/dist/aos.css';
 function debounce(fn, ms) {
     let timer
     return _ => {
-        AOS.init({duration: 1000});
+        AOS.init({ duration: 1000 });
         clearTimeout(timer);
         timer = setTimeout(_ => {
             timer = null
@@ -85,30 +85,33 @@ function Header({ toggleTab }) {
                             width < 550 ? null
                                 :
                                 <>
+                                    <Link to="/about" style={{ color: "white" }}>
+                                        <div className="tab-div">
+                                            <h5>ABOUT US</h5>
+                                            <Outlet />
+                                        </div>
+                                    </Link>
                                     <Link to="/gallery" style={{ color: "white" }}>
                                         <div className="tab-div">
                                             <h5>GALLERY</h5>
                                             <Outlet />
                                         </div>
                                     </Link>
+                                    <Link to="/contact" style={{ color: "white" }}>
+                                        <div className="tab-div">
+                                            <h5>BUILDING SERVICES</h5>
+                                            <Outlet />
+                                        </div>
+                                    </Link>
+
                                     <Link to="/listings" style={{ color: "white" }}>
                                         <div className="tab-div">
                                             <h5>LISTINGS</h5>
                                             <Outlet />
                                         </div>
                                     </Link>
-                                    <Link to="/about" style={{ color: "white" }}>
-                                        <div className="tab-div">
-                                            <h5>OUR TEAM</h5>
-                                            <Outlet />
-                                        </div>
-                                    </Link>
-                                    <Link to="/contact" style={{ color: "white" }}>
-                                        <div className="tab-div">
-                                            <h5>CONTACT</h5>
-                                            <Outlet />
-                                        </div>
-                                    </Link>
+
+
                                 </>
                         }
 
@@ -120,9 +123,9 @@ function Header({ toggleTab }) {
                 width < 550 ?
                     <div className={menu} style={{ overflowX: "hidden" }}>
 
-                        <div className="option" 
+                        <div className="option"
                             onClick={() => {
-                                
+
                                 handleMenu();
                             }}>
                             <Link to="/" style={{ color: "black" }}>
@@ -132,7 +135,7 @@ function Header({ toggleTab }) {
                         </div>
                         <div className="option"
                             onClick={() => {
-                                
+
                                 handleMenu();
                             }}>
                             <Link to="/gallery" style={{ color: "black" }}>
@@ -143,7 +146,7 @@ function Header({ toggleTab }) {
 
                         <div className="option"
                             onClick={() => {
-                                
+
                                 handleMenu();
                             }}>
                             <Link to="/listings" style={{ color: "black" }}>
@@ -154,7 +157,7 @@ function Header({ toggleTab }) {
                         </div>
                         <div className="option"
                             onClick={() => {
-                                
+
                                 handleMenu();
                             }}>
                             <Link to="/about" style={{ color: "black" }}>
@@ -165,7 +168,7 @@ function Header({ toggleTab }) {
                         </div>
                         <div className="option"
                             onClick={() => {
-                                
+
                                 handleMenu();
                             }}>
                             <Link to="/contact" style={{ color: "black" }}>

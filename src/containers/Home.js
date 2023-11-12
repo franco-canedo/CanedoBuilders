@@ -80,9 +80,24 @@ function Home({ toPage }) {
                 </>
             </div>
 
+            <div className="values-div">
+                <div>
+                    <h3>QUALITY</h3>
+                </div>
+                <div>
+                    <h3>INTEGRITY</h3>
+                </div>
+                <div>
+                    <h3>DESIGN</h3>
+                </div>
+            </div>
+
+            <div>
+                <h1>WHO WE ARE</h1>
+            </div>
             <div className='quote'>
                 <div className="motto-div">
-                    <p className="motto">Creating beautiful and unique living spaces in the city of Austin since 2014.
+                    <p className="motto">Canedo Builders is a family-owned custom home building company serving the Austin area.
                     </p>
                 </div>
 

@@ -10,6 +10,24 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
+.about-title-div {
+  padding-top: 5%;
+}
+
+.about-us-div {
+  padding: 5%;
+}
+
+.team-container {
+  display: flex;
+    justify-content: space-evenly;
+}
+
+.other-titles {
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
 .bio-div {
     padding: 50px;
     font-size: 20px;
@@ -43,6 +61,16 @@
     width: 150px;
     margin-top: 5px;
     animation: Profile_Slide_In 6s ease 0s forwards;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    object-fit: cover;
+}
+
+.services-pic {
+  border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: 5px;
+    /* animation: Profile_Slide_In 6s ease 0s forwards; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     object-fit: cover;
 }
