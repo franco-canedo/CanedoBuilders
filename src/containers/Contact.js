@@ -8,6 +8,11 @@ import { Icon } from 'semantic-ui-react'
 
 import { send } from 'emailjs-com';
 
+import green from '../gifs/green.png';
+import home from '../BFS/custom_homes.png';
+import project from '../BFS/project_management.png';
+import remodel from '../BFS/remodeling.png';
+
 function Contact() {
 
     useEffect(() => {
@@ -20,7 +25,7 @@ function Contact() {
         phone: '',
         issue: '',
         message: '',
-        
+
     });
 
     const onSubmit = (e) => {
@@ -31,14 +36,14 @@ function Contact() {
             'template_04eauw7',
             toSend,
             'user_aGuGt3m2XlA0hZ450LDxM',
-          )
+        )
             .then((response) => {
-              alert('Request sent.', response.status, response.text);
-              console.log('Request sent.', response.status, response.text);
+                alert('Request sent.', response.status, response.text);
+                console.log('Request sent.', response.status, response.text);
             })
             .catch((err) => {
-              alert('There was an error... Please try again.', err);
-              console.log('FAILED...', err);
+                alert('There was an error... Please try again.', err);
+                console.log('FAILED...', err);
             });
     };
 
@@ -51,9 +56,71 @@ function Contact() {
 
     return (
         <div className="gallery-master-container">
-            <div></div>
+            <div className='services-container'>
 
-            <div className="contact-container">
+                <div className='title-div'>
+                    <h1>BUILDING SERVICES</h1>
+                </div>
+                <div>
+                    <h3>WE CATER TO YOUR NEEDS</h3>
+                </div>
+
+                <div className='services-divs'>
+                    <div className='paragraph-divs'>
+                        <p>
+                            Over the years we have developed an impressive network of local architects, designers, and contractors. This network allows us to cater specifically to your needs, our process is extremely efficient and we aim to exceed expectations with the results.
+
+                            We pride ourselves in open communication and transparency, this is key to ensure our client’s vision is brought to life correctly. As a small business, we limit the amount of projects we take at a time and this is to our clients benefit.
+                        </p>
+                    </div>
+                    <div className="p-pic-div">
+                        <img className="services-pic" src={green}></img>
+                    </div>
+                </div>
+
+                <div className='services-divs'>
+                    <div className="p-pic-div">
+                        <img className="services-pic" src={home}></img>
+                    </div>
+                    <div className='paragraph-divs'>
+                        <p>
+                            We build your dream house on your lot. Our approach with custom homes is to give you
+                            total control to design and create your vision. We use our knowledge and expertise to guide
+                            you through the whole design and construction process, open communication is key. Schedule
+                            a consultation with us to start planning your dream project.
+                        </p>
+                    </div>
+                </div>
+
+                <div className='services-divs'>
+                    <div className='paragraph-divs'>
+                        <p>
+                            Small bathroom remodel, addition, or full home renovation, we got you covered. Schedule a consultation
+                            with us to start reinventing your current home and help it reach its full potential.
+                        </p>
+                    </div>
+                    <div className="p-pic-div">
+                        <img className="services-pic" src={remodel}></img>
+                    </div>
+                </div>
+
+                <div className='services-divs'>
+                    <div className="p-pic-div">
+                        <img className="services-pic" src={project}></img>
+                    </div>
+                    <div className='paragraph-divs'>
+                        <p>
+                            We offer full construction management services for real estate professionals or investors looking to add value to their properties.
+                            In this business it is essential to ensure proper supervision, budgeting, and scheduling to be successful. Our commitment
+                            to continuous improvement has been the driving factor for our extremely efficient process. We carefully monitor all aspects of
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            {/* <div className="contact-container">
                 <img src={house} className="img-background"></img>
                 <div className="info-div">
                     
@@ -101,7 +168,7 @@ function Contact() {
                         </Button>
                     </Form>
                 </div>
-            </div>
+            </div> */}
         </div >
 
     );

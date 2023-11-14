@@ -6,6 +6,23 @@
     height: 100%;
 }
 
+.services-divs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.paragraph-divs {
+  padding: 5%;
+}
+
+.services-container {
+  padding: 5%;
+}
+
+.title-div {
+  padding-bottom: 5%;
+}
+
 .info-div {
   font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 25px;

@@ -5,6 +5,10 @@ import guido from '../BFS/guido.Jpg';
 import franco from '../BFS/franco.Jpg';
 import green from '../gifs/green.png';
 
+import home from '../BFS/custom_homes.png';
+import project from '../BFS/project_management.png';
+import remodel from '../BFS/remodeling.png';
+
 
 function About() {
 
@@ -69,19 +73,19 @@ function About() {
                     <div>
                         <h2>Custom Homes</h2>
                         <div className="p-pic-div">
-                            <img className="services-pic" src={green}></img>
+                            <img className="services-pic" src={home}></img>
                         </div>
                     </div>
                     <div>
                         <h2>Remodeling</h2>
                         <div className="p-pic-div">
-                            <img className="services-pic" src={green}></img>
+                            <img className="services-pic" src={remodel}></img>
                         </div>
                     </div>
                     <div>
                         <h2>Project Management</h2>
                         <div className="p-pic-div">
-                            <img className="services-pic" src={green}></img>
+                            <img className="services-pic" src={project}></img>
                         </div>
                     </div>
                 </div>

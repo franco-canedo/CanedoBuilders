@@ -138,10 +138,32 @@ function Header({ toggleTab }) {
 
                                 handleMenu();
                             }}>
+                            <Link to="/about" style={{ color: "black" }}>
+                                <p> {<Icon name='info circle' size='large' />}ABOUT US</p>
+                            </Link>
+                            <Outlet />
+
+                        </div>
+                        <div className="option"
+                            onClick={() => {
+
+                                handleMenu();
+                            }}>
                             <Link to="/gallery" style={{ color: "black" }}>
                                 <p> {<Icon name='picture' size='large' />} GALLERY</p>
                             </Link>
                             <Outlet />
+                        </div>
+                        <div className="option"
+                            onClick={() => {
+
+                                handleMenu();
+                            }}>
+                            <Link to="/contact" style={{ color: "black" }}>
+                                <p> {<Icon name='envelope' size='large' />}SERVICES</p>
+                            </Link>
+                            <Outlet />
+
                         </div>
 
                         <div className="option"
@@ -155,28 +177,8 @@ function Header({ toggleTab }) {
                             <Outlet />
 
                         </div>
-                        <div className="option"
-                            onClick={() => {
-
-                                handleMenu();
-                            }}>
-                            <Link to="/about" style={{ color: "black" }}>
-                                <p> {<Icon name='info circle' size='large' />}OUR TEAM</p>
-                            </Link>
-                            <Outlet />
-
-                        </div>
-                        <div className="option"
-                            onClick={() => {
-
-                                handleMenu();
-                            }}>
-                            <Link to="/contact" style={{ color: "black" }}>
-                                <p> {<Icon name='envelope' size='large' />}CONTACT</p>
-                            </Link>
-                            <Outlet />
-
-                        </div>
+                       
+                        
                         <div className="button"
                             onClick={handleMenu}>
                             <Button variant="contained" onClick={handleMenu}
