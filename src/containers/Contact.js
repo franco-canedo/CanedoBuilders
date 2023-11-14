@@ -120,7 +120,7 @@ function Contact() {
 
 
 
-            {/* <div className="contact-container">
+            <div className="contact-container">
                 <img src={house} className="img-background"></img>
                 <div className="info-div">
                     
@@ -168,7 +168,7 @@ function Contact() {
                         </Button>
                     </Form>
                 </div>
-            </div> */}
+            </div>
         </div >
 
     );

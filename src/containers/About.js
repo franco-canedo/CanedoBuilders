@@ -9,6 +9,11 @@ import home from '../BFS/custom_homes.png';
 import project from '../BFS/project_management.png';
 import remodel from '../BFS/remodeling.png';
 
+import Button from '@material-ui/core/Button';
+import { Icon } from 'semantic-ui-react';
+
+import { Outlet, Link } from "react-router-dom";
+
 
 function About() {
 
@@ -89,6 +94,11 @@ function About() {
                         </div>
                     </div>
                 </div>
+                {/* <div className='contact-button'>
+                    <Link to="/contact" style={{ color: "black" }}>
+                        <h1>CONTACT US</h1>
+                    </Link>
+                </div> */}
 
             </div>
         </div>
