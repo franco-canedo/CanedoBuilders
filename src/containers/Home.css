@@ -23,6 +23,8 @@
 }
 
 .values-div {
+    font-size: 25px;
+    font-weight: bold;
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
@@ -31,7 +33,18 @@
     /* align-content: center; */
     margin: auto;
     width: 60%;
+
 }
+
+@media only screen and (max-width: 600px) {
+  .values-div {
+     font-size: 10px !important;
+     
+    
+  }
+}
+
+
 
 .head-imager {
   /* opacity: 40%; */

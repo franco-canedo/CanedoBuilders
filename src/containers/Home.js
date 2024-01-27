@@ -82,13 +82,13 @@ function Home({ toPage }) {
 
             <div className="values-div">
                 <div>
-                    <h3>QUALITY</h3>
+                    <p>QUALITY</p>
                 </div>
                 <div>
-                    <h3>INTEGRITY</h3>
+                    <p>INTEGRITY</p>
                 </div>
                 <div>
-                    <h3>DESIGN</h3>
+                    <p>DESIGN</p>
                 </div>
             </div>
 

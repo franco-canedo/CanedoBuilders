@@ -102,9 +102,9 @@ function CurrentProjects({ normal }) {
 
                                             {timer()}
                                            
-                                            <div data-aos="fade-right" data-aos-once="true">
+                                            {/* <div data-aos="fade-right" data-aos-once="true">
                                                 <EnchantedLane loading={loading} load={load} />
-                                            </div>
+                                            </div> */}
                                             <div data-aos="fade-right" data-aos-once="true">
                                                 <Ruth loading={loading} load={load} />
                                             </div>

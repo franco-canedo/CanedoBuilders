@@ -7,8 +7,22 @@
 }
 
 .services-divs {
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
+  border-bottom: dotted;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .services-divs {
+    flex-direction: column-reverse;
+  }
+}
+
+.services-titles {
+  /* text-align: left; */
+  margin-top: 45px;
 }
 
 .paragraph-divs {

@@ -28,9 +28,10 @@ function About() {
                         <h1>ABOUT US</h1>
                     </div>
                     <div className="about-us-div">
-                        <p>Welcome to Canedo Builders, an Austin based custom home builder committed to excellence and achieving the highest standards of craftmanship, design, efficiency and comfort.
-                            As a small family business, we like to add a personal touch in our relationship with our clients, we want to be more than just another builder, we are your partners in creating the home you always imagined. Our unwavering commitment to excellence and integrity has been the driving force to our success, we guarantee an exceptional customer experience and the highest standard of quality and durability.
-                            Whether you’re looking to remodel your current home, build the house of your dreams, or add value to your investment property, we can cater to all your construction needs. Explore our portfolio, meet the Canedo family, and let’s start building your dream project together.</p>
+                        <p>Welcome to Canedo Builders, an Austin based custom home builder committed to excellence and achieving the highest standards of craftmanship, design, efficiency and comfort.</p>
+
+                        <p> As a small family business, we like to add a personal touch in our relationship with our clients, we want to be more than just another builder, we are your partners in creating the home you always imagined. Our unwavering commitment to excellence and integrity has been the driving force to our success, we guarantee an exceptional customer experience and the highest standard of quality and durability</p>
+                        <p>Whether you’re looking to remodel your current home, build the house of your dreams, or add value to your investment property, we can cater to all your construction needs. Explore our portfolio, meet the Canedo family, and let’s start building your dream project together.</p>
                     </div>
                 </div>
                 <div className="other-titles">
@@ -75,20 +76,20 @@ function About() {
                     <h2>WHAT WE OFFER</h2>
                 </div>
                 <div className="team-container">
-                    <div>
-                        <h2>Custom Homes</h2>
+                    <div className="offer-divs">
+                        <h3>Custom Homes</h3>
                         <div className="p-pic-div">
                             <img className="services-pic" src={home}></img>
                         </div>
                     </div>
-                    <div>
-                        <h2>Remodeling</h2>
+                    <div className="offer-divs">
+                        <h3>Remodeling</h3>
                         <div className="p-pic-div">
                             <img className="services-pic" src={remodel}></img>
                         </div>
                     </div>
-                    <div>
-                        <h2>Project Management</h2>
+                    <div className="offer-divs">
+                        <h3>Project Management</h3>
                         <div className="p-pic-div">
                             <img className="services-pic" src={project}></img>
                         </div>

@@ -1,4 +1,5 @@
 .profile-pic-div {
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 50px;
     display: flex;
@@ -16,7 +17,7 @@
 
 .about-us-div {
   padding: 5%;
-
+  
 }
 
 .contact-button {
@@ -25,9 +26,21 @@
 }
 
 .team-container {
-  display: flex;
+    display: flex;
     justify-content: space-evenly;
     padding-bottom: 2%;
+    align-items: center;
+    
+}
+
+@media only screen and (max-width: 600px) {
+  .team-container {
+    flex-direction: column-reverse;
+  }
+}
+
+.offer-divs {
+  margin-top: 20px;
 }
 
 .other-titles {

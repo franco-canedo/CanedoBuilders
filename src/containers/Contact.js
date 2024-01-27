@@ -65,17 +65,23 @@ function Contact() {
                     <h3>WE CATER TO YOUR NEEDS</h3>
                 </div>
 
+                
+
                 <div className='services-divs'>
                     <div className='paragraph-divs'>
                         <p>
                             Over the years we have developed an impressive network of local architects, designers, and contractors. This network allows us to cater specifically to your needs, our process is extremely efficient and we aim to exceed expectations with the results.
 
                             We pride ourselves in open communication and transparency, this is key to ensure our client’s vision is brought to life correctly. As a small business, we limit the amount of projects we take at a time and this is to our clients benefit.
-                        </p>
+                        </p>    
                     </div>
                     <div className="p-pic-div">
                         <img className="services-pic" src={green}></img>
                     </div>
+                </div>
+
+                <div className='services-titles'>
+                    <h3>CUSTOM HOME</h3>
                 </div>
 
                 <div className='services-divs'>
@@ -92,6 +98,10 @@ function Contact() {
                     </div>
                 </div>
 
+                <div className='services-titles'>
+                    <h3>REMODELS</h3>
+                </div>
+
                 <div className='services-divs'>
                     <div className='paragraph-divs'>
                         <p>
@@ -102,6 +112,10 @@ function Contact() {
                     <div className="p-pic-div">
                         <img className="services-pic" src={remodel}></img>
                     </div>
+                </div>
+
+                <div className='services-titles'>
+                    <h3>PROJECT MANAGEMENT</h3>
                 </div>
 
                 <div className='services-divs'>
