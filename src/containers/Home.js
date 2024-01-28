@@ -60,7 +60,7 @@ function Home({ toPage }) {
         setInterval(() => setLoading(house), 4000);
     }
 
-  
+
 
 
     return (
@@ -99,16 +99,30 @@ function Home({ toPage }) {
                 <div className="motto-div">
                     <p className="motto">Canedo Builders is a family-owned custom home building company serving the Austin area.
                     </p>
+                    <div className="info-div-home">
+                        <p>INFO@CANEDOBUILDERS.COM</p>
+                        <p>(512)-888-4112</p>
+                    </div>
                 </div>
 
 
+
+
                 <div>
-                    <div className="see-work">
-                        <h5>SEE OUR WORK </h5>
+                    <div data-aos="flip-down" data-aos-once="true">
+                        <div className="see-our-video" >
+                            <h1>SEE OUR WORK</h1>
+                        </div>
+                        <div className="arrow" >
+                            {<Icon name='caret square down' size='large' />}
+                        </div>
                     </div>
+                    {/* <div className="see-work">
+                        <h5>SEE OUR WORK </h5>
+                    </div> */}
                     <video width="750" height="500" controls autoPlay
-          playsInline>
-                        <source src="/Videos/W51Avid.mp4" type="video/mp4" />
+                        playsInline>
+                        <source src="/Videos/bethuneVid.mp4" type="video/mp4" />
                         {/* <source src="/Videos/bethuneVid.mp4" type="video/mp4" /> */}
                     </video>
                     {/* <iframe
@@ -122,14 +136,14 @@ function Home({ toPage }) {
 
                     </iframe> */}
                 </div>
-                <div className="motto-div" data-aos="zoom-out" data-aos-once="true">
+                <div className="motto-div2" data-aos="zoom-out" data-aos-once="true">
                     <div className="image-points">
                         <h4>Clean & Aesthetic Design</h4>
                     </div>
 
                     <img className="promise-img" src={clean2}></img>
                 </div>
-                <div className="motto-div" data-aos="fade-right" data-aos-once="true">
+                <div className="motto-div2" data-aos="fade-right" data-aos-once="true">
                     <div className="warranty">
                         <h1>Warranty</h1>
 
@@ -170,6 +184,7 @@ function Home({ toPage }) {
                         </div>
                     </Link>
                 </div>
+
 
             </div>
         </div>

@@ -78,7 +78,7 @@ function E9({ loading, load }) {
             </div>
             <div className="progress-div">
                 <h5>{<Icon name={progressIcon} size='large' />} COMPLETION: FEBRUARY 2024</h5>
-                <Progress percent="50" indicating />
+                <Progress percent="90" indicating />
             </div>
 
         </>

@@ -22,6 +22,27 @@
   padding-left: 10%;
 }
 
+.info-div-home {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 45px;
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+   
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 11px 35px 4px; 
+}
+
+@media only screen and (max-width: 600px) {
+  .info-div-home {
+    margin-top: 25px;
+    font-size: 15px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+}
+
 .values-div {
     font-size: 25px;
     font-weight: bold;
@@ -253,6 +274,17 @@ transform: translateX(-4px);
 .motto-div {
   margin-top: 25px;
   padding-bottom: 5%;
+  border-bottom: dotted;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.motto-div2 {
+  margin-top: 25px;
+  padding-bottom: 5%;
+  
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .motto {
@@ -316,6 +348,12 @@ transform: translateX(-4px);
   
 }
 
+.see-our-video {
+  padding-top: 30px;
+  margin-bottom: 20px;
+
+}
+
 /* .arrow {
   animation: bounce 10s linear infinite;
 } */
@@ -350,6 +388,19 @@ padding-left: 30px;
   background-color: rgb(128, 193, 253);
   padding: 7px;
   position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 15px;
+  width: 150px;
+  /* border: double; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px outset;
+}
+
+.see-work-big {
+  text-align: center;
+  background-color: rgb(128, 193, 253);
+  padding: 7px;
+ 
   margin-top: 15px;
   margin-left: 10px;
   font-size: 15px;

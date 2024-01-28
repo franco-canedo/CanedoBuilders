@@ -15,6 +15,8 @@ import e14 from '../exterior/e14.jpg';
 import e15 from '../exterior/e15.jpg';
 import e17 from '../exterior/e17.jpg';
 import e18 from '../exterior/e18.jpg';
+import e19 from '../W51/w51Exterior.jpg';
+import e20 from '../W51/W51Exterior2.jpg';
 
 
 
@@ -22,6 +24,20 @@ import e18 from '../exterior/e18.jpg';
 function ExteriorCarousel() {
     return (
         <Carousel fade>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={e19}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={e20}
+                    alt="First slide"
+                />
+            </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"

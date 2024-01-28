@@ -15,6 +15,9 @@ import l13 from '../living/l13.jpg';
 import l14 from '../living/l14.jpg';
 import l16 from '../living/l16.jpg';
 import l17 from '../living/l17.jpg';
+import l18 from '../W51/W51Living.jpg';
+import l19 from '../W51/W51Living2.jpg';
+import l20 from '../W51/W51Living3.jpg';
 
 
 
@@ -22,6 +25,30 @@ import l17 from '../living/l17.jpg';
 function LivingCarousel() {
     return (
         <Carousel fade>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={l18}
+                    alt="First slide"
+                />
+             
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={l19}
+                    alt="First slide"
+                />
+             
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={l20}
+                    alt="First slide"
+                />
+             
+            </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"

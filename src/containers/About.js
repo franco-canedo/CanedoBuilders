@@ -5,6 +5,7 @@ import guido from '../BFS/guido.Jpg';
 import franco from '../BFS/franco.Jpg';
 import green from '../gifs/green.png';
 
+
 import home from '../BFS/custom_homes.png';
 import project from '../BFS/project_management.png';
 import remodel from '../BFS/remodeling.png';

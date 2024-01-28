@@ -18,12 +18,45 @@ import ba17 from '../bathroom/ba17.jpg';
 import ba22 from '../bathroom/ba22.jpg';
 import ba19 from '../bathroom/ba19.jpg';
 import ba20 from '../bathroom/ba20.jpg';
+import ba21 from '../W51/W51Bath.jpg';
+import ba23 from '../W51/W51Bath2.jpg';
+import ba24 from '../W51/W51Bath3.jpg';
+import ba25 from '../W51/W51Bath4.jpg';
 
 
 
 function BathroomCarousel() {
     return (
         <Carousel fade>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={ba21}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+           
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={ba24}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+             <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={ba23}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={ba25}
+                    alt="First slide"
+                />
+            </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"

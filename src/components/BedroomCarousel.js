@@ -12,6 +12,7 @@ import b11 from '../bedroom/b11.jpg';
 import b12 from '../bedroom/b12.jpg';
 import b13 from '../bedroom/b13.jpg';
 import b14 from '../bedroom/b14.jpg';
+import b15 from '../W51/W51Bed.jpg';
 
 
 
@@ -21,6 +22,14 @@ import b14 from '../bedroom/b14.jpg';
 function BedroomCarousel() {
     return (
         <Carousel fade>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={b15}
+                    alt="First slide"
+                />
+              
+            </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"

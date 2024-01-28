@@ -12,6 +12,7 @@ import green from '../gifs/green.png';
 import home from '../BFS/custom_homes.png';
 import project from '../BFS/project_management.png';
 import remodel from '../BFS/remodeling.png';
+import logoZoom from '../photos/LogoZoom2.png';
 
 function Contact() {
 
@@ -70,13 +71,13 @@ function Contact() {
                 <div className='services-divs'>
                     <div className='paragraph-divs'>
                         <p>
-                            Over the years we have developed an impressive network of local architects, designers, and contractors. This network allows us to cater specifically to your needs, our process is extremely efficient and we aim to exceed expectations with the results.
+                            Over the years, we have developed an impressive network of local architects, designers, and contractors. This network allows us to cater specifically to your needs, our process is extremely efficient and we aim to exceed expectations with the results.
 
                             We pride ourselves in open communication and transparency, this is key to ensure our client’s vision is brought to life correctly. As a small business, we limit the amount of projects we take at a time and this is to our clients benefit.
                         </p>    
                     </div>
                     <div className="p-pic-div">
-                        <img className="services-pic" src={green}></img>
+                        <img className="services-pic" src={logoZoom}></img>
                     </div>
                 </div>
 

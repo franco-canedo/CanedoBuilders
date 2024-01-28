@@ -99,7 +99,7 @@ function Header({ toggleTab }) {
                                     </Link>
                                     <Link to="/contact" style={{ color: "white" }}>
                                         <div className="tab-div">
-                                            <h5>BUILDING SERVICES</h5>
+                                            <h5>SERVICES / CONTACT</h5>
                                             <Outlet />
                                         </div>
                                     </Link>
