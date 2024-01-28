@@ -3,9 +3,8 @@ import './CurrentProjects.css';
 
 
 //////// components
-import EnchantedLane from '../individualProjects/EnchantedLane';
-import ProspectAve from '../individualProjects/ProspectAve';
-import W51 from '../individualProjects/W51';
+
+
 import Ruth from '../individualProjects/Ruth';
 import E9 from '../individualProjects/E9';
 
@@ -14,7 +13,7 @@ import E9 from '../individualProjects/E9';
 
 //////// Unit Page
 
-import ProspectA from '../units/ProspectA';
+
 
 
 
@@ -102,9 +101,7 @@ function CurrentProjects({ normal }) {
 
                                             {timer()}
                                            
-                                            {/* <div data-aos="fade-right" data-aos-once="true">
-                                                <EnchantedLane loading={loading} load={load} />
-                                            </div> */}
+                                           
                                             <div data-aos="fade-right" data-aos-once="true">
                                                 <Ruth loading={loading} load={load} />
                                             </div>

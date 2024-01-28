@@ -3,17 +3,10 @@ import { useEffect, useState } from 'react';
 
 import Button from '@material-ui/core/Button';
 
-import floor1 from '../W51/unitAone.png';
-import floor2 from '../W51/unitAtwo.png';
-import floor3 from '../W51/unitAthree.png';
-import layout from '../W51/layout.png';
+
 import RuthRendering from '../Ruth/RuthRendering.jpg';
 
 import green from '../gifs/green.png';
-
-
-
-import prospectRender from '../prospect/prospectRender.jpg';
 
 
 
